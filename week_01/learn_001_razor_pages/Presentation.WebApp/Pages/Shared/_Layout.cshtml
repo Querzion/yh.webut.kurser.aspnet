@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>@ViewData["Title"] - Presentation.WebApp</title>
     <script type="importmap"></script>
+    @* Imports either look like this  *@
+    @* <script type="importmap"> *@
+    @*     { *@
+    @*         "imports": { *@
+    @*             "jquery": "/lib/jquery/dist/jquery.js" *@
+    @*         } *@
+    @*     } *@
+    @* </script> *@
+    @* or like this *@
+    @* <script type="importmap"> *@
+    @*     <script type="module"></<script> *@
+    @* </script> *@
+    
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/Presentation.WebApp.styles.css" asp-append-version="true"/>
@@ -44,6 +57,7 @@
 </footer>
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
+@* <script>jQuery</script> *@
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="~/js/site.js" asp-append-version="true"></script>
 

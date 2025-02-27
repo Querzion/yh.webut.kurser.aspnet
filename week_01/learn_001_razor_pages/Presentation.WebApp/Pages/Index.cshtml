@@ -1,6 +1,10 @@
 ﻿@page
+
 @model IndexModel
 @{
+    UserService userService = new UserService();
+    var users = userService.GetUsers();
+    
     ViewData["Title"] = "Home page";
 }
 

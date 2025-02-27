@@ -1,24 +1,25 @@
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
 builder.Services.AddRazorPages();
+
+// Connection strings from the appsettings.json file,
+// no rebuild required if the string is changed there.
+// string serviceBus = builder.Configuration.GetConnectionString("ServiceBus")!;
+// string connectionString = builder.Configuration.GetConnectionString("LocalDatabaseFile")!;
+// builder.Services.AddDbContext<>();
+// builder.Services.AddTransient<>();
+// builder.Services.AddScoped<>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
-
 app.UseRouting();
-
 app.UseAuthorization();
-
 app.MapStaticAssets();
 app.MapRazorPages()
     .WithStaticAssets();
