@@ -1,0 +1,43 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Financial Solutions";
+}
+
+@await Html.PartialAsync("Partials/_HeroPartial")
+
+<section id="brands">
+    <div class="container">
+        @await Html.PartialAsync("Partials/Components/_ItemList", Model.Items)
+    </div>
+</section>
+
+
+@* @model is basically the private version, and Model is the public version. *@
+@* private string _firstName = null; *@
+@* private IndexModel _firstName = null; *@
+
+@* public string FirstName  *@
+@* { *@
+@*     get  *@
+@*     { *@
+@*         return _firstName; *@
+@*     } *@
+@*     set *@
+@*     { *@
+@*         _firstName = value; *@
+@*     } *@
+@* } *@
+@*      *@
+@* public IndexModel FirstName  *@
+@* { *@
+@*     get  *@
+@*     { *@
+@*         return _firstName; *@
+@*     } *@
+@*     set *@
+@*     { *@
+@*         _firstName = value; *@
+@*     } *@
+@* } *@
+    

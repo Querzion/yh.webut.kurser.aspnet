@@ -1,0 +1,17 @@
+@model List<User>
+
+<div class="user-list">
+    
+    @if (!Model.Any())
+    {
+        <div>No users was found.</div>
+    }
+    else
+    {
+        foreach (var user in Model)
+        {
+            @await Html.PartialAsync("Partials/Components/_UserListItem", user)
+        }
+    }
+    
+</div>

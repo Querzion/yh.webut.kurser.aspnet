@@ -1,0 +1,17 @@
+@model List<string>
+
+<div class="item-list">
+
+    @if (!Model.Any())
+    {
+        <div>No items found.</div>
+    }
+    else
+    {
+        @foreach (var item in Model)
+        {
+            @await Html.PartialAsync("Partials/Components/_ItemListItem", item)
+        }
+    }
+
+</div>

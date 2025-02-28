@@ -1,0 +1,61 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Presentation.WebApp
+build_property.RootNamespace = Presentation.WebApp
+build_property.ProjectDir = /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp/Pages/Partials/Components/_ItemList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGlhbHMvQ29tcG9uZW50cy9fSXRlbUxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp/Pages/Partials/Components/_ItemListItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGlhbHMvQ29tcG9uZW50cy9fSXRlbUxpc3RJdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp/Pages/Partials/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGlhbHMvX0Zvb3RlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp/Pages/Partials/_HeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGlhbHMvX0hlYWRlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp/Pages/Partials/_HeroPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGlhbHMvX0hlcm9QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

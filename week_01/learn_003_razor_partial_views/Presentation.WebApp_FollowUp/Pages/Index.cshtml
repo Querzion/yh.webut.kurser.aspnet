@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<section id="users">
+    <div class="container">
+        
+        @await Html.PartialAsync("Partials/Components/_UserList", Model.Users)
+        
+    </div>
+</section>

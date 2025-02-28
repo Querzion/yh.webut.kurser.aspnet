@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp_FollowUp/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp_FollowUp/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_003_razor_partial_views/Presentation.WebApp_FollowUp/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Presentation.WebApp_FollowUp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Presentation.WebApp_FollowUp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.Presentation.WebApp_FollowUp.props",
+      "PackagePath": "build\\Presentation.WebApp_FollowUp.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Presentation.WebApp_FollowUp.props",
+      "PackagePath": "buildMultiTargeting\\Presentation.WebApp_FollowUp.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Presentation.WebApp_FollowUp.props",
+      "PackagePath": "buildTransitive\\Presentation.WebApp_FollowUp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
