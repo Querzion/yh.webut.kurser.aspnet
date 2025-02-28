@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #000000;
+  --background-color: #ffffff;
+}
+
+html, body {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100dvh;
+}
+
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  @media (width >= 768px ) {
+    max-width: 720px;
+  }
+  @media (width >= 992px ) {
+    max-width: 960px;
+  }
+  @media (width >= 1400px ) {
+    max-width: 1320px;
+  }
+}
