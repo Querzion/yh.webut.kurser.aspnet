@@ -14,12 +14,14 @@ public class HomeController : Controller
         return View();
     }
 
+    [Route("about")]
     public IActionResult About()
     {
         ViewData["Title"] = "About Us";
         return View();
     }
 
+    [Route("contacts")]
     public IActionResult Contact()
     {
         ViewData["Title"] = "Contact Us";
