@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Presentation.WebApp2/1.0.0": {
+        "runtime": {
+          "Presentation.WebApp2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Presentation.WebApp2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

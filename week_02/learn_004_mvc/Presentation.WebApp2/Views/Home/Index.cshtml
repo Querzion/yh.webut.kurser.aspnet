@@ -1,0 +1,14 @@
+﻿@model HomeIndexViewModel
+
+@* R@zor code is everything that starts with an @. *@
+<h1>Latest Products</h1>
+@foreach (var item in Model.LastestProducts)
+{
+    <div>@item</div>
+}
+
+<h1>Top Products</h1>
+@foreach (var item in Model.TopProducts)
+{
+    <div>@item</div>
+}
