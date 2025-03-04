@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Presentation.WebApp4_CleanStart/1.0.0": {
+        "runtime": {
+          "Presentation.WebApp4_CleanStart.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Presentation.WebApp4_CleanStart/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
