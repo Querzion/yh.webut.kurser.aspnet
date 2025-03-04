@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.WebApp.Controllers;
 
-public class HomeController : Controller
+public class AboutController : Controller
 {
     // GET
     public IActionResult Index()

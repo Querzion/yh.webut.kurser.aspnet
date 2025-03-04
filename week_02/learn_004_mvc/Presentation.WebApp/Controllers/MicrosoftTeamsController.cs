@@ -2,11 +2,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.WebApp.Controllers;
 
-public class HomeController : Controller
+public class MicrosoftTeamsController : Controller
 {
     // GET
     public IActionResult Index()
     {
         return View();
     }
+    
+    public IActionResult SmallMediumBusiness() => View();
 }
