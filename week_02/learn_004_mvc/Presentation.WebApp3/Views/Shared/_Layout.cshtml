@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <title>@ViewData["Title"] - Presentation.WebApp3</title>
+    
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
+    
+    @*  This linking states that the code-behind css file should be read in upon reload,
+        and that each version should get a new id after a change to it has been made. *@
+    <link rel="stylesheet" href="~/Presentation.WebApp3.styles.css" asp-append-version="true"/>
+</head>
+<body>
+<header>
+    <nav>
+        
+        @*  Links for navigation looks like this 
+            Area of the page (not necessary), Which controller(), and which method/view, then then the link name*@
+        <a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        @* Area doesn't need to be there but the rest does. *@
+        <a asp-controller="Home" asp-action="About">About</a>
+        <a asp-controller="Home" asp-action="Contact">Contact</a>
+        <a asp-controller="Products" asp-action="Index">Products</a>
+        
+    </nav>
+</header>
+<div class="container">
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+</div>
+
+<footer class="border-top footer text-muted">
+    <div class="container">
+        &copy; 2025 - Presentation.WebApp3 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+</footer>
+
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
