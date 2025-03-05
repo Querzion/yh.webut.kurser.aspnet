@@ -28,16 +28,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/exercise_001/Presentation.WebApp/Pages/Partials/Components/_FooterPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGlhbHMvQ29tcG9uZW50cy9fRm9vdGVyUGFydGlhbC5jc2h0bWw=
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/exercise_001/Presentation.WebApp/Pages/Partials/_FooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGlhbHMvX0Zvb3RlclBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/exercise_001/Presentation.WebApp/Pages/Partials/Components/_HeaderPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGlhbHMvQ29tcG9uZW50cy9fSGVhZGVyUGFydGlhbC5jc2h0bWw=
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/exercise_001/Presentation.WebApp/Pages/Partials/_HeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGlhbHMvX0hlYWRlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/exercise_001/Presentation.WebApp/Pages/Partials/_HeroPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGlhbHMvX0hlcm9QYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/exercise_001/Presentation.WebApp/Pages/Partials/_ProductPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGlhbHMvX1Byb2R1Y3RQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/exercise_001/Presentation.WebApp/Pages/Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJvZHVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/exercise_001/Presentation.WebApp/Pages/Shared/_Layout.cshtml]

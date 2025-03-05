@@ -1,0 +1,24 @@
+@page
+@model Products
+
+@{
+    Layout = null;
+}
+
+<header>
+    <a class="btn btn-beige" asp-page="/Index">Home</a>
+</header>
+
+<div class="container">
+    @if (!Model.ProductList.Any())
+    {
+        <div>No items found.</div>
+    }
+    else
+    {
+        @foreach (var product in Model.ProductList)
+        {
+            @await Html.PartialAsync("Partials/_ProductPartial", product)
+        }
+    }
+</div>
