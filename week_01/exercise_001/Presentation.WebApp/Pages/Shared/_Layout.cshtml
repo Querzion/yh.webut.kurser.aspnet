@@ -6,14 +6,16 @@
     <title>@ViewData["Title"] - Presentation.WebApp</title>
     <script type="importmap"></script>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true"/>
-    @* <link rel="stylesheet" href="~/Presentation.WebApp.styles.css" asp-append-version="true"/> *@
+    <link rel="stylesheet" href="~/Presentation.WebApp.styles.css" asp-append-version="true"/>
 </head>
 <body>
 
-<div class="container">
-    <main role="main" class="pb-3">
+<div class="wrapper">
+    @await Html.PartialAsync("Partials/Components/_HeaderPartial")
+    <main>
         @RenderBody()
     </main>
+    @await Html.PartialAsync("Partials/Components/_FooterPartial")
 </div>
 
 <script src="~/js/site.js" asp-append-version="true"></script>
