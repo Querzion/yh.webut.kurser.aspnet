@@ -1,15 +1,8 @@
 @* Not Injected! *@
-@* @model IEnumerable<Product> *@
-@* *@
-@* @foreach (var product in Model) *@
-@* { *@
-@*     @await Html.PartialAsync("Partials/ProductList/_ProductListItem", product) *@
-@* } *@
+@model IEnumerable<Product>
 
-@* Injected! *@
-@*  This will ONLY work if you first inject the ProductService! 
-    It's added to the view imports file. *@
-@foreach (var product in productService.GetProducts())
+@foreach (var product in Model)
 {
     @await Html.PartialAsync("Partials/ProductList/_ProductListItem", product)
 }
+
