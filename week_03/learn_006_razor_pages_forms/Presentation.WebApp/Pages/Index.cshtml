@@ -39,6 +39,7 @@
                 <select asp-for="FormData.ClientId" asp-items="Model.ClientOptions" class="form-control">
                     <option value="">-- Select a Client --</option>
                 </select>
+                <span asp-validation-for="FormData.ClientId"></span>
             </div>
             
             <button type="submit" class="btn btn-beige">SUBMIT</button>

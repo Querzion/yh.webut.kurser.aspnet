@@ -4,6 +4,7 @@ namespace Presentation.WebApp.Models;
 
 public class RegisterUserModel
 {
+    [Display(Name = "First name")]
     [Required(ErrorMessage = "You must enter a first name.")]
     public string FirstName { get; set; } = null!;
     

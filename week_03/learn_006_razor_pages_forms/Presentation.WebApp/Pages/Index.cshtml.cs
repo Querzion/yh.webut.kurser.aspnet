@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Presentation.WebApp.Models;
+using System.Linq;
 
 namespace Presentation.WebApp.Pages;
 
@@ -19,18 +20,18 @@ public class IndexModel(ClientService clientService) : PageModel
     {
         var clients = await _clientService.GetClientsAsync();
         // Old way to write this
-        // ClientOptions = clients.Select(x => new SelectListItem
-        // {
-        //     Value = x.Id.ToString(),
-        //     Text = x.ClientName
-        // }).ToList();
+        ClientOptions = clients.Select(x => new SelectListItem
+        {
+            Value = x.Id.ToString(),
+            Text = x.ClientName
+        }).ToList();
         
         // New way to write this.
-        ClientOptions = [.. clients.Select(x => new SelectListItem
-        {
-           Value = x.Id.ToString(),
-           Text = x.ClientName
-        })];
+        // ClientOptions = [.. clients.Select(x => new SelectListItem
+        // {
+        //    Value = x.Id.ToString(),
+        //    Text = x.ClientName
+        // })];
     }
     
     public IActionResult OnPost()
