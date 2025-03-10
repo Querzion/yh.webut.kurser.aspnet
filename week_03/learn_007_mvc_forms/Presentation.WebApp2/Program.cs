@@ -18,4 +18,5 @@ app.MapControllerRoute(
         pattern: "{controller=Auth}/{action=SignUp}/{id?}")
     .WithStaticAssets();
 
+
 app.Run();

@@ -1,10 +1,52 @@
-@model dynamic
+@model SignUpFormModel
 @{
-    ViewData["Title"] = "Home";
+    ViewData["Title"] = "Sign Up";
 }
 
 <div class="card bg-white">
     <div class="card-body">
-        <h1>@ViewData["Title"]</h1>
+        
+        <form method="post" asp-controller="Auth" asp-action="SignUp" novalidate>
+            <div class="mb-3">
+                <label asp-for="FirstName" class="form-label">First Name</label>
+                <input asp-for="FirstName" class="form-control">
+                <span asp-validation-for="FirstName"></span>
+            </div>
+            
+            <div class="mb-3">
+                <label asp-for="LastName" class="form-label">Last Name</label>
+                <input asp-for="LastName" class="form-control">
+                <span asp-validation-for="LastName"></span>
+            </div>
+            
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label">Email</label>
+                <input asp-for="Email" class="form-control">
+                <span asp-validation-for="Email"></span>
+            </div>
+            
+            @* <div class="mb-3"> *@
+            @*     <label asp-for="Password" class="form-label">Password</label> *@
+            @*     <input asp-for="Password" class="form-control"> *@
+            @*     <span asp-validation-for="Password"></span> *@
+            @* </div> *@
+            
+            @* The value assignment here could be a potential security risk *@
+            <div class="mb-3">
+                <label asp-for="Password" class="form-label">Password</label>
+                <input asp-for="Password" class="form-control" value="@Model.Password">
+                <span asp-validation-for="Password"></span>
+            </div>
+            
+            <div class="mb-5">
+                <label asp-for="ConfirmPassword" class="form-label">Confirm Password</label>
+                <input asp-for="ConfirmPassword" class="form-control">
+                <span asp-validation-for="ConfirmPassword"></span>
+            </div>
+            
+            <button type="submit" class="btn btn-beige">SUBMIT</button>
+            
+        </form>
+        
     </div>
 </div>

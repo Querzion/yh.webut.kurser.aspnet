@@ -4,10 +4,9 @@ namespace Presentation.WebApp.Controllers;
 
 public class AuthController : Controller
 {
-    public IActionResult SignUp()
+    [HttpPost]
+    public IActionResult HandleSignUp()
     {
-        ViewData["Title"] = "Sign Up";
-
-        return View();
+        return RedirectToAction("SignUp", "Account");
     }
 }

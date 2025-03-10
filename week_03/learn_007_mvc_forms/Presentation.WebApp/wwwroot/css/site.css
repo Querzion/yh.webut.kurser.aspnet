@@ -5,6 +5,7 @@
 }
 
 :root {
+    --orange-color: #ff9020;
     --beige-color: #F2EDDC;
     --sand-color: #D9C3A9;
     --slategreen-color: #4F5955;
@@ -140,4 +141,14 @@ h4 {
 }
 .product-list .product-list-item {
     margin-bottom: 1rem;
+}
+
+/* Validation */
+.field-validation-error {
+    color: var(--orange-color);
+    font-size: .8em;
+}
+.field-validation-valid {
+    color: var(--orange-color);
+    font-size: .8em;
 }
