@@ -10,4 +10,12 @@
       <Folder Include="Models\" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="Controllers\ProductsController.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Auth\SignUp.cshtml" />
+    </ItemGroup>
+
 </Project>
