@@ -24,16 +24,20 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_Injected/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_Injected/Views/Shared/Partials/ProductList/_ProductList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL1Byb2R1Y3RMaXN0L19Qcm9kdWN0TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_Injected/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_Injected/Views/Shared/Partials/ProductList/_ProductListItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL1Byb2R1Y3RMaXN0L19Qcm9kdWN0TGlzdEl0ZW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_Injected/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_Injected/Views/Shared/Partials/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL19Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_Injected/Views/Shared/Partials/_Header.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL19IZWFkZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_Injected/Views/_ViewImports.cshtml]

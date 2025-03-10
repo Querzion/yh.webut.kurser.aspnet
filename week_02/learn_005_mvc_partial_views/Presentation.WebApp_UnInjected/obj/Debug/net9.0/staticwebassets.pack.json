@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/obj/Debug/net9.0/scopedcss/projectbundle/Presentation.WebApp_UnInjected.bundle.scp.css",
+      "PackagePath": "staticwebassets/Presentation.WebApp_UnInjected.k9ky4d0vlb.bundle.scp.css"
+    },
+    {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Presentation.WebApp_UnInjected.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Presentation.WebApp_UnInjected.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.Presentation.WebApp_UnInjected.props",
+      "PackagePath": "build\\Presentation.WebApp_UnInjected.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Presentation.WebApp_UnInjected.props",
+      "PackagePath": "buildMultiTargeting\\Presentation.WebApp_UnInjected.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Presentation.WebApp_UnInjected.props",
+      "PackagePath": "buildTransitive\\Presentation.WebApp_UnInjected.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
