@@ -21,7 +21,6 @@
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/obj/Debug/net9.0/scopedcss/bundle/Presentation.WebApp_UnInjected.styles.css
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/obj/Debug/net9.0/scopedcss/projectbundle/Presentation.WebApp_UnInjected.bundle.scp.css
-/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/obj/Debug/net9.0/compressed/dmx4cezjtb-5ipweew5fc.gz
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/obj/Debug/net9.0/compressed/q86c4a5cgv-3r8b2a0bt1.gz
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/obj/Debug/net9.0/compressed/k9ewfmk2xx-k9ky4d0vlb.gz
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/obj/Debug/net9.0/compressed/oolcladoon-k9ky4d0vlb.gz
@@ -40,3 +39,4 @@
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/obj/Debug/net9.0/Presentation.WebApp_UnInjected.pdb
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/obj/Debug/net9.0/Presentation.WebApp_UnInjected.genruntimeconfig.cache
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/obj/Debug/net9.0/ref/Presentation.WebApp_UnInjected.dll
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_005_mvc_partial_views/Presentation.WebApp_UnInjected/obj/Debug/net9.0/compressed/dmx4cezjtb-fqd79audht.gz

@@ -1,1 +1,6 @@
-@await Html.PartialAsync("Partials/ProductList/_ProductListItem", )
+@model IEnumerable<Product>
+
+@foreach (var product in Model)
+{
+    @await Html.PartialAsync("Partials/ProductList/_ProductListItem", product)
+}
