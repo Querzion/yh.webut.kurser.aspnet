@@ -34,6 +34,13 @@
                 <span asp-validation-for="FormData.ConfirmPassword"></span>
             </div>
             
+            <div class="mb-5">
+                <label asp-for="FormData.ClientId">Select Client</label>
+                <select asp-for="FormData.ClientId" asp-items="Model.ClientOptions" class="form-control">
+                    <option value="">-- Select a Client --</option>
+                </select>
+            </div>
+            
             <button type="submit" class="btn btn-beige">SUBMIT</button>
             
         </form>

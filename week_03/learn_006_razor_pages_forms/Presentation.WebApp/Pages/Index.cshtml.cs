@@ -26,11 +26,11 @@ public class IndexModel(ClientService clientService) : PageModel
         // }).ToList();
         
         // New way to write this.
-        // ClientOptions = [.. clients.Select(x => new SelectListItem
-        // {
-        //    Value = x.Id.ToString(),
-        //    Text = x.ClientName
-        // })];
+        ClientOptions = [.. clients.Select(x => new SelectListItem
+        {
+           Value = x.Id.ToString(),
+           Text = x.ClientName
+        })];
     }
     
     public IActionResult OnPost()
