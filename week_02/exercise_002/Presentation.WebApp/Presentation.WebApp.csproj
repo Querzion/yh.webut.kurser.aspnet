@@ -7,7 +7,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Folder Include="Models\" />
+      <_ContentIncludedByDefault Remove="Views\Muffins\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Product\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Pages\" />
     </ItemGroup>
 
 </Project>

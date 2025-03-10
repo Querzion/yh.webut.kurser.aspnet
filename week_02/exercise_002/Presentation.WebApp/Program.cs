@@ -1,7 +1,9 @@
+using Presentation.WebApp.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
-
+builder.Services.AddSingleton<ProductService>();
 
 var app = builder.Build();
 app.UseHsts();

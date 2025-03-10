@@ -1,0 +1,10 @@
+@model IEnumerable<Product>
+
+@if (!Model.Any())
+{
+    <p>Det finns inga produkter tillgängliga</p>
+}
+@foreach (var product in Model)
+{
+    @await Html.PartialAsync("Partials/_ProductPartial", product)
+}
