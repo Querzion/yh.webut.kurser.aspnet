@@ -1,0 +1,15 @@
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/bin/Debug/net9.0/Infrastructure.deps.json
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/bin/Debug/net9.0/Infrastructure.dll
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/bin/Debug/net9.0/Infrastructure.pdb
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/obj/Debug/net9.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/obj/Debug/net9.0/Infrastructure.AssemblyInfoInputs.cache
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/obj/Debug/net9.0/Infrastructure.AssemblyInfo.cs
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/obj/Debug/net9.0/Infrastructure.csproj.CoreCompileInputs.cache
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/obj/Debug/net9.0/Infrastructure.sourcelink.json
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/obj/Debug/net9.0/Infrastructure.dll
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/obj/Debug/net9.0/refint/Infrastructure.dll
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/obj/Debug/net9.0/Infrastructure.pdb
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/obj/Debug/net9.0/ref/Infrastructure.dll
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/bin/Debug/net9.0/Infrastructure.runtimeconfig.json
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/obj/Debug/net9.0/Infrastructure.csproj.AssemblyReference.cache
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_006_razor_pages_forms/Infrastructure/obj/Debug/net9.0/Infrastructure.genruntimeconfig.cache
