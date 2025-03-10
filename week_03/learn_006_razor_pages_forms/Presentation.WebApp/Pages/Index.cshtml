@@ -1,0 +1,42 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Form Management";
+}
+
+<div class="card bg-white">
+    <div class="card-body">
+        
+        <form method="post" novalidate>
+            <div class="mb-3">
+                <label asp-for="FormData.FirstName" class="form-label">First Name</label>
+                <input asp-for="FormData.FirstName" class="form-control">
+                <span asp-validation-for="FormData.FirstName"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="FormData.LastName" class="form-label">Last Name</label>
+                <input asp-for="FormData.LastName" class="form-control">
+                <span asp-validation-for="FormData.LastName"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="FormData.Email" class="form-label">Email</label>
+                <input asp-for="FormData.Email" class="form-control">
+                <span asp-validation-for="FormData.Email"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="FormData.Password" class="form-label">Password</label>
+                <input asp-for="FormData.Password" class="form-control">
+                <span asp-validation-for="FormData.Password"></span>
+            </div>
+            <div class="mb-5">
+                <label asp-for="FormData.ConfirmPassword" class="form-label">Confirm Password</label>
+                <input asp-for="FormData.ConfirmPassword" class="form-control">
+                <span asp-validation-for="FormData.ConfirmPassword"></span>
+            </div>
+            
+            <button type="submit" class="btn btn-beige">SUBMIT</button>
+            
+        </form>
+        
+    </div>
+</div>
