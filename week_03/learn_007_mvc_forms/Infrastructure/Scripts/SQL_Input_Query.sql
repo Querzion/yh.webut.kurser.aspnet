@@ -18,6 +18,5 @@ VALUES ('Querzion Inc.'),
        ('SubstansInformation Org.');
 
 INSERT INTO Projects (Title, Description, StartDate, EndDate, CĺientId, StatusId)
-VALUES ('Hemsida', 'Skapa en hemsida för verksamhet.', '2025-02-28','2025-06-01', 1, 1),
-       ('OpenAI', 'Träna AI modell','2025-06-01','2026-06-01',3,1),
-       ('Random', 'Random, just Random.', '2025-04-02','2025-06-01', 6, 2);
+VALUES ('Website', 'Create a website', '2025-06-01','2025-08-26', 1, 1),
+       ('OpenAI', 'Train an AI modell','2026-06-01','2028-06-01',3,1)
