@@ -54,4 +54,6 @@ public class SignUpViewModel(ClientService clientService)
         // }).ToList();
     }
 
+    // Method to clear the form.
+    public void ClearFormData() => FormData = new();
 }

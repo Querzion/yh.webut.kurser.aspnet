@@ -11,6 +11,8 @@ public class AuthController(ClientService clientService) : Controller
     // Seems stupid to use and to be a security risk, BUT it also has some features to it!
     // By making this viewmodel, the code may be cleaned up a bit.
     private readonly SignUpViewModel _signUpViewModel = new(clientService);
+    // Register a service to add formData to!
+    // private readonly AccountService _accountService;
     
     public async Task<IActionResult> SignUp()
     {
@@ -37,6 +39,14 @@ public class AuthController(ClientService clientService) : Controller
             return View(_signUpViewModel);
         }
 
-        return View();
+        // And when the form is populated properly,
+        // it starts a save to database command. Like this.
+        // await _accountService.CreateUserAccountAsync(formData);
+        
+        // Empty all input fields. Set to empty form.
+        _signUpViewModel.ClearFormData();
+        return View(_signUpViewModel);
+        
+        // return View();
     }
 }

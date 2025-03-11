@@ -9,19 +9,19 @@
         <form method="post" asp-controller="Auth" asp-action="SignUp" novalidate>
             <div class="mb-3">
                 <label asp-for="FormData.FirstName" class="form-label">First Name</label>
-                <input asp-for="FormData.FirstName" class="form-control">
+                <input asp-for="FormData.FirstName" class="form-control" value="@Model?.FormData?.FirstName">
                 <span asp-validation-for="FormData.FirstName"></span>
             </div>
             
             <div class="mb-3">
                 <label asp-for="FormData.LastName" class="form-label">Last Name</label>
-                <input asp-for="FormData.LastName" class="form-control">
+                <input asp-for="FormData.LastName" class="form-control" value="@Model?.FormData?.LastName">
                 <span asp-validation-for="FormData.LastName"></span>
             </div>
             
             <div class="mb-3">
                 <label asp-for="FormData.Email" class="form-label">Email</label>
-                <input asp-for="FormData.Email" class="form-control">
+                <input asp-for="FormData.Email" class="form-control" value="@Model?.FormData?.Email">
                 <span asp-validation-for="FormData.Email"></span>
             </div>
             
