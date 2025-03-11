@@ -12,11 +12,15 @@ public class AuthController(ClientService clientService) : Controller
     // By making this viewmodel, the code may be cleaned up a bit.
     private readonly SignUpViewModel _signUpViewModel = new(clientService);
     
-    public IActionResult SignUp()
+    public async Task<IActionResult> SignUp()
     {
         // Creates a model at signup so that one can gain access to the variables at start.
         // var formData = new SignUpFormModel();
         // return View(formData);
+
+        // This is added because the first time it's only instantiated in the constructor in SignUpViewModel,
+        // while this time it's actually read in.
+        await _signUpViewModel.PopulateClientOptionsAsync();
         
         return View(_signUpViewModel);
 

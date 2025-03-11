@@ -11,7 +11,8 @@ public class SignUpViewModel
     public SignUpViewModel(ClientService clientService)
     {
         _clientService = clientService;
-        Task.Run(PopulateClientOptionsAsync);
+        // Task.Run(PopulateClientOptionsAsync);
+        PopulateClientOptionsAsync().ConfigureAwait(false).GetAwaiter().GetResult();
     }
     
     public SignUpFormModel FormData { get; set; } = new();

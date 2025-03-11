@@ -45,7 +45,7 @@
             </div>
             
             <div class="mb-3">
-                <select asp-for="FormData.ClientId" class="form-control">
+                <select asp-for="FormData.ClientId" asp-items="@Model?.ClientOptions" class="form-control">
                     <option value="0" disabled selected>-- Select a Client --</option>
                 </select>
                 <span asp-validation-for="FormData.ClientId"></span>
