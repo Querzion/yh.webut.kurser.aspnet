@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/scopedcss/projectbundle/Presentation.WebApp_MVC.bundle.scp.css",
-      "PackagePath": "staticwebassets/Presentation.WebApp_MVC.tgv0awvdk9.bundle.scp.css"
+      "PackagePath": "staticwebassets/Presentation.WebApp_MVC.ea9vpkyghy.bundle.scp.css"
     },
     {
       "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/css/site.css",
@@ -21,8 +21,32 @@
       "PackagePath": "staticwebassets/uploads/2025-03-11.6079374a-e53b-4b7f-ae34-6c65239280d8.jpg"
     },
     {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/73f5cc3e-209f-4340-a40f-bf3a9772bf37_f964b4997d125b603a22d80881bcd392e8b97bf49007b8fe4d7c423347ac89b7.png",
+      "PackagePath": "staticwebassets/uploads/73f5cc3e-209f-4340-a40f-bf3a9772bf37_f964b4997d125b603a22d80881bcd392e8b97bf49007b8fe4d7c423347ac89b7.png"
+    },
+    {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[11344663-264f-4874-8e30-5f0fd2b0dee2].png",
+      "PackagePath": "staticwebassets/uploads/[2025-03-11].[ID-0].[11344663-264f-4874-8e30-5f0fd2b0dee2].png"
+    },
+    {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[2e5ab874-605d-4f44-807e-ba5a910bfe92].png",
+      "PackagePath": "staticwebassets/uploads/[2025-03-11].[ID-0].[2e5ab874-605d-4f44-807e-ba5a910bfe92].png"
+    },
+    {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[580c186a-479e-4077-844d-5fa41f7a6f37].png",
+      "PackagePath": "staticwebassets/uploads/[2025-03-11].[ID-0].[580c186a-479e-4077-844d-5fa41f7a6f37].png"
+    },
+    {
       "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[c3133f10-0696-418e-a9bf-d0bbfa355717].png",
       "PackagePath": "staticwebassets/uploads/[2025-03-11].[ID-0].[c3133f10-0696-418e-a9bf-d0bbfa355717].png"
+    },
+    {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[ID-0].[2025-03-11].[1591d8e9-7746-4f86-beb7-f8e25ecb690c].png",
+      "PackagePath": "staticwebassets/uploads/[ID-0].[2025-03-11].[1591d8e9-7746-4f86-beb7-f8e25ecb690c].png"
+    },
+    {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[ID-0].[2025-03-11].[b28ce284-1f7c-4388-bcb6-7430455dc014].png",
+      "PackagePath": "staticwebassets/uploads/[ID-0].[2025-03-11].[b28ce284-1f7c-4388-bcb6-7430455dc014].png"
     },
     {
       "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/f964b4997d125b603a22d80881bcd392e8b97bf49007b8fe4d7c423347ac89b7.png",

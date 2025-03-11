@@ -1,5 +1,5 @@
 .surface[b-te3pq6ee7a] {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--light-color);
@@ -14,6 +14,48 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;  /* Full viewport height */
+    height: 100dvh;  /* Full viewport height */
     width: 100vw;   /* Full viewport width */
+}
+
+/*ChatGPT code since I have almost forgotten how to use css. "/ */
+/* The circle container should be a proper size, not too big */
+.circle[b-te3pq6ee7a] {
+    border-radius: 50%;  /* Makes it round */
+    display: flex; /* Using flexbox to center content */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    padding: 2rem; /* Adjust padding to control circle size */
+    height: 5rem; /* Fixed height */
+    width: 5rem; /* Fixed width */
+    margin: 5rem;
+    background-color: var(--lightgray-color); /* Set the background color */
+}
+
+/* Make the icon inside the circle larger */
+.circle i[b-te3pq6ee7a] {
+    font-size: 3rem; /* Make the icon bigger */
+    color: var(--slategreen-color); /* Icon color */
+}
+
+/* The purple box with rounded corners and dashed border */
+.image-preview-container[b-te3pq6ee7a] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem; /* Padding for the box */
+    border: 2px dashed var(--slategreen-color); /* Dashed border */
+    /*background-color: #975cff; !* Purple background *!*/
+    /*height: 25rem; !* Set a fixed height *!*/
+    /*width: 25rem; !* Set a fixed width *!*/
+    margin-bottom: 1rem;
+    border-radius: 1rem; /* Rounded edges */
+}
+
+/* Make the image inside the preview container smaller with rounded corners */
+#image-preview[b-te3pq6ee7a] {
+    max-width: 100%;  /* Make the image 10% smaller than the container */
+    max-height: 100%; /* Maintain aspect ratio, shrink if needed */
+    border-radius: 1rem; /* Same rounded corners as the container */
+    object-fit: contain; /* Make sure the image fits within the bounds without distorting */
 }

@@ -35,6 +35,6 @@
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/Presentation.WebApp_MVC.pdb
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/Presentation.WebApp_MVC.genruntimeconfig.cache
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/ref/Presentation.WebApp_MVC.dll
-/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/377iyk5lbf-sfpfip2fsp.gz
-/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/e0av98ah0n-tgv0awvdk9.gz
-/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/36l9shp49a-tgv0awvdk9.gz
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/377iyk5lbf-j9do9zqqgo.gz
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/e0av98ah0n-ea9vpkyghy.gz
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/36l9shp49a-ea9vpkyghy.gz

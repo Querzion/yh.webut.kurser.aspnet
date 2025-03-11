@@ -163,10 +163,7 @@ h4 {
     font-style: italic;
     /*opacity: 0.1;*/
 }
-/*input::placeholder {*/
-/*    color: var(--lightgray-color);*/
-/*    font-size: .9em;*/
-/*    font-style: italic;*/
-/*    opacity: 0.1;*/
-/*}*/
 
+.d-none {
+    display: none;
+}

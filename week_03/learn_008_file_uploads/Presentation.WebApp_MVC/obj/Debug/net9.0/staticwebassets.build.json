@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7WoPD4bseSh1KDDIa+dmM8aQRDqOIVopTUekasn8cWk=",
+  "Hash": "cYEzioy8/T8IQ1F6TV54UofiIIf9OTbl+Pcpc4xLx0A=",
   "Source": "Presentation.WebApp_MVC",
   "BasePath": "_content/Presentation.WebApp_MVC",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/36l9shp49a-tgv0awvdk9.gz",
+      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/36l9shp49a-ea9vpkyghy.gz",
       "SourceId": "Presentation.WebApp_MVC",
       "SourceType": "Computed",
       "ContentRoot": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/Presentation.WebApp_MVC",
-      "RelativePath": "Presentation.WebApp_MVC#[.{fingerprint=tgv0awvdk9}]!.bundle.scp.css.gz",
+      "RelativePath": "Presentation.WebApp_MVC#[.{fingerprint=ea9vpkyghy}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -31,19 +31,19 @@
       "RelatedAsset": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/scopedcss/projectbundle/Presentation.WebApp_MVC.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "nltp9svdtq",
-      "Integrity": "GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk=",
+      "Fingerprint": "rajr9o5ky9",
+      "Integrity": "jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/scopedcss/projectbundle/Presentation.WebApp_MVC.bundle.scp.css"
     },
     {
-      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/377iyk5lbf-sfpfip2fsp.gz",
+      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/377iyk5lbf-j9do9zqqgo.gz",
       "SourceId": "Presentation.WebApp_MVC",
       "SourceType": "Discovered",
       "ContentRoot": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/Presentation.WebApp_MVC",
-      "RelativePath": "css/site#[.{fingerprint=sfpfip2fsp}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=j9do9zqqgo}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -52,8 +52,8 @@
       "RelatedAsset": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "zdz4zlbeis",
-      "Integrity": "JzMzrY9rKDYlJt2gsE2Wr4pDxuySgyClQqsI+MUfiY8=",
+      "Fingerprint": "qntmcbjzwv",
+      "Integrity": "pscVHJkj1GhuIe3ASRjXTQIXGEM2Ru+S4+WZEQHsjaY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/css/site.css"
@@ -80,12 +80,12 @@
       "OriginalItemSpec": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/js/site.js"
     },
     {
-      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/e0av98ah0n-tgv0awvdk9.gz",
+      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/e0av98ah0n-ea9vpkyghy.gz",
       "SourceId": "Presentation.WebApp_MVC",
       "SourceType": "Computed",
       "ContentRoot": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/Presentation.WebApp_MVC",
-      "RelativePath": "Presentation.WebApp_MVC#[.{fingerprint=tgv0awvdk9}]?.styles.css.gz",
+      "RelativePath": "Presentation.WebApp_MVC#[.{fingerprint=ea9vpkyghy}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -94,8 +94,8 @@
       "RelatedAsset": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/scopedcss/bundle/Presentation.WebApp_MVC.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "nltp9svdtq",
-      "Integrity": "GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk=",
+      "Fingerprint": "rajr9o5ky9",
+      "Integrity": "jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/scopedcss/bundle/Presentation.WebApp_MVC.styles.css"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "tgv0awvdk9",
-      "Integrity": "s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o=",
+      "Fingerprint": "ea9vpkyghy",
+      "Integrity": "xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/scopedcss/bundle/Presentation.WebApp_MVC.styles.css"
@@ -157,8 +157,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "tgv0awvdk9",
-      "Integrity": "s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o=",
+      "Fingerprint": "ea9vpkyghy",
+      "Integrity": "xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/scopedcss/projectbundle/Presentation.WebApp_MVC.bundle.scp.css"
@@ -178,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sfpfip2fsp",
-      "Integrity": "eJsJ6De8eBykjiRNgBb00WHn4R/r9lcOa1y970paoRw=",
+      "Fingerprint": "j9do9zqqgo",
+      "Integrity": "J47W2QeYOXN4MUzb3Ci+XgB4lqeu8I7db/Iam0oX14Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -227,6 +227,69 @@
       "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
+      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[11344663-264f-4874-8e30-5f0fd2b0dee2].png",
+      "SourceId": "Presentation.WebApp_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/",
+      "BasePath": "_content/Presentation.WebApp_MVC",
+      "RelativePath": "uploads/[2025-03-11].[ID-0].[11344663-264f-4874-8e30-5f0fd2b0dee2]#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmarh6jpr3",
+      "Integrity": "dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/[2025-03-11].[ID-0].[11344663-264f-4874-8e30-5f0fd2b0dee2].png"
+    },
+    {
+      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[2e5ab874-605d-4f44-807e-ba5a910bfe92].png",
+      "SourceId": "Presentation.WebApp_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/",
+      "BasePath": "_content/Presentation.WebApp_MVC",
+      "RelativePath": "uploads/[2025-03-11].[ID-0].[2e5ab874-605d-4f44-807e-ba5a910bfe92]#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmarh6jpr3",
+      "Integrity": "dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/[2025-03-11].[ID-0].[2e5ab874-605d-4f44-807e-ba5a910bfe92].png"
+    },
+    {
+      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[580c186a-479e-4077-844d-5fa41f7a6f37].png",
+      "SourceId": "Presentation.WebApp_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/",
+      "BasePath": "_content/Presentation.WebApp_MVC",
+      "RelativePath": "uploads/[2025-03-11].[ID-0].[580c186a-479e-4077-844d-5fa41f7a6f37]#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmarh6jpr3",
+      "Integrity": "dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/[2025-03-11].[ID-0].[580c186a-479e-4077-844d-5fa41f7a6f37].png"
+    },
+    {
       "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[c3133f10-0696-418e-a9bf-d0bbfa355717].png",
       "SourceId": "Presentation.WebApp_MVC",
       "SourceType": "Discovered",
@@ -248,6 +311,48 @@
       "OriginalItemSpec": "wwwroot/uploads/[2025-03-11].[ID-0].[c3133f10-0696-418e-a9bf-d0bbfa355717].png"
     },
     {
+      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[ID-0].[2025-03-11].[1591d8e9-7746-4f86-beb7-f8e25ecb690c].png",
+      "SourceId": "Presentation.WebApp_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/",
+      "BasePath": "_content/Presentation.WebApp_MVC",
+      "RelativePath": "uploads/[ID-0].[2025-03-11].[1591d8e9-7746-4f86-beb7-f8e25ecb690c]#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmarh6jpr3",
+      "Integrity": "dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/[ID-0].[2025-03-11].[1591d8e9-7746-4f86-beb7-f8e25ecb690c].png"
+    },
+    {
+      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[ID-0].[2025-03-11].[b28ce284-1f7c-4388-bcb6-7430455dc014].png",
+      "SourceId": "Presentation.WebApp_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/",
+      "BasePath": "_content/Presentation.WebApp_MVC",
+      "RelativePath": "uploads/[ID-0].[2025-03-11].[b28ce284-1f7c-4388-bcb6-7430455dc014]#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmarh6jpr3",
+      "Integrity": "dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/[ID-0].[2025-03-11].[b28ce284-1f7c-4388-bcb6-7430455dc014].png"
+    },
+    {
       "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/2025-03-11.6079374a-e53b-4b7f-ae34-6c65239280d8.jpg",
       "SourceId": "Presentation.WebApp_MVC",
       "SourceType": "Discovered",
@@ -267,6 +372,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/uploads/2025-03-11.6079374a-e53b-4b7f-ae34-6c65239280d8.jpg"
+    },
+    {
+      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/73f5cc3e-209f-4340-a40f-bf3a9772bf37_f964b4997d125b603a22d80881bcd392e8b97bf49007b8fe4d7c423347ac89b7.png",
+      "SourceId": "Presentation.WebApp_MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/",
+      "BasePath": "_content/Presentation.WebApp_MVC",
+      "RelativePath": "uploads/73f5cc3e-209f-4340-a40f-bf3a9772bf37_f964b4997d125b603a22d80881bcd392e8b97bf49007b8fe4d7c423347ac89b7#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kmarh6jpr3",
+      "Integrity": "dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/73f5cc3e-209f-4340-a40f-bf3a9772bf37_f964b4997d125b603a22d80881bcd392e8b97bf49007b8fe4d7c423347ac89b7.png"
     },
     {
       "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/f964b4997d125b603a22d80881bcd392e8b97bf49007b8fe4d7c423347ac89b7.png",
@@ -293,12 +419,12 @@
   "Endpoints": [
     {
       "Route": "css/site.css",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/377iyk5lbf-sfpfip2fsp.gz",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/377iyk5lbf-j9do9zqqgo.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000945179584"
+          "Quality": "0.000966183575"
         }
       ],
       "ResponseHeaders": [
@@ -308,15 +434,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1057"
+          "Value": "1034"
         },
         {
           "Name": "ETag",
-          "Value": "\"JzMzrY9rKDYlJt2gsE2Wr4pDxuySgyClQqsI+MUfiY8=\""
+          "Value": "\"pscVHJkj1GhuIe3ASRjXTQIXGEM2Ru+S4+WZEQHsjaY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 14:48:41 GMT"
+          "Value": "Tue, 11 Mar 2025 17:58:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -336,13 +462,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"eJsJ6De8eBykjiRNgBb00WHn4R/r9lcOa1y970paoRw=\""
+          "Value": "W/\"J47W2QeYOXN4MUzb3Ci+XgB4lqeu8I7db/Iam0oX14Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-eJsJ6De8eBykjiRNgBb00WHn4R/r9lcOa1y970paoRw="
+          "Value": "sha256-J47W2QeYOXN4MUzb3Ci+XgB4lqeu8I7db/Iam0oX14Y="
         }
       ]
     },
@@ -357,7 +483,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3746"
+          "Value": "3632"
         },
         {
           "Name": "Content-Type",
@@ -365,11 +491,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eJsJ6De8eBykjiRNgBb00WHn4R/r9lcOa1y970paoRw=\""
+          "Value": "\"J47W2QeYOXN4MUzb3Ci+XgB4lqeu8I7db/Iam0oX14Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 14:48:41 GMT"
+          "Value": "Tue, 11 Mar 2025 17:58:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -379,13 +505,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-eJsJ6De8eBykjiRNgBb00WHn4R/r9lcOa1y970paoRw="
+          "Value": "sha256-J47W2QeYOXN4MUzb3Ci+XgB4lqeu8I7db/Iam0oX14Y="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/377iyk5lbf-sfpfip2fsp.gz",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/377iyk5lbf-j9do9zqqgo.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -394,7 +520,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1057"
+          "Value": "1034"
         },
         {
           "Name": "Content-Type",
@@ -402,11 +528,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JzMzrY9rKDYlJt2gsE2Wr4pDxuySgyClQqsI+MUfiY8=\""
+          "Value": "\"pscVHJkj1GhuIe3ASRjXTQIXGEM2Ru+S4+WZEQHsjaY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 14:48:41 GMT"
+          "Value": "Tue, 11 Mar 2025 17:58:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -424,18 +550,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-JzMzrY9rKDYlJt2gsE2Wr4pDxuySgyClQqsI+MUfiY8="
+          "Value": "sha256-pscVHJkj1GhuIe3ASRjXTQIXGEM2Ru+S4+WZEQHsjaY="
         }
       ]
     },
     {
-      "Route": "css/site.sfpfip2fsp.css",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/377iyk5lbf-sfpfip2fsp.gz",
+      "Route": "css/site.j9do9zqqgo.css",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/377iyk5lbf-j9do9zqqgo.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000945179584"
+          "Quality": "0.000966183575"
         }
       ],
       "ResponseHeaders": [
@@ -445,15 +571,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1057"
+          "Value": "1034"
         },
         {
           "Name": "ETag",
-          "Value": "\"JzMzrY9rKDYlJt2gsE2Wr4pDxuySgyClQqsI+MUfiY8=\""
+          "Value": "\"pscVHJkj1GhuIe3ASRjXTQIXGEM2Ru+S4+WZEQHsjaY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 14:48:41 GMT"
+          "Value": "Tue, 11 Mar 2025 17:58:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -473,13 +599,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"eJsJ6De8eBykjiRNgBb00WHn4R/r9lcOa1y970paoRw=\""
+          "Value": "W/\"J47W2QeYOXN4MUzb3Ci+XgB4lqeu8I7db/Iam0oX14Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sfpfip2fsp"
+          "Value": "j9do9zqqgo"
         },
         {
           "Name": "label",
@@ -487,12 +613,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-eJsJ6De8eBykjiRNgBb00WHn4R/r9lcOa1y970paoRw="
+          "Value": "sha256-J47W2QeYOXN4MUzb3Ci+XgB4lqeu8I7db/Iam0oX14Y="
         }
       ]
     },
     {
-      "Route": "css/site.sfpfip2fsp.css",
+      "Route": "css/site.j9do9zqqgo.css",
       "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -502,7 +628,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3746"
+          "Value": "3632"
         },
         {
           "Name": "Content-Type",
@@ -510,11 +636,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"eJsJ6De8eBykjiRNgBb00WHn4R/r9lcOa1y970paoRw=\""
+          "Value": "\"J47W2QeYOXN4MUzb3Ci+XgB4lqeu8I7db/Iam0oX14Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 14:48:41 GMT"
+          "Value": "Tue, 11 Mar 2025 17:58:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -524,7 +650,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sfpfip2fsp"
+          "Value": "j9do9zqqgo"
         },
         {
           "Name": "label",
@@ -532,13 +658,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-eJsJ6De8eBykjiRNgBb00WHn4R/r9lcOa1y970paoRw="
+          "Value": "sha256-J47W2QeYOXN4MUzb3Ci+XgB4lqeu8I7db/Iam0oX14Y="
         }
       ]
     },
     {
-      "Route": "css/site.sfpfip2fsp.css.gz",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/377iyk5lbf-sfpfip2fsp.gz",
+      "Route": "css/site.j9do9zqqgo.css.gz",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/377iyk5lbf-j9do9zqqgo.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -547,7 +673,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1057"
+          "Value": "1034"
         },
         {
           "Name": "Content-Type",
@@ -555,11 +681,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"JzMzrY9rKDYlJt2gsE2Wr4pDxuySgyClQqsI+MUfiY8=\""
+          "Value": "\"pscVHJkj1GhuIe3ASRjXTQIXGEM2Ru+S4+WZEQHsjaY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 14:48:41 GMT"
+          "Value": "Tue, 11 Mar 2025 17:58:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -577,7 +703,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "sfpfip2fsp"
+          "Value": "j9do9zqqgo"
         },
         {
           "Name": "label",
@@ -585,7 +711,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-JzMzrY9rKDYlJt2gsE2Wr4pDxuySgyClQqsI+MUfiY8="
+          "Value": "sha256-pscVHJkj1GhuIe3ASRjXTQIXGEM2Ru+S4+WZEQHsjaY="
         }
       ]
     },
@@ -1187,12 +1313,12 @@
     },
     {
       "Route": "Presentation.WebApp_MVC.bundle.scp.css",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/36l9shp49a-tgv0awvdk9.gz",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/36l9shp49a-ea9vpkyghy.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002710027100"
+          "Quality": "0.001078748652"
         }
       ],
       "ResponseHeaders": [
@@ -1202,15 +1328,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "368"
+          "Value": "926"
         },
         {
           "Name": "ETag",
-          "Value": "\"GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk=\""
+          "Value": "\"jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 15:28:59 GMT"
+          "Value": "Tue, 11 Mar 2025 18:23:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1230,13 +1356,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o=\""
+          "Value": "W/\"xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o="
+          "Value": "sha256-xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y="
         }
       ]
     },
@@ -1251,7 +1377,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "865"
+          "Value": "2584"
         },
         {
           "Name": "Content-Type",
@@ -1259,11 +1385,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o=\""
+          "Value": "\"xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 15:28:59 GMT"
+          "Value": "Tue, 11 Mar 2025 18:23:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1273,13 +1399,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o="
+          "Value": "sha256-xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y="
         }
       ]
     },
     {
       "Route": "Presentation.WebApp_MVC.bundle.scp.css.gz",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/36l9shp49a-tgv0awvdk9.gz",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/36l9shp49a-ea9vpkyghy.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1288,7 +1414,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "368"
+          "Value": "926"
         },
         {
           "Name": "Content-Type",
@@ -1296,11 +1422,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk=\""
+          "Value": "\"jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 15:28:59 GMT"
+          "Value": "Tue, 11 Mar 2025 18:23:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1318,18 +1444,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk="
+          "Value": "sha256-jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4="
         }
       ]
     },
     {
-      "Route": "Presentation.WebApp_MVC.styles.css",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/e0av98ah0n-tgv0awvdk9.gz",
+      "Route": "Presentation.WebApp_MVC.ea9vpkyghy.bundle.scp.css",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/36l9shp49a-ea9vpkyghy.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002710027100"
+          "Quality": "0.001078748652"
         }
       ],
       "ResponseHeaders": [
@@ -1339,152 +1465,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "368"
+          "Value": "926"
         },
         {
           "Name": "ETag",
-          "Value": "\"GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk=\""
+          "Value": "\"jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 15:28:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o="
-        }
-      ]
-    },
-    {
-      "Route": "Presentation.WebApp_MVC.styles.css",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/scopedcss/bundle/Presentation.WebApp_MVC.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "865"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 15:28:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o="
-        }
-      ]
-    },
-    {
-      "Route": "Presentation.WebApp_MVC.styles.css.gz",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/e0av98ah0n-tgv0awvdk9.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "368"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 15:28:59 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk="
-        }
-      ]
-    },
-    {
-      "Route": "Presentation.WebApp_MVC.tgv0awvdk9.bundle.scp.css",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/36l9shp49a-tgv0awvdk9.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.002710027100"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "368"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 15:28:59 GMT"
+          "Value": "Tue, 11 Mar 2025 18:23:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1504,13 +1493,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o=\""
+          "Value": "W/\"xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tgv0awvdk9"
+          "Value": "ea9vpkyghy"
         },
         {
           "Name": "label",
@@ -1518,12 +1507,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o="
+          "Value": "sha256-xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y="
         }
       ]
     },
     {
-      "Route": "Presentation.WebApp_MVC.tgv0awvdk9.bundle.scp.css",
+      "Route": "Presentation.WebApp_MVC.ea9vpkyghy.bundle.scp.css",
       "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/scopedcss/projectbundle/Presentation.WebApp_MVC.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1533,7 +1522,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "865"
+          "Value": "2584"
         },
         {
           "Name": "Content-Type",
@@ -1541,11 +1530,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o=\""
+          "Value": "\"xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 15:28:59 GMT"
+          "Value": "Tue, 11 Mar 2025 18:23:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1555,7 +1544,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tgv0awvdk9"
+          "Value": "ea9vpkyghy"
         },
         {
           "Name": "label",
@@ -1563,13 +1552,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o="
+          "Value": "sha256-xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y="
         }
       ]
     },
     {
-      "Route": "Presentation.WebApp_MVC.tgv0awvdk9.bundle.scp.css.gz",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/36l9shp49a-tgv0awvdk9.gz",
+      "Route": "Presentation.WebApp_MVC.ea9vpkyghy.bundle.scp.css.gz",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/36l9shp49a-ea9vpkyghy.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1578,7 +1567,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "368"
+          "Value": "926"
         },
         {
           "Name": "Content-Type",
@@ -1586,11 +1575,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk=\""
+          "Value": "\"jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 15:28:59 GMT"
+          "Value": "Tue, 11 Mar 2025 18:23:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1608,7 +1597,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tgv0awvdk9"
+          "Value": "ea9vpkyghy"
         },
         {
           "Name": "label",
@@ -1616,18 +1605,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk="
+          "Value": "sha256-jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4="
         }
       ]
     },
     {
-      "Route": "Presentation.WebApp_MVC.tgv0awvdk9.styles.css",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/e0av98ah0n-tgv0awvdk9.gz",
+      "Route": "Presentation.WebApp_MVC.ea9vpkyghy.styles.css",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/e0av98ah0n-ea9vpkyghy.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.002710027100"
+          "Quality": "0.001078748652"
         }
       ],
       "ResponseHeaders": [
@@ -1637,15 +1626,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "368"
+          "Value": "926"
         },
         {
           "Name": "ETag",
-          "Value": "\"GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk=\""
+          "Value": "\"jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 15:28:59 GMT"
+          "Value": "Tue, 11 Mar 2025 18:23:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1665,13 +1654,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o=\""
+          "Value": "W/\"xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tgv0awvdk9"
+          "Value": "ea9vpkyghy"
         },
         {
           "Name": "label",
@@ -1679,12 +1668,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o="
+          "Value": "sha256-xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y="
         }
       ]
     },
     {
-      "Route": "Presentation.WebApp_MVC.tgv0awvdk9.styles.css",
+      "Route": "Presentation.WebApp_MVC.ea9vpkyghy.styles.css",
       "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/scopedcss/bundle/Presentation.WebApp_MVC.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1694,7 +1683,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "865"
+          "Value": "2584"
         },
         {
           "Name": "Content-Type",
@@ -1702,11 +1691,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o=\""
+          "Value": "\"xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 15:28:59 GMT"
+          "Value": "Tue, 11 Mar 2025 18:23:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1716,7 +1705,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tgv0awvdk9"
+          "Value": "ea9vpkyghy"
         },
         {
           "Name": "label",
@@ -1724,13 +1713,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-s2amVsNIlbeOOUUDCsLyYZ633gYgQXRapHl+2RKu58o="
+          "Value": "sha256-xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y="
         }
       ]
     },
     {
-      "Route": "Presentation.WebApp_MVC.tgv0awvdk9.styles.css.gz",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/e0av98ah0n-tgv0awvdk9.gz",
+      "Route": "Presentation.WebApp_MVC.ea9vpkyghy.styles.css.gz",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/e0av98ah0n-ea9vpkyghy.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1739,7 +1728,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "368"
+          "Value": "926"
         },
         {
           "Name": "Content-Type",
@@ -1747,11 +1736,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk=\""
+          "Value": "\"jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 15:28:59 GMT"
+          "Value": "Tue, 11 Mar 2025 18:23:05 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1769,7 +1758,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "tgv0awvdk9"
+          "Value": "ea9vpkyghy"
         },
         {
           "Name": "label",
@@ -1777,7 +1766,390 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GysUNWoh8pgTNF+1YnWYjIzgaekQcL5KB5K75bGBczk="
+          "Value": "sha256-jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4="
+        }
+      ]
+    },
+    {
+      "Route": "Presentation.WebApp_MVC.styles.css",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/e0av98ah0n-ea9vpkyghy.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.001078748652"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "926"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 18:23:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y="
+        }
+      ]
+    },
+    {
+      "Route": "Presentation.WebApp_MVC.styles.css",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/scopedcss/bundle/Presentation.WebApp_MVC.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2584"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 18:23:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xukYGyBBxeIja2xrgKrsq0bPpsJ2DDs9xWYsbnJ8s1Y="
+        }
+      ]
+    },
+    {
+      "Route": "Presentation.WebApp_MVC.styles.css.gz",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/obj/Debug/net9.0/compressed/e0av98ah0n-ea9vpkyghy.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "926"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 18:23:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jQyohQgE5gjLhpwVj8L+EpplkuieCJfq8ys9SqFqBk4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/[2025-03-11].[ID-0].[11344663-264f-4874-8e30-5f0fd2b0dee2].kmarh6jpr3.png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[11344663-264f-4874-8e30-5f0fd2b0dee2].png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 16:56:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmarh6jpr3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/[2025-03-11].[ID-0].[11344663-264f-4874-8e30-5f0fd2b0dee2].png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/[2025-03-11].[ID-0].[11344663-264f-4874-8e30-5f0fd2b0dee2].png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[11344663-264f-4874-8e30-5f0fd2b0dee2].png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 16:56:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/[2025-03-11].[ID-0].[2e5ab874-605d-4f44-807e-ba5a910bfe92].kmarh6jpr3.png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[2e5ab874-605d-4f44-807e-ba5a910bfe92].png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 18:11:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmarh6jpr3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/[2025-03-11].[ID-0].[2e5ab874-605d-4f44-807e-ba5a910bfe92].png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/[2025-03-11].[ID-0].[2e5ab874-605d-4f44-807e-ba5a910bfe92].png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[2e5ab874-605d-4f44-807e-ba5a910bfe92].png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 18:11:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/[2025-03-11].[ID-0].[580c186a-479e-4077-844d-5fa41f7a6f37].kmarh6jpr3.png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[580c186a-479e-4077-844d-5fa41f7a6f37].png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 17:07:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmarh6jpr3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/[2025-03-11].[ID-0].[580c186a-479e-4077-844d-5fa41f7a6f37].png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/[2025-03-11].[ID-0].[580c186a-479e-4077-844d-5fa41f7a6f37].png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[580c186a-479e-4077-844d-5fa41f7a6f37].png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 17:07:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw="
         }
       ]
     },
@@ -1850,6 +2222,170 @@
         {
           "Name": "Last-Modified",
           "Value": "Tue, 11 Mar 2025 16:37:18 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/[ID-0].[2025-03-11].[1591d8e9-7746-4f86-beb7-f8e25ecb690c].kmarh6jpr3.png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[ID-0].[2025-03-11].[1591d8e9-7746-4f86-beb7-f8e25ecb690c].png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 17:14:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmarh6jpr3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/[ID-0].[2025-03-11].[1591d8e9-7746-4f86-beb7-f8e25ecb690c].png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/[ID-0].[2025-03-11].[1591d8e9-7746-4f86-beb7-f8e25ecb690c].png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[ID-0].[2025-03-11].[1591d8e9-7746-4f86-beb7-f8e25ecb690c].png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 17:14:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/[ID-0].[2025-03-11].[b28ce284-1f7c-4388-bcb6-7430455dc014].kmarh6jpr3.png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[ID-0].[2025-03-11].[b28ce284-1f7c-4388-bcb6-7430455dc014].png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 17:12:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmarh6jpr3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/[ID-0].[2025-03-11].[b28ce284-1f7c-4388-bcb6-7430455dc014].png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/[ID-0].[2025-03-11].[b28ce284-1f7c-4388-bcb6-7430455dc014].png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[ID-0].[2025-03-11].[b28ce284-1f7c-4388-bcb6-7430455dc014].png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 17:12:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1942,6 +2478,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-aHvGk/K1sdRAkmWKA1E+NKCcUHaFoLgZgGt+CvgspHY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/73f5cc3e-209f-4340-a40f-bf3a9772bf37_f964b4997d125b603a22d80881bcd392e8b97bf49007b8fe4d7c423347ac89b7.kmarh6jpr3.png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/73f5cc3e-209f-4340-a40f-bf3a9772bf37_f964b4997d125b603a22d80881bcd392e8b97bf49007b8fe4d7c423347ac89b7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 17:01:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kmarh6jpr3"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/73f5cc3e-209f-4340-a40f-bf3a9772bf37_f964b4997d125b603a22d80881bcd392e8b97bf49007b8fe4d7c423347ac89b7.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/73f5cc3e-209f-4340-a40f-bf3a9772bf37_f964b4997d125b603a22d80881bcd392e8b97bf49007b8fe4d7c423347ac89b7.png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/73f5cc3e-209f-4340-a40f-bf3a9772bf37_f964b4997d125b603a22d80881bcd392e8b97bf49007b8fe4d7c423347ac89b7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "226515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 11 Mar 2025 17:01:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw="
         }
       ]
     },

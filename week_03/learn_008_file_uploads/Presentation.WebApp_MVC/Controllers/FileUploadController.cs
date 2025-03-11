@@ -31,7 +31,7 @@ public class FileUploadController(IWebHostEnvironment env) : Controller
         //     var uploadFolder = Path.Combine(_env.WebRootPath, "uploads");
         //     Directory.CreateDirectory(uploadFolder);
         //
-        //     var filePath = Path.Combine(uploadFolder, model.File.FileName);
+        //     var filePath = Path.Combine(uploadFolder, $"{Guid.NewGuid()}_{Path.GetFileName(model.File.FileName)}");
         //
         //     using (var stream = new FileStream(filePath, FileMode.Create))
         //     {

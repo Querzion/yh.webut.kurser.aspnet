@@ -15,6 +15,16 @@
         else
         {
             <form asp-action="Upload" asp-controller="FileUpload" method="post" enctype="multipart/form-data">
+                
+                <div class="image-preview-container">
+                    <div id="circle-container" class="circle circle-gray">
+                        <i class="fa-duotone fa-solid fa-camera"></i>
+                    </div>
+                    
+                    <img id="image-preview" src="#" alt="Image Preview" class="d-none" >
+                </div>
+                
+                
                 <div class="form-group mb-3">
                     <label asp-for="File"></label>
                     <input asp-for="File" accept="image/*" class="form-control"/>
@@ -27,3 +37,35 @@
         
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const fileInput = document.querySelector("#File");
+        if (!fileInput) return;
+        
+        fileInput.addEventListener("change", (e) => {
+            const file = e.target.files[0];
+            const circle = document.querySelector("#circle-container");
+            const img = document.querySelector("#image-preview");
+            
+            if (file) {
+                const reader = new FileReader();
+                
+                reader.onload = (e) => {
+                    // Set the image source to the file data
+                    img.src = e.target.result;
+                    
+                    // Show the image and hide the circle
+                    img.classList.remove("d-none");
+                    circle.classList.add("d-none");
+                };
+                
+                reader.readAsDataURL(file);
+            } else {
+                // If no file is selected, show the circle again and hide the image
+                img.classList.add("d-none");
+                circle.classList.remove("d-none");
+            }
+        });
+    });
+</script>
