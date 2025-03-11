@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yiP0ZnpPDwKtcw2luDnuaPFAXOJkShFTp3002sQ5m1o=",
+  "Hash": "6BXauBI1S93OX6oaPQziqmDvZ9vEK/WIZMj1kKEgS+k=",
   "Source": "Presentation.WebApp2",
   "BasePath": "_content/Presentation.WebApp2",
   "Mode": "Default",
@@ -59,12 +59,12 @@
       "OriginalItemSpec": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/scopedcss/projectbundle/Presentation.WebApp2.bundle.scp.css"
     },
     {
-      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/qagcijpugq-2t44f31pv7.gz",
+      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/qagcijpugq-sh7x1o0tgq.gz",
       "SourceId": "Presentation.WebApp2",
       "SourceType": "Discovered",
       "ContentRoot": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/Presentation.WebApp2",
-      "RelativePath": "css/site#[.{fingerprint=2t44f31pv7}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=sh7x1o0tgq}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -73,8 +73,8 @@
       "RelatedAsset": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "sxmzw7mys9",
-      "Integrity": "4Np36SvTmGlDcnw2TTlO1HlhJiIXhnWHDy1M+CZk+1k=",
+      "Fingerprint": "noiacd3m3k",
+      "Integrity": "6fLQ+IffCPjpd29WcaxDZuxC9is6dmUHQ3W46mFAQUE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/wwwroot/css/site.css"
@@ -178,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "2t44f31pv7",
-      "Integrity": "VpyhnM5mYkEoBFOJm8IgcPl0Oe0YutGNBSA14itRajE=",
+      "Fingerprint": "sh7x1o0tgq",
+      "Integrity": "0Boa/kKQ5h7ntGbkHZOoEPTNB3C0AtauC61yimCW7JA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -229,13 +229,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.2t44f31pv7.css",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/qagcijpugq-2t44f31pv7.gz",
+      "Route": "css/site.css",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/qagcijpugq-sh7x1o0tgq.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001054852321"
+          "Quality": "0.000946969697"
         }
       ],
       "ResponseHeaders": [
@@ -245,19 +245,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "947"
+          "Value": "1055"
         },
         {
           "Name": "ETag",
-          "Value": "\"4Np36SvTmGlDcnw2TTlO1HlhJiIXhnWHDy1M+CZk+1k=\""
+          "Value": "\"6fLQ+IffCPjpd29WcaxDZuxC9is6dmUHQ3W46mFAQUE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:38:01 GMT"
+          "Value": "Mon, 10 Mar 2025 17:17:50 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -273,26 +273,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"VpyhnM5mYkEoBFOJm8IgcPl0Oe0YutGNBSA14itRajE=\""
+          "Value": "W/\"0Boa/kKQ5h7ntGbkHZOoEPTNB3C0AtauC61yimCW7JA=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "2t44f31pv7"
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-VpyhnM5mYkEoBFOJm8IgcPl0Oe0YutGNBSA14itRajE="
+          "Value": "sha256-0Boa/kKQ5h7ntGbkHZOoEPTNB3C0AtauC61yimCW7JA="
         }
       ]
     },
     {
-      "Route": "css/site.2t44f31pv7.css",
+      "Route": "css/site.css",
       "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -302,7 +294,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3378"
+          "Value": "3742"
         },
         {
           "Name": "Content-Type",
@@ -310,11 +302,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VpyhnM5mYkEoBFOJm8IgcPl0Oe0YutGNBSA14itRajE=\""
+          "Value": "\"0Boa/kKQ5h7ntGbkHZOoEPTNB3C0AtauC61yimCW7JA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:38:01 GMT"
+          "Value": "Mon, 10 Mar 2025 17:17:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0Boa/kKQ5h7ntGbkHZOoEPTNB3C0AtauC61yimCW7JA="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.css.gz",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/qagcijpugq-sh7x1o0tgq.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1055"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6fLQ+IffCPjpd29WcaxDZuxC9is6dmUHQ3W46mFAQUE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 17:17:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6fLQ+IffCPjpd29WcaxDZuxC9is6dmUHQ3W46mFAQUE="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.sh7x1o0tgq.css",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/qagcijpugq-sh7x1o0tgq.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000946969697"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1055"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6fLQ+IffCPjpd29WcaxDZuxC9is6dmUHQ3W46mFAQUE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 17:17:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"0Boa/kKQ5h7ntGbkHZOoEPTNB3C0AtauC61yimCW7JA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sh7x1o0tgq"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0Boa/kKQ5h7ntGbkHZOoEPTNB3C0AtauC61yimCW7JA="
+        }
+      ]
+    },
+    {
+      "Route": "css/site.sh7x1o0tgq.css",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/wwwroot/css/site.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3742"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0Boa/kKQ5h7ntGbkHZOoEPTNB3C0AtauC61yimCW7JA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 10 Mar 2025 17:17:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -324,7 +461,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2t44f31pv7"
+          "Value": "sh7x1o0tgq"
         },
         {
           "Name": "label",
@@ -332,13 +469,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-VpyhnM5mYkEoBFOJm8IgcPl0Oe0YutGNBSA14itRajE="
+          "Value": "sha256-0Boa/kKQ5h7ntGbkHZOoEPTNB3C0AtauC61yimCW7JA="
         }
       ]
     },
     {
-      "Route": "css/site.2t44f31pv7.css.gz",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/qagcijpugq-2t44f31pv7.gz",
+      "Route": "css/site.sh7x1o0tgq.css.gz",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/qagcijpugq-sh7x1o0tgq.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -347,7 +484,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "947"
+          "Value": "1055"
         },
         {
           "Name": "Content-Type",
@@ -355,11 +492,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4Np36SvTmGlDcnw2TTlO1HlhJiIXhnWHDy1M+CZk+1k=\""
+          "Value": "\"6fLQ+IffCPjpd29WcaxDZuxC9is6dmUHQ3W46mFAQUE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:38:01 GMT"
+          "Value": "Mon, 10 Mar 2025 17:17:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -377,7 +514,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "2t44f31pv7"
+          "Value": "sh7x1o0tgq"
         },
         {
           "Name": "label",
@@ -385,144 +522,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4Np36SvTmGlDcnw2TTlO1HlhJiIXhnWHDy1M+CZk+1k="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/qagcijpugq-2t44f31pv7.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.001054852321"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "947"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4Np36SvTmGlDcnw2TTlO1HlhJiIXhnWHDy1M+CZk+1k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:38:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"VpyhnM5mYkEoBFOJm8IgcPl0Oe0YutGNBSA14itRajE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-VpyhnM5mYkEoBFOJm8IgcPl0Oe0YutGNBSA14itRajE="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/wwwroot/css/site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3378"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VpyhnM5mYkEoBFOJm8IgcPl0Oe0YutGNBSA14itRajE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:38:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-VpyhnM5mYkEoBFOJm8IgcPl0Oe0YutGNBSA14itRajE="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css.gz",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/qagcijpugq-2t44f31pv7.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "947"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4Np36SvTmGlDcnw2TTlO1HlhJiIXhnWHDy1M+CZk+1k=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:38:01 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-4Np36SvTmGlDcnw2TTlO1HlhJiIXhnWHDy1M+CZk+1k="
+          "Value": "sha256-6fLQ+IffCPjpd29WcaxDZuxC9is6dmUHQ3W46mFAQUE="
         }
       ]
     },
@@ -1147,7 +1147,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:35:33 GMT"
+          "Value": "Tue, 11 Mar 2025 07:57:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1200,7 +1200,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:35:33 GMT"
+          "Value": "Tue, 11 Mar 2025 07:57:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1237,7 +1237,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:35:33 GMT"
+          "Value": "Tue, 11 Mar 2025 07:57:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1284,7 +1284,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:35:33 GMT"
+          "Value": "Tue, 11 Mar 2025 07:57:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1345,7 +1345,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:35:33 GMT"
+          "Value": "Tue, 11 Mar 2025 07:57:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1390,7 +1390,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:35:33 GMT"
+          "Value": "Tue, 11 Mar 2025 07:57:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1445,7 +1445,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:35:33 GMT"
+          "Value": "Tue, 11 Mar 2025 07:57:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1506,7 +1506,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:35:33 GMT"
+          "Value": "Tue, 11 Mar 2025 07:57:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1551,7 +1551,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:35:33 GMT"
+          "Value": "Tue, 11 Mar 2025 07:57:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1606,7 +1606,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:35:33 GMT"
+          "Value": "Tue, 11 Mar 2025 07:57:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1659,7 +1659,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:35:33 GMT"
+          "Value": "Tue, 11 Mar 2025 07:57:57 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1696,7 +1696,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 10 Mar 2025 16:35:33 GMT"
+          "Value": "Tue, 11 Mar 2025 07:57:57 GMT"
         },
         {
           "Name": "Cache-Control",

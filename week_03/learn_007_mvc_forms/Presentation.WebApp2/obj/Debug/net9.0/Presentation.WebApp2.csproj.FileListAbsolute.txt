@@ -18,8 +18,11 @@
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/scopedcss/bundle/Presentation.WebApp2.styles.css
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/scopedcss/projectbundle/Presentation.WebApp2.bundle.scp.css
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/qagcijpugq-sh7x1o0tgq.gz
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/umzklz6e2q-63p8tsrz5f.gz
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/yljrbm085f-3r8b2a0bt1.gz
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/6j1wo1n54l-q7jm3l453f.gz
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/awtba5ay4g-q7jm3l453f.gz
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/staticwebassets.build.json
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/staticwebassets.development.json
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -34,6 +37,3 @@
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/Presentation.WebApp2.pdb
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/Presentation.WebApp2.genruntimeconfig.cache
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/ref/Presentation.WebApp2.dll
-/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/6j1wo1n54l-q7jm3l453f.gz
-/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/awtba5ay4g-q7jm3l453f.gz
-/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_007_mvc_forms/Presentation.WebApp2/obj/Debug/net9.0/compressed/qagcijpugq-2t44f31pv7.gz

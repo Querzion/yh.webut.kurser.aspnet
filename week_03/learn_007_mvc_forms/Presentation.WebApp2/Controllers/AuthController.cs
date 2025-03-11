@@ -5,11 +5,18 @@ namespace Presentation.WebApp2.Controllers;
 
 public class AuthController : Controller
 {
+    // CONFUSE ME MORE!! THANK YOU FOR CHANGING THE CODE 5 TIMES IN ONE HOUR!
+    // This is solely or mostly used in order to hold the password in the form at registration.
+    // Seems stupid to use and to be a security risk.
+    private SignUpViewModel _signUpViewModel = new();
+    
     public IActionResult SignUp()
     {
-        // This is used later on to save the password entry without deleting it from the form.
-        var formData = new SignUpFormModel();
-        return View(formData);
+        // Creates a model at signup so that one can gain access to the variables at start.
+        // var formData = new SignUpFormModel();
+        // return View(formData);
+
+        return View(_signUpViewModel);
 
         // return View();
     }
@@ -17,9 +24,13 @@ public class AuthController : Controller
     [HttpPost]
     public IActionResult SignUp(SignUpFormModel formData)
     {
+        // if (!ModelState.IsValid && formData.ClientId == 0)
         if (!ModelState.IsValid)
-            return View(formData);
-        
+        {
+            _signUpViewModel.FormData = formData;
+            return View(_signUpViewModel);
+        }
+
         return View();
     }
 }
