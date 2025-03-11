@@ -14,12 +14,12 @@ public static class StatusFactory
         StatusName = registrationForm.StatusName
     };
 
-    public static StatusForm CreateOutputModel(StatusEntity entity) => new()
+    public static Status CreateOutputModel(StatusEntity entity) => new()
     {
         Id = entity.Id,
         StatusName = entity.StatusName
     };
-    public static StatusForm CreateOutputModelFrom(StatusEntity entity) => new()
+    public static Status CreateOutputModelFrom(StatusEntity entity) => new()
     {
         Id = entity.Id,
         StatusName = entity.StatusName

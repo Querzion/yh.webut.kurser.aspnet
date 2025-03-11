@@ -14,12 +14,12 @@ public class ClientFactory
         ClientName = registrationForm.ClientName
     };
 
-    public static ClientForm CreateOutputModel(ClientEntity entity) => new()
+    public static Client CreateOutputModel(ClientEntity entity) => new()
     {
         Id = entity.Id,
         ClientName = entity.ClientName
     };
-    public static ClientForm CreateOutputModelFrom(ClientEntity entity) => new()
+    public static Client CreateOutputModelFrom(ClientEntity entity) => new()
     {
         Id = entity.Id,
         ClientName = entity.ClientName

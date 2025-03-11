@@ -19,7 +19,7 @@ public static class ProjectFactory
         ClientId = form.ClientId,
         StatusId = form.StatusId,
     };
-    public static ProjectForm CreateOutputModel(ProjectEntity entity) => new()
+    public static Project CreateOutputModel(ProjectEntity entity) => new()
     {
         Id = entity.Id,
         Title = entity.Title,
@@ -29,7 +29,7 @@ public static class ProjectFactory
         ClientId = entity.ClientId,
         StatusId = entity.StatusId
     };
-    public static ProjectForm CreateOutputModelFrom(ProjectEntity entity) => new()
+    public static Project CreateOutputModelFrom(ProjectEntity entity) => new()
     {
         Id = entity.Id,
         Title = entity.Title,
