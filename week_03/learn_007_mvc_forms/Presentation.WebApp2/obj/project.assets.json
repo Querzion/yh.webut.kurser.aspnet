@@ -1055,7 +1055,8 @@
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Proxies": "9.0.2",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.2"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.2",
+          "Microsoft.Extensions.Caching.Memory": "9.0.2"
         },
         "compile": {
           "bin/placeholder/Infrastructure.dll": {}
