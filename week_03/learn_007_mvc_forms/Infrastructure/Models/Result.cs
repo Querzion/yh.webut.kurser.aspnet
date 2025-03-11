@@ -37,6 +37,7 @@ public abstract class Result : IResult
 public class Result<T> : Result
 {
     public T? Data { get; private set; }
+    public T Value => Data ?? throw new InvalidOperationException("No data available");
 
     public static Result<T> Ok(T? data)
     {
