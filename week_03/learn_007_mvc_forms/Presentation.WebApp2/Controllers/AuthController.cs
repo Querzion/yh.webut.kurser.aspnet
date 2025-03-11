@@ -19,7 +19,7 @@ public class AuthController(ClientService clientService) : Controller
         // return View(formData);
 
         // This is added because the first time it's only instantiated in the constructor in SignUpViewModel,
-        // while this time it's actually read in.
+        // while this time it's actually read in the data at launch.
         await _signUpViewModel.PopulateClientOptionsAsync();
         
         return View(_signUpViewModel);
