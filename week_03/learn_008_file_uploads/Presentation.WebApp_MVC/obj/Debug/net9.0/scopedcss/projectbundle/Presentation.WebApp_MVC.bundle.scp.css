@@ -1,0 +1,28 @@
+/* _content/Presentation.WebApp_MVC/Views/FileUpload/Upload.cshtml.rz.scp.css */
+.surface[b-te3pq6ee7a] {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-color);
+    border: 4px solid var(--slategreen-color);
+    border-radius: .9rem;
+    padding: 1.4rem;
+    text-align: left;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.center-screen[b-te3pq6ee7a] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+    width: 100vw;   /* Full viewport width */
+}
+/* _content/Presentation.WebApp_MVC/Views/Shared/_Layout.cshtml.rz.scp.css */
+.center-screen[b-t6xrrc0ct3] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+    width: 100vw;   /* Full viewport width */
+}

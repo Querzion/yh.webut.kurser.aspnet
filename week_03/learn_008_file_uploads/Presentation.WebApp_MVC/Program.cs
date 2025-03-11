@@ -15,7 +15,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
         name: "default",
-        pattern: "{controller=Auth}/{action=SignUp}/{id?}")
+        pattern: "{controller=FileUpload}/{action=Upload}/{id?}")
     .WithStaticAssets();
 
 
