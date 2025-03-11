@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Jc1rUKyTQiLPtt0NypmHZkc6pPXDmClrFadkzNusPek=",
+  "Hash": "7WoPD4bseSh1KDDIa+dmM8aQRDqOIVopTUekasn8cWk=",
   "Source": "Presentation.WebApp_MVC",
   "BasePath": "_content/Presentation.WebApp_MVC",
   "Mode": "Default",
@@ -227,12 +227,12 @@
       "OriginalItemSpec": "wwwroot/js/site.js"
     },
     {
-      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[0].[79d3d073-2595-4a34-aa52-c9fada798b00].png",
+      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[c3133f10-0696-418e-a9bf-d0bbfa355717].png",
       "SourceId": "Presentation.WebApp_MVC",
       "SourceType": "Discovered",
       "ContentRoot": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/",
       "BasePath": "_content/Presentation.WebApp_MVC",
-      "RelativePath": "uploads/[2025-03-11].[0].[79d3d073-2595-4a34-aa52-c9fada798b00]#[.{fingerprint}]?.png",
+      "RelativePath": "uploads/[2025-03-11].[ID-0].[c3133f10-0696-418e-a9bf-d0bbfa355717]#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -245,7 +245,7 @@
       "Integrity": "dJjPEVEhgoLwM4djcq0r/S3UNOouxCJYDmAWXrXlZqw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/uploads/[2025-03-11].[0].[79d3d073-2595-4a34-aa52-c9fada798b00].png"
+      "OriginalItemSpec": "wwwroot/uploads/[2025-03-11].[ID-0].[c3133f10-0696-418e-a9bf-d0bbfa355717].png"
     },
     {
       "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/2025-03-11.6079374a-e53b-4b7f-ae34-6c65239280d8.jpg",
@@ -1782,8 +1782,8 @@
       ]
     },
     {
-      "Route": "uploads/[2025-03-11].[0].[79d3d073-2595-4a34-aa52-c9fada798b00].kmarh6jpr3.png",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[0].[79d3d073-2595-4a34-aa52-c9fada798b00].png",
+      "Route": "uploads/[2025-03-11].[ID-0].[c3133f10-0696-418e-a9bf-d0bbfa355717].kmarh6jpr3.png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[c3133f10-0696-418e-a9bf-d0bbfa355717].png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1804,7 +1804,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 16:35:26 GMT"
+          "Value": "Tue, 11 Mar 2025 16:37:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1818,7 +1818,7 @@
         },
         {
           "Name": "label",
-          "Value": "uploads/[2025-03-11].[0].[79d3d073-2595-4a34-aa52-c9fada798b00].png"
+          "Value": "uploads/[2025-03-11].[ID-0].[c3133f10-0696-418e-a9bf-d0bbfa355717].png"
         },
         {
           "Name": "integrity",
@@ -1827,8 +1827,8 @@
       ]
     },
     {
-      "Route": "uploads/[2025-03-11].[0].[79d3d073-2595-4a34-aa52-c9fada798b00].png",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[0].[79d3d073-2595-4a34-aa52-c9fada798b00].png",
+      "Route": "uploads/[2025-03-11].[ID-0].[c3133f10-0696-418e-a9bf-d0bbfa355717].png",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_008_file_uploads/Presentation.WebApp_MVC/wwwroot/uploads/[2025-03-11].[ID-0].[c3133f10-0696-418e-a9bf-d0bbfa355717].png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1849,7 +1849,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 11 Mar 2025 16:35:26 GMT"
+          "Value": "Tue, 11 Mar 2025 16:37:18 GMT"
         },
         {
           "Name": "Cache-Control",
