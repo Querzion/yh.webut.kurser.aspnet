@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.WebApp", "Pres
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.WebApp2", "Presentation.WebApp2\Presentation.WebApp2.csproj", "{1A435A91-2647-4E27-B211-6C59894A5B9B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{CE6462EE-64EE-4CC9-81FB-AB88FC4F3AD5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{1A435A91-2647-4E27-B211-6C59894A5B9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A435A91-2647-4E27-B211-6C59894A5B9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A435A91-2647-4E27-B211-6C59894A5B9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE6462EE-64EE-4CC9-81FB-AB88FC4F3AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE6462EE-64EE-4CC9-81FB-AB88FC4F3AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE6462EE-64EE-4CC9-81FB-AB88FC4F3AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE6462EE-64EE-4CC9-81FB-AB88FC4F3AD5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
