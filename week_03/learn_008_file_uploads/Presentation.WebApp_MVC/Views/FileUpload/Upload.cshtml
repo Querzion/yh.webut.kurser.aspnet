@@ -5,17 +5,25 @@
 
 <h1>@ViewData["Title"]</h1>
 <div class="center-screen">
-    
     <div class="surface">
-        <form asp-action="Upload" asp-controller="FileUpload" method="post" enctype="multipart/form-data">
-            <div class="form-group mb-3">
-                <label asp-for="File"></label>
-                <input asp-for="File" accept="image/*" class="form-control"/>
-                <span asp-validation-for="File"></span>
-            </div>
-            
-            <button type="submit" class="btn btn-slategreen">Upload file</button>
-        </form>
+        
+        @if (ViewBag.Message != null)
+        {
+            <div class="alert alert-success">@ViewBag.Message</div>
+            <a asp-action="Upload" class="btn btn-slategreen">Refresh</a>
+        }
+        else
+        {
+            <form asp-action="Upload" asp-controller="FileUpload" method="post" enctype="multipart/form-data">
+                <div class="form-group mb-3">
+                    <label asp-for="File"></label>
+                    <input asp-for="File" accept="image/*" class="form-control"/>
+                    <span asp-validation-for="File"></span>
+                </div>
+
+                <button type="submit" class="btn btn-slategreen">Upload file</button>
+            </form>
+        }
+        
     </div>
-    
 </div>
