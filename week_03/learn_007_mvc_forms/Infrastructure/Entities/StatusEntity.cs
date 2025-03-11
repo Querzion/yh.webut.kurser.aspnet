@@ -9,7 +9,7 @@ public class StatusEntity
     public int Id { get; set; }
     
     [Required]
-    [Column(TypeName = "varchar(150)")]
+    [Column(TypeName = "nvarchar(150)")]
     public string StatusName { get; set; } = null!;
     
     public virtual ICollection<ProjectEntity> Projects { get; set; } = [];

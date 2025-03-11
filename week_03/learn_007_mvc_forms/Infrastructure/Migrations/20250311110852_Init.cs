@@ -17,7 +17,7 @@ namespace Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ClientName = table.Column<string>(type: "varchar(150)", nullable: false)
+                    ClientName = table.Column<string>(type: "nvarchar(150)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -30,7 +30,7 @@ namespace Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    StatusName = table.Column<string>(type: "varchar(150)", nullable: false)
+                    StatusName = table.Column<string>(type: "nvarchar(150)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -43,8 +43,8 @@ namespace Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Title = table.Column<string>(type: "varchar(150)", nullable: false),
-                    Description = table.Column<string>(type: "varchar(150)", nullable: true),
+                    Title = table.Column<string>(type: "nvarchar(150)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(150)", nullable: true),
                     StartDate = table.Column<DateTime>(type: "date", nullable: false),
                     EndDate = table.Column<DateTime>(type: "date", nullable: true),
                     ClientId = table.Column<int>(type: "int", nullable: false),
