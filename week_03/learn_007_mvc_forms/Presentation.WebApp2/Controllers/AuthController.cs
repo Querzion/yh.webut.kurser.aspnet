@@ -18,8 +18,7 @@ public class AuthController(ClientService clientService) : Controller
         // var formData = new SignUpFormModel();
         // return View(formData);
 
-        // This is added because the first time it's only instantiated in the constructor in SignUpViewModel,
-        // while this time it's actually read in the data at launch.
+        // Get information when in use
         await _signUpViewModel.PopulateClientOptionsAsync();
         
         return View(_signUpViewModel);
@@ -28,11 +27,12 @@ public class AuthController(ClientService clientService) : Controller
     }
     
     [HttpPost]
-    public IActionResult SignUp(SignUpFormModel formData)
+    public async Task<IActionResult> SignUp(SignUpFormModel formData)
     {
         // if (!ModelState.IsValid && formData.ClientId == 0)
         if (!ModelState.IsValid)
         {
+            await _signUpViewModel.PopulateClientOptionsAsync();
             _signUpViewModel.FormData = formData;
             return View(_signUpViewModel);
         }

@@ -4,16 +4,18 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Presentation.WebApp2.Models;
 
-public class SignUpViewModel
+public class SignUpViewModel(ClientService clientService)
 {
-    private readonly ClientService _clientService;
+    private readonly ClientService _clientService = clientService;
 
-    public SignUpViewModel(ClientService clientService)
-    {
-        _clientService = clientService;
-        // Task.Run(PopulateClientOptionsAsync);
-        PopulateClientOptionsAsync().ConfigureAwait(false).GetAwaiter().GetResult();
-    }
+
+    // Get information when ready(basically after a refresh or something.
+    // public SignUpViewModel(ClientService clientService)
+    // {
+    //     _clientService = clientService;
+    //     // Task.Run(PopulateClientOptionsAsync);
+    //     PopulateClientOptionsAsync().ConfigureAwait(false).GetAwaiter().GetResult();
+    // }
     
     public SignUpFormModel FormData { get; set; } = new();
     public List<SelectListItem> ClientOptions { get; set; } = new();
