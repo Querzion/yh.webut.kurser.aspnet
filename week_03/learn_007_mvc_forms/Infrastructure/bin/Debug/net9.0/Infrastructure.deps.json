@@ -11,7 +11,8 @@
           "Microsoft.EntityFrameworkCore.Design": "9.0.2",
           "Microsoft.EntityFrameworkCore.Proxies": "9.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.2",
-          "Microsoft.EntityFrameworkCore.Tools": "9.0.2"
+          "Microsoft.EntityFrameworkCore.Tools": "9.0.2",
+          "Microsoft.Extensions.Caching.Memory": "9.0.2"
         },
         "runtime": {
           "Infrastructure.dll": {}
