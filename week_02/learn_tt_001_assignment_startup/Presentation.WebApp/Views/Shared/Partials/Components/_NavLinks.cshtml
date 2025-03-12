@@ -1,10 +1,10 @@
-@model TModel
-@{
-    ViewData["Title"] = "Home";
-}
-
-<div class="card bg-white">
-    <div class="card-body">
-        <h1>@ViewData["Title"]</h1>
-    </div>
-</div>
+<nav class="nav-links">
+    <a class="nav-link @(Context.Request.Path == "/projects" ? "active" : "")" asp-action="Projects" asp-controller="Projects">
+        <i class="fa-duotone fa-solid fa-briefcase"></i>
+        <span>Projects</span>
+    </a>
+    <a class="nav-link @(Context.Request.Path == "/admin/members" ? "active" : "")" asp-action="Members" asp-controller="Admin">
+        <i class="fa-duotone fa-solid fa-users"></i>
+        <span>Team Members</span>
+    </a>
+</nav>

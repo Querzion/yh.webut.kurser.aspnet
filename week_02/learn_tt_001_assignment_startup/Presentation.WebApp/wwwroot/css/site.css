@@ -4,6 +4,7 @@
 
 /* variable scheme */
 :root {
+  /* font families */
   /* 200-900 */
   --font-standard: "Nunito", sans-serif;
   /* 300-700 */
@@ -59,7 +60,7 @@
   --gray-500: #DEDEDE;
   --gray-600: #C6C8CC;
   --gray-700: #9E9E9E;
-  --gray-800: #637085;
+  --gray-800: #637085; /* Minna #637985 */
 
   --dark-100: #1A1926;
   --dark-200: #1C1D1F;
@@ -78,37 +79,26 @@
   --green-dark: #24B26B;
   --blue-1: #2CD9D9;
   --blue-2: #2D99FF;
-  --blue-accent: var(--blue-2);
   --blue-dark: #2D7DCC;
+  --blue-accent: var(--blue-2);
   --blue-accent-dark: #2682D9;
   --purple: #826AF9;
   --purple-dark: #634CD4;
 
-  --heading-color: var(--dark-100);
-  --body-light: var(--gray-800);
-  --body-dark: var(--dark-400);
-  --grey-100: var(--white-200);
-  --grey-200: var(--white-400);
-  --grey-300: var(--gray-100);
-  --grey-400: var(--gray-300);
-  --border-100: var(--gray-200);
-  --border-200: var(--gray-300);
-  --border-300: var(--gray-600);
-  --bg-color: var(--white-300);
-  --surface-color: var(--white-100);
-  --blue-accent-color: var(--blue-2);
-
+  /* opacity colors */
   --blue-accent-10: #2e9aff1a;
   --green-opacity-10: #31d3821a;
   --red-opacity-10: #ff68421a;
   --purple-opacity-10: #846cf91a;
 
+  /* theme colors */
   --text-color: var(--dark-400);
   --headline-color: var(--dark-100);
   --background-color: var(--white-300);
   --auth-background-color: var(--gray-100);
   --border-color: var(--gray-500);
 
+  /* buttons */
   --btn-blue-text-color: var(--white-100);
   --btn-blue-text-hover-color: var(--white-100);
   --btn-blue-border-color: var(--white-100);
@@ -123,6 +113,7 @@
   --btn-gray-background-color: var(--white-200);
   --btn-gray-background-hover-color: var(--gray-300);
 
+  /* nav links */
   --navlink-text-color: var(--text-color);
   --navlink-text-hover-color: var(--blue-accent);
   --navlink-text-active-color: var(--blue-accent);
@@ -130,25 +121,44 @@
   --navlink-background-hover-color: var(--blue-accent-10);
   --navlink-background-active-color: var(--blue-accent-10);
 
-  /* Box Shadow */ /* Default */
+  /* box shadow */
   /* box-shadow: 2px 12px 16px 2px var(--box-shadow-color); */
-  --box-shadow-primary-horisontal: 2px;
-  --box-shadow-primary-vertical: 12px;
-  --box-shadow-primary-blur: 16px;
-  --box-shadow-primary-spread: 2px;
-  --box-shadow-primary-color: rgba(82, 81, 81, 0.1);
+  --box-sh-prim-horisontal: 2px;
+  --box-sh-prim-vertical: 12px;
+  --box-sh-prim-blur: 16px;
+  --box-sh-prim-spread: 2px;
+  --box-sh-prim-color: rgba(82, 81, 81, 0.1);
+
+  /* From the Figma File for Alpha Portal */
+  --heading-color: var(--dark-100);
+  --body-light: var(--gray-800);
+  --body-dark: var(--dark-400);
+  --grey-100: var(--white-200);
+  --grey-200: var(--white-400);
+  --grey-300: var(--gray-100);
+  --grey-400: var(--gray-300);
+  --border-100: var(--gray-200);
+  --border-200: var(--gray-300);
+  --border-300: var(--gray-600);
+  --bg-color: var(--white-300);
+  --surface-color: var(--white-100);
+  --blue-accent-color: var(--blue-2);
 }
 [data-theme="dark"] {
+
+  /* dark theme colors */
   --text-color: var(--white-100);
   --headline-color: var(--white-100);
   --background-color: var(--dark-200);
   --auth-background-color: var(--dark-300);
   --border-color: var(--dark-600);
 
+  /* dark buttons */
   --btn-blue-border-color: var(--heading-color);
   --btn-gray-text-color: var(--surface-color);
   --btn-gray-background-color: var(--dark-200);
 
+  /* dark nav links */
   --navlink-text-color: var(--text-color);
   --navlink-text-hover-color: var(--blue-accent);
   --navlink-text-active-color: var(--blue-accent);
@@ -189,7 +199,12 @@ html, body {
 
 .surface {
   background-color: var(--surface-color);
-  box-shadow: var(--box-shadow-primary-horisontal) var(--box-shadow-primary-vertical) var(--box-shadow-primary-blur) var(--box-shadow-primary-spread) var(--box-shadow-primary-color);
+  /* Default box-shadow: is >> 2px 12px 16px 2px var(--box-shadow-color); */
+  box-shadow: var(--box-sh-prim-horisontal) 
+              var(--box-sh-prim-vertical) 
+              var(--box-sh-prim-blur) 
+              var(--box-sh-prim-spread) 
+              var(--box-sh-prim-color);
   border-radius: 16px;
   padding: 2rem;
 }

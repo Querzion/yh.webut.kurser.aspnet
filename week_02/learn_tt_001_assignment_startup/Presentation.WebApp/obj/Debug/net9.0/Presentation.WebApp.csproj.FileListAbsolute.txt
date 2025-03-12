@@ -32,5 +32,5 @@
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/Presentation.WebApp.pdb
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/Presentation.WebApp.genruntimeconfig.cache
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/ref/Presentation.WebApp.dll
-/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-rlchajpv8r.gz
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/9ztadg5v30-4gulfgzaid.gz
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-qpcv9m62k3.gz

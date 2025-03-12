@@ -2,12 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.WebApp.Controllers;
 
+[Route("admin")]
 public class AdminController : Controller
 {
-    public IActionResult Index()
+    [Route("members")]
+    public IActionResult Members()
     {
-        ViewData["Title"] = "Home";
-
         return View();
     }
 }
