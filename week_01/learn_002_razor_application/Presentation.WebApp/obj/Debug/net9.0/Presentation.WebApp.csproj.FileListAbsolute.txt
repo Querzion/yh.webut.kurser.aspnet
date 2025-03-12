@@ -33,3 +33,7 @@
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_002_razor_application/Presentation.WebApp/obj/Debug/net9.0/Presentation.WebApp.genruntimeconfig.cache
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_002_razor_application/Presentation.WebApp/obj/Debug/net9.0/ref/Presentation.WebApp.dll
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_002_razor_application/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-h14p1awsa2.gz
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_002_razor_application/Presentation.WebApp/bin/Debug/net9.0/Business.dll
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_002_razor_application/Presentation.WebApp/bin/Debug/net9.0/Business.pdb
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_002_razor_application/Presentation.WebApp/obj/Debug/net9.0/Presentation.WebApp.csproj.AssemblyReference.cache
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_01/learn_002_razor_application/Presentation.WebApp/obj/Debug/net9.0/Presenta.8A8DC120.Up2Date
