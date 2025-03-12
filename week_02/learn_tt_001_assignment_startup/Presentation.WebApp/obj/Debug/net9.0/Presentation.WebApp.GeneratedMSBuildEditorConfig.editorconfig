@@ -32,6 +32,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/Views/Shared/_PortalLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Qb3J0YWxMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
