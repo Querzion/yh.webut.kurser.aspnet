@@ -4,7 +4,8 @@ namespace Presentation.WebApp.Controllers;
 
 public class ProjectsController : Controller
 {
-    public IActionResult Index()
+    [Route("/projects")]
+    public IActionResult Projects()
     {
         ViewData["Title"] = "Home";
 

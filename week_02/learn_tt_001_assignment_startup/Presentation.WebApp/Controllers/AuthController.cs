@@ -4,7 +4,15 @@ namespace Presentation.WebApp.Controllers;
 
 public class AuthController : Controller
 {
-    public IActionResult Index()
+    [Route("register")]
+    public IActionResult Register()
+    {
+        ViewData["Title"] = "Home";
+
+        return View();
+    }
+    
+    public IActionResult Login()
     {
         ViewData["Title"] = "Home";
 
