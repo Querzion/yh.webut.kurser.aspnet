@@ -101,34 +101,34 @@
     --red-opacity: rgba(255, 104, 66, 0.1);
     --purple-opacity: rgba(132, 108, 249, 0.1);
     
-    /* box-shadow: 2px 12px 16px 2px var(--box-shadow-color); */
-    --box-shadow-primary-horisontal: 2px;
-    --box-shadow-primary-vertical: 12px;
-    --box-shadow-primary-blur: 16px;
-    --box-shadow-primary-spread: 2px;
-    --box-shadow-primary-color: rgba(110, 109, 109, 0.1);
-    --box-shadow-default-setting: var(--box-shadow-horisontal) var(--box-shadow-vertical) var(--box-shadow-blur) var(--box-shadow-spread) var(--box-shadow-color);
 
     --text-color: var(--dark-400);
     --headline-color: var(--dark-100);
-    --background-color: var(--white-200);
+    --background-color: var(--white-300);
     --auth-background-color: var(--gray-100);
     --border-color: var(--gray-500);
-
+    
     --btn-blue-text-color: var(--white-100);
     --btn-blue-text-hover-color: var(--white-100);
     --btn-blue-border-color: var(--white-100);
     --btn-blue-border-hover-color: var(--white-100);
     --btn-blue-background-color: var(--accent);
     --btn-blue-background-hover-color: var(--blue-dark);
-
+    
     --btn-gray-text-color: var(--dark-100);
     --btn-gray-text-hover-color: var(--dark-100);
     --btn-gray-border-color: var(--white-200);
     --btn-gray-border-hover-color: var(--white-200);
     --btn-gray-background-color: var(--white-200);
     --btn-gray-background-hover-color: var(--gray-300);
-
+    
+    /* box-shadow: 2px 12px 16px 2px var(--box-shadow-color); */
+    --box-shadow-primary-horisontal: 2px;
+    --box-shadow-primary-vertical: 12px;
+    --box-shadow-primary-blur: 16px;
+    --box-shadow-primary-spread: 2px;
+    --box-shadow-primary-color: rgba(82, 81, 81, 0.1);
+    --box-shadow-default-setting: var(--box-shadow-horisontal) var(--box-shadow-vertical) var(--box-shadow-blur) var(--box-shadow-spread) var(--box-shadow-color);
 }
 [data-theme="dark"] {
     --text-color: var(--white-100);
@@ -174,14 +174,10 @@ html, body {
 
 .surface {
     background-color: var(--surface-color);
-    box-shadow: var(--box-shadow-default-setting);
+    /* box-shadow: var(--box-shadow-default-setting); */
+    box-shadow: var(--box-shadow-primary-horisontal) var(--box-shadow-primary-vertical) var(--box-shadow-primary-blur) var(--box-shadow-primary-spread) var(--box-shadow-primary-color);
     border-radius: 16px;
-    padding: 1rem;
-}
-
-.temp {
-    height: 600px;
-    width: 400px;
+    padding: 2rem;
 }
 
 /* typography */
