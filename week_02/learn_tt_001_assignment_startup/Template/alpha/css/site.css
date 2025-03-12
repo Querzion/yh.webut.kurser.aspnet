@@ -180,6 +180,40 @@ html, body {
     padding: 2rem;
 }
 
+.portal {
+    display: grid;
+    grid-template-columns: minmax(50px, 270px) 1fr;
+    grid-template-rows: minmax(80px, auto) 1fr;
+    grid-template-areas: "side top" "side main";
+    height: 100dvh;
+
+    .side {
+        grid-area: side;
+        border-right: 1px solid var(--border-color);
+        padding: 1rem;
+        display: grid;
+
+    }
+    .top {
+        grid-area: top;
+        border-bottom: 1px solid var(--border-color);
+        padding: 1rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        align-items: center;
+        gap: 5rem;
+    }
+    .main {
+        grid-area: main;
+        padding: 2rem;
+    }
+}
+
+.d-flex {
+    display: flex;
+    gap: 1rem;
+}
+
 /* typography */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-standard);
