@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "g3FAudItGPZjaSL2gdsijM2ZAFJqEUwWq3g+yN0RUT8=",
+  "Hash": "M9HiNFzEoyDJKZSRS0f/71YBJ+w1md08fhZjbirVCGQ=",
   "Source": "Presentation.WebApp",
   "BasePath": "_content/Presentation.WebApp",
   "Mode": "Default",
@@ -143,12 +143,12 @@
       "OriginalItemSpec": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/scopedcss/bundle/Presentation.WebApp.styles.css"
     },
     {
-      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-mu6i8ysl3z.gz",
+      "Identity": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-npg6fqakfp.gz",
       "SourceId": "Presentation.WebApp",
       "SourceType": "Discovered",
       "ContentRoot": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/Presentation.WebApp",
-      "RelativePath": "css/site#[.{fingerprint=mu6i8ysl3z}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=npg6fqakfp}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -157,8 +157,8 @@
       "RelatedAsset": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "c0tp9j9adw",
-      "Integrity": "HER2Z9OAkN5tFFuwd+ET7APzvspxPOtfT5gNntNr5F4=",
+      "Fingerprint": "92mt99eqyh",
+      "Integrity": "8eF2tTBv5BdMvZE08YXoitPsqt3LoiV7XnNJiOc09cw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/wwwroot/css/site.css"
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mu6i8ysl3z",
-      "Integrity": "LsMDYyS/OeoH+zZVldfAeIRLlaoNevNidgwAiydX+8M=",
+      "Fingerprint": "npg6fqakfp",
+      "Integrity": "5a6PXQ9mpROpCUdTYedufSZtUdHwpiLfqan/y22ieXs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/site.css"
@@ -314,12 +314,12 @@
   "Endpoints": [
     {
       "Route": "css/site.css",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-mu6i8ysl3z.gz",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-npg6fqakfp.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000357270454"
+          "Quality": "0.000309789343"
         }
       ],
       "ResponseHeaders": [
@@ -329,15 +329,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2798"
+          "Value": "3227"
         },
         {
           "Name": "ETag",
-          "Value": "\"HER2Z9OAkN5tFFuwd+ET7APzvspxPOtfT5gNntNr5F4=\""
+          "Value": "\"8eF2tTBv5BdMvZE08YXoitPsqt3LoiV7XnNJiOc09cw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 14:48:47 GMT"
+          "Value": "Thu, 13 Mar 2025 17:57:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -357,13 +357,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"LsMDYyS/OeoH+zZVldfAeIRLlaoNevNidgwAiydX+8M=\""
+          "Value": "W/\"5a6PXQ9mpROpCUdTYedufSZtUdHwpiLfqan/y22ieXs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LsMDYyS/OeoH+zZVldfAeIRLlaoNevNidgwAiydX+8M="
+          "Value": "sha256-5a6PXQ9mpROpCUdTYedufSZtUdHwpiLfqan/y22ieXs="
         }
       ]
     },
@@ -378,7 +378,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11293"
+          "Value": "13403"
         },
         {
           "Name": "Content-Type",
@@ -386,11 +386,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LsMDYyS/OeoH+zZVldfAeIRLlaoNevNidgwAiydX+8M=\""
+          "Value": "\"5a6PXQ9mpROpCUdTYedufSZtUdHwpiLfqan/y22ieXs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 14:48:47 GMT"
+          "Value": "Thu, 13 Mar 2025 17:57:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -400,13 +400,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LsMDYyS/OeoH+zZVldfAeIRLlaoNevNidgwAiydX+8M="
+          "Value": "sha256-5a6PXQ9mpROpCUdTYedufSZtUdHwpiLfqan/y22ieXs="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-mu6i8ysl3z.gz",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-npg6fqakfp.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -415,7 +415,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2798"
+          "Value": "3227"
         },
         {
           "Name": "Content-Type",
@@ -423,11 +423,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HER2Z9OAkN5tFFuwd+ET7APzvspxPOtfT5gNntNr5F4=\""
+          "Value": "\"8eF2tTBv5BdMvZE08YXoitPsqt3LoiV7XnNJiOc09cw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 14:48:47 GMT"
+          "Value": "Thu, 13 Mar 2025 17:57:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -445,18 +445,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HER2Z9OAkN5tFFuwd+ET7APzvspxPOtfT5gNntNr5F4="
+          "Value": "sha256-8eF2tTBv5BdMvZE08YXoitPsqt3LoiV7XnNJiOc09cw="
         }
       ]
     },
     {
-      "Route": "css/site.mu6i8ysl3z.css",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-mu6i8ysl3z.gz",
+      "Route": "css/site.npg6fqakfp.css",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-npg6fqakfp.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000357270454"
+          "Quality": "0.000309789343"
         }
       ],
       "ResponseHeaders": [
@@ -466,15 +466,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2798"
+          "Value": "3227"
         },
         {
           "Name": "ETag",
-          "Value": "\"HER2Z9OAkN5tFFuwd+ET7APzvspxPOtfT5gNntNr5F4=\""
+          "Value": "\"8eF2tTBv5BdMvZE08YXoitPsqt3LoiV7XnNJiOc09cw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 14:48:47 GMT"
+          "Value": "Thu, 13 Mar 2025 17:57:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -494,13 +494,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"LsMDYyS/OeoH+zZVldfAeIRLlaoNevNidgwAiydX+8M=\""
+          "Value": "W/\"5a6PXQ9mpROpCUdTYedufSZtUdHwpiLfqan/y22ieXs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mu6i8ysl3z"
+          "Value": "npg6fqakfp"
         },
         {
           "Name": "label",
@@ -508,12 +508,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LsMDYyS/OeoH+zZVldfAeIRLlaoNevNidgwAiydX+8M="
+          "Value": "sha256-5a6PXQ9mpROpCUdTYedufSZtUdHwpiLfqan/y22ieXs="
         }
       ]
     },
     {
-      "Route": "css/site.mu6i8ysl3z.css",
+      "Route": "css/site.npg6fqakfp.css",
       "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/wwwroot/css/site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -523,7 +523,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "11293"
+          "Value": "13403"
         },
         {
           "Name": "Content-Type",
@@ -531,11 +531,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LsMDYyS/OeoH+zZVldfAeIRLlaoNevNidgwAiydX+8M=\""
+          "Value": "\"5a6PXQ9mpROpCUdTYedufSZtUdHwpiLfqan/y22ieXs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 14:48:47 GMT"
+          "Value": "Thu, 13 Mar 2025 17:57:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -545,7 +545,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mu6i8ysl3z"
+          "Value": "npg6fqakfp"
         },
         {
           "Name": "label",
@@ -553,13 +553,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-LsMDYyS/OeoH+zZVldfAeIRLlaoNevNidgwAiydX+8M="
+          "Value": "sha256-5a6PXQ9mpROpCUdTYedufSZtUdHwpiLfqan/y22ieXs="
         }
       ]
     },
     {
-      "Route": "css/site.mu6i8ysl3z.css.gz",
-      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-mu6i8ysl3z.gz",
+      "Route": "css/site.npg6fqakfp.css.gz",
+      "AssetFile": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-npg6fqakfp.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -568,7 +568,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2798"
+          "Value": "3227"
         },
         {
           "Name": "Content-Type",
@@ -576,11 +576,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HER2Z9OAkN5tFFuwd+ET7APzvspxPOtfT5gNntNr5F4=\""
+          "Value": "\"8eF2tTBv5BdMvZE08YXoitPsqt3LoiV7XnNJiOc09cw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 14:48:47 GMT"
+          "Value": "Thu, 13 Mar 2025 17:57:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -598,7 +598,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "mu6i8ysl3z"
+          "Value": "npg6fqakfp"
         },
         {
           "Name": "label",
@@ -606,7 +606,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-HER2Z9OAkN5tFFuwd+ET7APzvspxPOtfT5gNntNr5F4="
+          "Value": "sha256-8eF2tTBv5BdMvZE08YXoitPsqt3LoiV7XnNJiOc09cw="
         }
       ]
     },
@@ -1827,7 +1827,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 12:53:15 GMT"
+          "Value": "Thu, 13 Mar 2025 16:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1880,7 +1880,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 12:53:15 GMT"
+          "Value": "Thu, 13 Mar 2025 16:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1917,7 +1917,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 12:53:15 GMT"
+          "Value": "Thu, 13 Mar 2025 16:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1964,7 +1964,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 12:53:15 GMT"
+          "Value": "Thu, 13 Mar 2025 16:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2025,7 +2025,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 12:53:15 GMT"
+          "Value": "Thu, 13 Mar 2025 16:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2070,7 +2070,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 12:53:15 GMT"
+          "Value": "Thu, 13 Mar 2025 16:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2125,7 +2125,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 12:53:15 GMT"
+          "Value": "Thu, 13 Mar 2025 16:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2186,7 +2186,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 12:53:15 GMT"
+          "Value": "Thu, 13 Mar 2025 16:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2231,7 +2231,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 12:53:15 GMT"
+          "Value": "Thu, 13 Mar 2025 16:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2286,7 +2286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 12:53:15 GMT"
+          "Value": "Thu, 13 Mar 2025 16:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2339,7 +2339,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 12:53:15 GMT"
+          "Value": "Thu, 13 Mar 2025 16:33:35 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2376,7 +2376,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 13 Mar 2025 12:53:15 GMT"
+          "Value": "Thu, 13 Mar 2025 16:33:35 GMT"
         },
         {
           "Name": "Cache-Control",

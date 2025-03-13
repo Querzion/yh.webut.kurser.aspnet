@@ -1,47 +1,16 @@
-@{
-    ViewData["Title"] = "Clients";
-}
+@* @await Html.PartialAsync("Partials/Sections/_AddClientModal") *@
+<partial name="Partials/Sections/_AddClientModal"/>
 
 <section id="clients">
-    <header>
-        <h2>@ViewData["Title"]</h2>
-        <button type="button" class="btn btn-add btn-blue">Add Client</button>
-    </header>
     
-    <div class="client-list surface">
-        <table>
-            <thead>
-            <tr>
-                <th class="client-check"><input type="checkbox" /></th>
-                <th class="client-info">Client Name</th>
-                <th class="client-location">Location</th>
-                <th class="client-phone">Phone</th>
-                <th class="client-date">Date</th>
-                <th class="client-status">Status</th>
-                <th class="client-actions"></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <th class="client-check"><input type="checkbox" /></th>
-                <th class="client-info">
-                    <img class="client-image" src="~/images/avatars/avatar-001-male.svg" alt="" />
-                    <div class="client-name">EPN Sverige AB</div>
-                    <div class="client-email">info@domain.com</div>
-                </th>
-                <th class="client-location">Stockholm, Sweden</th>
-                <th class="client-phone">+46 08 121 475 50</th>
-                <th class="client-date">25-03-12</th>
-                <th class="client-status">
-                    <div class="badge success">
-                        active
-                    </div>
-                </th>
-                <th class="client-actions">
-                    <i class="fa-regular fa-ellipsis"></i>
-                </th>
-            </tr>
-            </tbody>
-        </table>
+    <header>
+        <h2>Clients</h2>
+        <button type="button" data-modal="true" data-target="#addClientModal" class="btn btn-add btn-blue">Add Client</button>
+    </header>
+
+    <div class="surface">
+        @* @await Html.PartialAsync("Partials/Sections/_ClientList") *@
+        <partial name="Partials/Sections/_ClientList"/>
     </div>
+
 </section>

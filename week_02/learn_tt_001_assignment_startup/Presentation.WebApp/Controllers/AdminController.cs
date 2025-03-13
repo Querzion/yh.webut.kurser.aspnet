@@ -16,4 +16,12 @@ public class AdminController : Controller
     {
         return View();
     }
+    
+    // [Route("add-client")]
+    // public IActionResult AddClient()
+    // {
+    //     return View();
+    // }
+    
+    
 }

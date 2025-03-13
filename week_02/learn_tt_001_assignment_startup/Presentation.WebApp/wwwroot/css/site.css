@@ -74,11 +74,12 @@
   --dark-500: #333333;
   --dark-600: #38383B;
   --dark-700: #39393F;
-  --dark-800: #39394F;
+  --dark-800: #3F3F60;
 
   --yellow-light: #FEF8DA;
   --yellow: #FFD422;
-  --yellow-dark: #FCBB42; /* #6A5902 */
+  --yellow-dark-1: #FCBB42;
+  --yellow-dark-2: #6A5902;
   --orange: #FF9640;
   --orange-dark: #F09330;
   --red-light: #FEF0EC;
@@ -104,7 +105,7 @@
 
   /* theme colors */
   --text-color: var(--dark-400);
-  --text-muted-color: var(--dark-800);
+  --text-muted-color: var(--gray-800);
   --headline-color: var(--dark-100);
   --background-color: var(--white-300);
   --auth-background-color: var(--gray-100);
@@ -373,6 +374,48 @@ h6 {
   }
 }
 
+.btn-close {
+  cursor: pointer;
+  font-size: 2em;
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  &::after {
+    content: '\F62A';
+    font-family: var(--font-bootstrap), sans-serif;
+  }
+}
+
+/* statuses */
+.success {
+  background-color: var(--green-light) !important;
+  color: var(--green) !important;
+}
+
+.warning {
+  background-color: var(--yellow-light) !important;
+  color: var(--yellow-dark-2) !important;
+}
+
+.error {
+  background-color: var(--red-light) !important;
+  color: var(--red-dark) !important;
+}
+
+.info {
+  background-color: var(--blue-accent-10) !important;
+  color: var(--blue-accent) !important;
+}
+
+.normal {
+  background-color: var(--white-400) !important;
+  color: var(--text-color) !important;
+}
+
 /* components */
 .alpha-logotype {
   font-size: var(--font-size-logo);
@@ -420,13 +463,38 @@ h6 {
 
 /* lists */
 .client-list {
-  height: 82.3vh;
-  
-  .client-info {
-    
+
+  table tr {
+    grid-template-areas: "check info location phone date status actions";
+    grid-template-columns: auto 3fr 3fr 2fr 2fr 2fr 50px;
   }
   
-  
+  .client-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "image name" "image email";
+    -webkit-column-gap: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    align-items: center;
+    
+    .client-image {
+      grid-area: image;
+      width: 48px;
+      height: 48px;
+    }
+    
+    .client-name {
+      grid-area: name;
+      font-weight: var(--font-extrabold);
+    }
+    
+    .client-email {
+      grid-area: email;
+      color: var(--text-muted-color);
+      font-weight: var(--font-regular);
+    }
+  }
 }
 
 /* tables */ 
@@ -438,8 +506,6 @@ table {
   /* table-row */
   tr {
     display: grid;
-    grid-template-areas: "check info location phone date status actions";
-    grid-template-columns: auto 3fr 3fr 2fr 2fr 2fr 50px;
     align-items: center;
     width: 100%;
     border-radius: 1rem;
@@ -470,18 +536,46 @@ table {
     text-align: left;
   }
   
-  img {
-    width: 48px;
-    height: 48px;
-  }
-  
   input[type="checkbox"] {
     height: 15px;
     width: 15px;
   }
 }
 
-/* statuses */
+/* badges */
+.badge {
+  display: inline-flex;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  font-size: var(--font-size-default);
+}
+
+/* modal */
+.the-local-modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--modal-screen-background-color);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  .with-modal-content {
+    background-color: var(--modal-background-color);
+    border-radius: 1rem;
+    box-shadow: 0 4px 4px 3px var(--box-sh-prim-color);
+    padding: 2rem;
+    
+    .and-a-modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+  }
+}
 
 /* sections */
 #team-members {
@@ -495,6 +589,13 @@ table {
 #clients {
   display: grid;
   grid-template-rows: auto 1fr;
+  height: 100%;
+}
+
+#addClientModal {
+  .with-modal-content {
+    width: 550px;
+  }
 }
 
 /* views/pages */
