@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/scopedcss/projectbundle/Presentation.WebApp.bundle.scp.css",
+      "PackagePath": "staticwebassets/Presentation.WebApp.ksnn1o9bvo.bundle.scp.css"
+    },
+    {
       "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
@@ -11,6 +15,10 @@
     {
       "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/wwwroot/images/alpha-logo.svg",
       "PackagePath": "staticwebassets/images/alpha-logo.svg"
+    },
+    {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/wwwroot/images/avatars/avatar-001-male.svg",
+      "PackagePath": "staticwebassets/images/avatars/avatar-001-male.svg"
     },
     {
       "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/wwwroot/js/site.js",
