@@ -1,3 +1,4 @@
+using Business.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.WebApp.Controllers;
@@ -18,4 +19,62 @@ public class ProjectsController : Controller
     {
         return View();
     }*/
+    
+    [HttpPost]
+    public IActionResult AddProject(AddProjectForm form)
+    {
+        if (!ModelState.IsValid)
+        {
+            var errors = ModelState
+                .Where(x => x.Value?.Errors.Count > 0)
+                .ToDictionary(
+                    kvp => kvp.Key,
+                    kvp => kvp.Value?.Errors.Select(x => x.ErrorMessage).ToArray()
+                );
+
+            return BadRequest(new { success = false, errors });
+        }
+
+        // Send data to clientService
+        // var result = await _clientService.AddMemberAsync(form);
+        // if (result)
+        // {
+        //     return Ok(new { success = true });
+        // }
+        // else
+        // {
+        //     return Problem("Unable to submit data.");
+        // }
+        
+        return Ok(new { success = true });
+    }
+    
+    [HttpPost]
+    public IActionResult EditProject(EditMemberForm form)
+    {
+        if (!ModelState.IsValid)
+        {
+            var errors = ModelState
+                .Where(x => x.Value?.Errors.Count > 0)
+                .ToDictionary(
+                    kvp => kvp.Key,
+                    kvp => kvp.Value?.Errors.Select(x => x.ErrorMessage).ToArray()
+                );
+
+            return BadRequest(new { success = false, errors });
+        }
+            
+        // Send data to clientService
+        // var result = await _clientService.UpdateMemberAsync(form);
+        // if (result)
+        // {
+        //     return Ok(new { success = true });
+        // }
+        // else
+        // {
+        //     return Problem("Unable to submit data.");
+        // }
+        
+        return Ok(new { success = true });
+    }
 }

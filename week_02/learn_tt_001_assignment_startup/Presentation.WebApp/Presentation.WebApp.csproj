@@ -12,7 +12,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Models\" />
+      <ProjectReference Include="..\Business\Business.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.3.0" />
     </ItemGroup>
 
 </Project>

@@ -1,3 +1,4 @@
+using Business.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.WebApp.Controllers;
@@ -16,12 +17,4 @@ public class AdminController : Controller
     {
         return View();
     }
-    
-    // [Route("add-client")]
-    // public IActionResult AddClient()
-    // {
-    //     return View();
-    // }
-    
-    
 }

@@ -106,10 +106,12 @@
   /* theme colors */
   --text-color: var(--dark-400);
   --text-muted-color: var(--gray-800);
+  --text-extra-muted-color: var(--gray-700);
   --headline-color: var(--dark-100);
   --background-color: var(--white-300);
   --auth-background-color: var(--gray-100);
   --border-color: var(--gray-500);
+  --border-focus-color: var(--blue-accent);
 
   /* buttons */
   --btn-blue-text-color: var(--white-100);
@@ -230,6 +232,10 @@ html, body {
               var(--box-sh-prim-color);
   border-radius: 16px;
   padding: 2rem;
+}
+
+.hide {
+  display: none;
 }
 
 .portal {
@@ -376,7 +382,7 @@ h6 {
 
 .btn-close {
   cursor: pointer;
-  font-size: 2em;
+  font-size: 1.3em;
   border: none;
   background-color: transparent;
   color: var(--text-color);
@@ -389,6 +395,12 @@ h6 {
     font-family: var(--font-bootstrap), sans-serif;
   }
 }
+
+.btn-submit {
+  width: 100%;
+  margin-top: 2rem;
+}
+
 
 /* statuses */
 .success {
@@ -497,6 +509,10 @@ h6 {
   }
 }
 
+.client-actions {
+  cursor: pointer;
+}
+
 /* tables */ 
 /* table > table-row, table-head, table-data */
 table {
@@ -535,12 +551,70 @@ table {
     padding: 0 1rem;
     text-align: left;
   }
+}
+
+/* forms */
+form {
+  width: 100%;
   
-  input[type="checkbox"] {
-    height: 15px;
-    width: 15px;
+  .form-group {
+    display: grid;
+    gap: .2rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .field-group {
+    position: relative;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    font-size: 1em;
+    padding: .5rem 1rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    outline: none;
+    transition: border-color .1s ease-in-out;
+    
+    &:focus {
+      border: 1px solid var(--border-focus-color);
+    }
+    
+    &::placeholder {
+      color: var(--text-extra-muted-color);
+      font-size: .9em;
+    }
+  }
+  
+  .input-validation-error {
+    border-color: var(--error-border-color);
+  }
+  
+  .field-validation-error {
+    position: absolute;
+    z-index: 1;
+    right: .25rem;
+    top: 4px;
+    font-size: .8em;
+    background-color: var(--error-background-color);
+    color: var(--error-text-color);
+    border: 1px solid var(--error-border-color);
+    padding: .4rem 1.5rem;
+    border-radius: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    
   }
 }
+
+input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+}
+
+
 
 /* badges */
 .badge {
@@ -548,6 +622,48 @@ table {
   border-radius: 10px;
   padding: 0.5rem 1rem;
   font-size: var(--font-size-default);
+}
+
+/* image-previewer */
+.image-previewer {
+  border: 2px dashed var(--border-color);
+  height: 150px;
+  width: 150px;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+
+  &:after {
+    content: '\F220';
+    font-family: var(--font-bootstrap), sans-serif;
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-regular);
+    color: var(--white-200);
+    background-color: var(--dark-100-60);
+    padding: .5rem .90rem;
+    border-radius: 50%;
+    position: relative;
+    bottom: 0;
+  }
+}
+.image-previewer.selected::after {
+  content: '\F4CB';
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.square {
+  border-radius: 1rem;
 }
 
 /* modal */
@@ -593,6 +709,13 @@ table {
 }
 
 #addClientModal {
+  .with-modal-content {
+    width: 550px;
+  }
+}
+
+#editClientModal {
+  
   .with-modal-content {
     width: 550px;
   }
