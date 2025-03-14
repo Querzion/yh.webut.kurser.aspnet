@@ -4,54 +4,60 @@
 }
 
 <div id="add-client" class="surface">
-    <form asp-action="Create" method="post" asp-controller="Clients" novalidate="">
+    <div class="with-modal-content">
         
-        <header>
-            <h3>@ViewData["Title"]</h3>
-            <button class="btn btn-close"><i class="fa-solid fa-xmark"></i></button>
-        </header>
-        
-        <div class="image-preview-container">
-            <div class="circle circle-gray">
-                <i class="fa-duotone fa-solid fa-camera"></i>
+        <form asp-action="Create" method="post" asp-controller="Clients" novalidate="">
+
+            <header>
+                <h3>@ViewData["Title"]</h3>
+                <button class="btn btn-close"><i class="fa-solid fa-xmark"></i></button>
+            </header>
+
+            <div class="image-preview-container">
+                <div class="circle circle-gray">
+                    <i class="fa-duotone fa-solid fa-camera"></i>
+                </div>
             </div>
-        </div>
-        
-        <div class="form-group">
-            <label asp-for="ClientName"></label>
-            <div class="field-group">
-                <input asp-for="ClientName"/>
-                <span asp-validation-for="ClientName"></span>
+
+            <div class="form-group">
+                <label asp-for="ClientName"></label>
+                <div class="field-group">
+                    <input data-val="true" asp-for="ClientName"/>
+                    <span asp-validation-for="ClientName"></span>
+                </div>
             </div>
-        </div>
-        
-        <div class="form-group">
-            <label asp-for="ContactPerson"></label>
-            <div class="field-group">
-                <input asp-for="ContactPerson"/>
-                <span asp-validation-for="ContactPerson"></span>
+
+            <div class="form-group">
+                <label asp-for="ContactPerson"></label>
+                <div class="field-group">
+                    <input data-val="true" asp-for="ContactPerson"/>
+                    <span asp-validation-for="ContactPerson"></span>
+                </div>
             </div>
-        </div>
-        
-        <div class="form-group">
-            <label asp-for="Email"></label>
-            <div class="field-group">
-                <input asp-for="Email"/>
-                <span asp-validation-for="Email"></span>
+
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <div class="field-group">
+                    <input data-val="true" asp-for="Email"/>
+                    <span asp-validation-for="Email"></span>
+                </div>
             </div>
-        </div>
-        
-        <div class="form-group">
-            <label asp-for="PhoneNumber"></label>
-            <div class="field-group">
-                <input asp-for="PhoneNumber"/>
-                <span asp-validation-for="PhoneNumber"></span>
+
+            <div class="form-group">
+                <label asp-for="PhoneNumber"></label>
+                <div class="field-group">
+                    <input data-val="false" asp-for="PhoneNumber"/>
+                    <span asp-validation-for="PhoneNumber"></span>
+                </div>
             </div>
-        </div>
+
+            <footer>
+                <button type="submit" class="btn btn-blue">Create</button>
+            </footer>
+
+        </form>
         
-        <footer>
-            <button type="submit" class="btn btn-blue">Create</button>
-        </footer>
-        
-    </form>
+    </div>
 </div>
+
+@await Html.PartialAsync("_ValidationScripts")

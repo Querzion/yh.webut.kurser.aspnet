@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_009_js_form_validation/Presentation.WebApp/obj/Debug/net9.0/scopedcss/projectbundle/Presentation.WebApp.bundle.scp.css",
-      "PackagePath": "staticwebassets/Presentation.WebApp.nnkhen3jlb.bundle.scp.css"
+      "PackagePath": "staticwebassets/Presentation.WebApp.b4escfkbib.bundle.scp.css"
     },
     {
       "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_009_js_form_validation/Presentation.WebApp/wwwroot/css/site.css",
@@ -15,6 +15,10 @@
     {
       "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_009_js_form_validation/Presentation.WebApp/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_03/learn_009_js_form_validation/Presentation.WebApp/wwwroot/js/validate.js",
+      "PackagePath": "staticwebassets/js/validate.js"
     },
     {
       "Id": "obj/Debug/net9.0/staticwebassets/msbuild.Presentation.WebApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

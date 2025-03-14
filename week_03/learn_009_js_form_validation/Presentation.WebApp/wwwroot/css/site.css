@@ -646,11 +646,11 @@ form {
     .field-validation-error {
         position: absolute;
         z-index: 1;
-        right: .25rem;
-        top: 4px;
+        right: .2rem;
         font-size: .8em;
-        background-color: var(--error-background-color);
+        top: 2px;
         color: var(--error-text-color);
+        background-color: var(--error-background-color);
         border: 1px solid var(--error-border-color);
         padding: .4rem 1.5rem;
         border-radius: .8rem;
@@ -658,7 +658,17 @@ form {
         align-items: center;
         justify-content: center;
         gap: 0.5rem;
-
+        
+        &:before {
+            content: '\f071';
+            font-family: var(--font-fa-pro), sans-serif;
+            font-size: 1rem;
+            font-weight: var(--font-regular);
+        }
+    }
+    
+    .field-validation-valid {
+        border-color: var(--green-light);
     }
 }
 
@@ -805,4 +815,13 @@ input[type="checkbox"] {
     }
 }
 
+#add-client {
+    .with-modal-content {
+        width: 550px;
+    }
+}
+
+form .field-group {
+    position: relative;
+}
 /* views/pages */
