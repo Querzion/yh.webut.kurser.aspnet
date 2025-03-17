@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Presentation.WebApp_MVC_Individual_Authentication.props" />
+</Project>
