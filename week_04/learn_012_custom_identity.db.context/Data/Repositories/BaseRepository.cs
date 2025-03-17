@@ -1,15 +1,17 @@
 using System.Diagnostics;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
+using Data;
+using Data.Contexts;
 
-namespace Presentation.WebApp.Data.Repositories;
+namespace Data.Repositories;
 
 public abstract class BaseRepository<TEntity> where TEntity : class
 {
-    protected readonly ApplicationDbContext _context;
+    protected readonly DataContext _context;
     protected readonly DbSet<TEntity> _dbSet;
 
-    protected BaseRepository(ApplicationDbContext context)
+    protected BaseRepository(DataContext context)
     {
         _context = context;
         _dbSet = context.Set<TEntity>();

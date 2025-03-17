@@ -2,6 +2,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.WebApp", "Presentation.WebApp\Presentation.WebApp.csproj", "{9B6452A8-EAAB-4BFA-AD57-0A4E2448F8E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.WebApp.Separated", "Presentation.WebApp.Separated\Presentation.WebApp.Separated.csproj", "{9544EE3E-2E5B-41EB-92E9-0028F2B9F8E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{845420EA-DA2F-400A-B26F-EF48CDC95AF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Separated_Project", "Separated_Project", "{7CF0141B-2ECA-4A50-BE3C-70156A2E8FB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Combined_Project", "Combined_Project", "{141E6FAA-8221-460B-B7D6-4983A7219F1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +20,18 @@ Global
 		{9B6452A8-EAAB-4BFA-AD57-0A4E2448F8E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B6452A8-EAAB-4BFA-AD57-0A4E2448F8E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B6452A8-EAAB-4BFA-AD57-0A4E2448F8E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9544EE3E-2E5B-41EB-92E9-0028F2B9F8E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9544EE3E-2E5B-41EB-92E9-0028F2B9F8E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9544EE3E-2E5B-41EB-92E9-0028F2B9F8E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9544EE3E-2E5B-41EB-92E9-0028F2B9F8E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{845420EA-DA2F-400A-B26F-EF48CDC95AF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{845420EA-DA2F-400A-B26F-EF48CDC95AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{845420EA-DA2F-400A-B26F-EF48CDC95AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{845420EA-DA2F-400A-B26F-EF48CDC95AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{845420EA-DA2F-400A-B26F-EF48CDC95AF9} = {7CF0141B-2ECA-4A50-BE3C-70156A2E8FB5}
+		{9544EE3E-2E5B-41EB-92E9-0028F2B9F8E3} = {7CF0141B-2ECA-4A50-BE3C-70156A2E8FB5}
+		{9B6452A8-EAAB-4BFA-AD57-0A4E2448F8E3} = {141E6FAA-8221-460B-B7D6-4983A7219F1C}
 	EndGlobalSection
 EndGlobal

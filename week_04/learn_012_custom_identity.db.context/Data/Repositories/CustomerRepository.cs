@@ -1,5 +1,6 @@
-using Presentation.WebApp.Data.Entities;
+using Data.Contexts;
+using Data.Entities;
 
-namespace Presentation.WebApp.Data.Repositories;
+namespace Data.Repositories;
 
-public class CustomerRepository(ApplicationDbContext context) : BaseRepository<CustomerEntity>(context);
+public class CustomerRepository(DataContext context) : BaseRepository<CustomerEntity>(context);
