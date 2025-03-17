@@ -698,8 +698,34 @@ input[type="checkbox"] {
   
 }
 
+#addMemberModal {
+  .with-modal-content {
+    width: 550px;
+  }
+}
+
+#editMemberModal {
+
+  .with-modal-content {
+    width: 550px;
+  }
+}
+
 #projects {
   
+}
+
+#addProjectModal {
+  .with-modal-content {
+    width: 550px;
+  }
+}
+
+#editProjectModal {
+
+  .with-modal-content {
+    width: 550px;
+  }
 }
 
 #clients {

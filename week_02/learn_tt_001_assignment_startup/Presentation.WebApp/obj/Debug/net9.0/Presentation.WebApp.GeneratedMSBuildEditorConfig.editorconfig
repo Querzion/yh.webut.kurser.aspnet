@@ -40,12 +40,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL1NlY3Rpb25zL19BZGRDbGllbnRNb2RhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/Views/Shared/Partials/Sections/_AddMembersModal.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL1NlY3Rpb25zL19BZGRNZW1iZXJzTW9kYWwuY3NodG1s
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/Views/Shared/Partials/Sections/_AddMemberModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL1NlY3Rpb25zL19BZGRNZW1iZXJNb2RhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/Views/Shared/Partials/Sections/_AddProjectsModal.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL1NlY3Rpb25zL19BZGRQcm9qZWN0c01vZGFsLmNzaHRtbA==
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/Views/Shared/Partials/Sections/_AddProjectModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL1NlY3Rpb25zL19BZGRQcm9qZWN0TW9kYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/Views/Shared/Partials/Sections/_ClientList.cshtml]
@@ -56,12 +56,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL1NlY3Rpb25zL19FZGl0Q2xpZW50TW9kYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/Views/Shared/Partials/Sections/_EditMembersModal.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL1NlY3Rpb25zL19FZGl0TWVtYmVyc01vZGFsLmNzaHRtbA==
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/Views/Shared/Partials/Sections/_EditMemberModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL1NlY3Rpb25zL19FZGl0TWVtYmVyTW9kYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/Views/Shared/Partials/Sections/_EditProjectModal.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL1NlY3Rpb25zL19FZGl0UHJvamVjdE1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/Views/Shared/Partials/Sections/_MemberList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL1NlY3Rpb25zL19NZW1iZXJMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/Views/Shared/Partials/Sections/_ProjectList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL1BhcnRpYWxzL1NlY3Rpb25zL19Qcm9qZWN0TGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/Views/Shared/_CleanLayout.cshtml]

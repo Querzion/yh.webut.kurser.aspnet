@@ -43,7 +43,6 @@
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/Presentation.WebApp.pdb
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/Presentation.WebApp.genruntimeconfig.cache
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/ref/Presentation.WebApp.dll
-/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-1aqr3drm6o.gz
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/5qbmpqamh8-q5ibqb92b0.gz
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/bin/Debug/net9.0/Castle.Core.dll
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/bin/Debug/net9.0/Microsoft.Data.Sqlite.dll
@@ -89,3 +88,4 @@
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/bin/Debug/net9.0/runtimes/win-x86/native/e_sqlite3.dll
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/bin/Debug/net9.0/Data.dll
 /home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/bin/Debug/net9.0/Data.pdb
+/home/querzion/RiderProjects/yh.webut.kurser.aspnet/week_02/learn_tt_001_assignment_startup/Presentation.WebApp/obj/Debug/net9.0/compressed/bn91pp0usi-bh6daroohq.gz
