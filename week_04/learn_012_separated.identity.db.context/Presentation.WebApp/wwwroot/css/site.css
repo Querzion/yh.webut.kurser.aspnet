@@ -1,31 +1,27 @@
-html {
-  font-size: 14px;
+.text-center {
+  text-align: center;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+.command-list {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  margin: 20px 0; /* Add margin for spacing */
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+.command-list li {
+  background-color: #f8f9fa; /* Light background for commands */
+  border: 1px solid #dee2e6; /* Border for better visibility */
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px; /* Padding for comfort */
+  margin: 5px 0; /* Space between list items */
+  font-family: monospace; /* Monospace font for commands */
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+.btn-info {
+  background-color: #17a2b8; /* Bootstrap info button color */
+  color: white; /* Text color */
 }
 
-body {
-  margin-bottom: 60px;
-}
-
-.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
-  color: var(--bs-secondary-color);
-  text-align: end;
-}
-
-.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
-  text-align: start;
+.text-danger {
+  color: #dc3545; /* Bootstrap danger text color */
 }
