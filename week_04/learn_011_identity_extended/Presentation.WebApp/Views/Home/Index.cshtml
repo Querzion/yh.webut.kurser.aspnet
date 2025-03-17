@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    
+    <p> EC Utbildning: <a href="https://youtu.be/PmMm_Fh19Xk">Course Video Link</a> </p>
+    <h2> Staging: </h2>
+    <ol>
+        <li>Create WebApp, with Identity Authentication.</li>
+        <li>Delete the app.db</li>
+        <li>Create a new sqlite database file</li>
+        <li>Connect the db file</li>
+        <li>Create AppUser Model, in order to add to the existing model through Microsoft Identity</li>
+        <li>Base AppUser on IdentityUser in AppUser</li>
+        <li>Add extended data to AppUser</li>
+        <li>Change the IdentityUser to AppUser in Program.cs, and other places, such as Application DbConext etc.</li>
+        <li>Create new migration</li>
+        <li>Migrate it to database.</li>
+        <li>In Areas, scaffold identity - Register</li>
+        <li>Open Register code-behind file, and go to the class input, add AppUser info that is missing</li>
+        <li>Open Register.cshmtl, and add the missing fields to the registration.</li>
+        <li>Associate variables in the code behind file to get them working!</li>
+        <li>user.FirstName = Input.FirstName;</li>
+        <li>user.LastName = Input.LastName</li>
+        <li>Create associations in the index code behind file that was scaffolded from the manage folder</li>
+    </ol>
+</div>
