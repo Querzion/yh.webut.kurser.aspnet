@@ -407,13 +407,22 @@ h6 {
   }
 }
 
-.btn-submit {
+.btn-submit, .btn-login {
   width: 100%;
   margin-top: 2rem;
 }
 
 
 /* statuses */
+
+.notification {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: .7rem 1rem;
+  border-radius: 14px;
+}
+
 .success {
   background-color: var(--green-light) !important;
   color: var(--green) !important;
@@ -623,7 +632,7 @@ form {
   input, select, textarea {
     width: 100%;
     font-size: 1em;
-    padding: .5rem 1rem;
+    padding: .6rem 1rem;
     border-radius: 16px;
     border: 1px solid var(--border-color);
     outline: none;
@@ -648,7 +657,7 @@ form {
     z-index: 1;
     right: .2rem;
     font-size: .8em;
-    top: 2px;
+    top: 3px;
     color: var(--error-text-color);
     background-color: var(--error-background-color);
     border: 1px solid var(--error-border-color);
@@ -823,3 +832,31 @@ form .field-group {
   position: relative;
 }
 /* views/pages */
+
+#signup {
+  width: 550px;
+  margin: 0 auto;
+  
+  #signup-form {
+    padding: 2rem;
+    
+    .btn-submit{
+      display: grid;
+      width: 100%;
+    }
+  }
+}
+
+#signin {
+  width: 550px;
+  margin: 0 auto;
+
+  #signin-form {
+    padding: 2rem;
+
+    .btn-login{
+      display: grid;
+      width: 100%;
+    }
+  }
+}

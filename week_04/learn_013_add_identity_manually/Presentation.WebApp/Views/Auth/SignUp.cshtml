@@ -1,0 +1,69 @@
+@model UserSignUpForm
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<div id="signup" class="surface">
+    
+    <form id="signup-form" asp-action="SignUp" asp-controller="Auth" method="post" novalidate>
+
+        <div class="form-group">
+            <label asp-for="FirstName"></label>
+            <div class="field-group">
+                <input asp-for="FirstName"/>
+                <span asp-validation-for="FirstName"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="LastName"></label>
+            <div class="field-group">
+                <input asp-for="LastName"/>
+                <span asp-validation-for="LastName"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <div class="field-group">
+                <input asp-for="Email"/>
+                <span asp-validation-for="Email"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="PhoneNumber"></label>
+            <div class="field-group">
+                <input asp-for="PhoneNumber"/>
+                <span asp-validation-for="PhoneNumber"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <div class="field-group">
+                <input asp-for="Password"/>
+                <span asp-validation-for="Password"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ConfirmPassword"></label>
+            <div class="field-group">
+                <input asp-for="ConfirmPassword"/>
+                <span asp-validation-for="ConfirmPassword"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="TermsAndConditionsAccepted"></label>
+            <div class="field-group">
+                <input asp-for="TermsAndConditionsAccepted"/>
+                <span asp-validation-for="TermsAndConditionsAccepted">I accept the terms and conditions.</span>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-gray btn-submit">Sign Up</button>
+
+    </form>
+</div>
