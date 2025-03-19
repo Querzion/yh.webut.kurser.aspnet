@@ -20,7 +20,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Business\Business.csproj" />
+      <Folder Include="Data\Databases\" />
     </ItemGroup>
 
 </Project>

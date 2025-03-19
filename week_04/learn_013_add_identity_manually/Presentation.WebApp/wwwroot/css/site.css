@@ -391,6 +391,42 @@ h6 {
   }
 }
 
+.btn-signup {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  &::before {
+    content: "\f234";
+    font-family: var(--font-fa-pro), sans-serif;
+    font-size: 1rem;
+  }
+}
+
+.btn-signin {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  &::before {
+    content: "\f2f6";
+    font-family: var(--font-fa-pro), sans-serif;
+    font-size: 1rem;
+  }
+}
+
+.btn-signout {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+
+  &::before {
+    content: "\f2f5";
+    font-family: var(--font-fa-pro), sans-serif;
+    font-size: 1rem;
+  }
+}
+
 .btn-close {
   cursor: pointer;
   font-size: 1.3em;

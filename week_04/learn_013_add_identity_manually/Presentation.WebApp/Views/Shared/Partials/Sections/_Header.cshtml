@@ -1,0 +1,20 @@
+
+<header>
+    <div class="container">
+        <div class="section-header">
+            <h1>@ViewData["Title"]</h1>
+            
+            <div class="btn-group">
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <a asp-action="SignOut" asp-controller="Auth" class="btn btn-gray btn-signout">Sign Out</a>
+                }
+                else
+                {
+                    <a asp-action="SignUp" asp-controller="Auth" class="btn btn-gray btn-signup">Sign Up</a>
+                    <a asp-action="SignIn" asp-controller="Auth" class="btn btn-gray btn-signin">Sign In</a>
+                }
+            </div>
+        </div>
+    </div>
+</header>

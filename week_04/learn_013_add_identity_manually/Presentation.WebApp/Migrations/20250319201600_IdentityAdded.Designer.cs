@@ -11,7 +11,7 @@ using Presentation.WebApp.Data;
 namespace Presentation.WebApp.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250319080544_IdentityAdded")]
+    [Migration("20250319201600_IdentityAdded")]
     partial class IdentityAdded
     {
         /// <inheritdoc />
@@ -169,11 +169,11 @@ namespace Presentation.WebApp.Migrations
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("INTEGER");

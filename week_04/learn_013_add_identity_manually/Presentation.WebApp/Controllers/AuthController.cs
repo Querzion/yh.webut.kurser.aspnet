@@ -56,6 +56,11 @@ public class AuthController(UserService userService, SignInManager<ApplicationUs
         return View(form);
     }
     
+    public new async Task<IActionResult> SignOut()
+    {
+        await _signInManager.SignOutAsync();
+        return RedirectToAction("Index", "Home");
+    }
     
     // Gets status codes from the UserService.cs if it returns an int
     // [HttpPost]
