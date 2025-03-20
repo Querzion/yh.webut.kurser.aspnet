@@ -219,6 +219,31 @@ html, body {
 }
 
 /* structure */
+.wrapper {
+  
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  
+  .btn-group {
+    justify-items: right;
+  }
+}
+
+.container, .container-fluid {
+  position: relative;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .center-screen {
   display: flex;
   justify-content: center;
@@ -537,7 +562,6 @@ h6 {
   height: 32px;
   width: 32px;
 }
-
 
 .nav-links {
   margin: 1rem 0;

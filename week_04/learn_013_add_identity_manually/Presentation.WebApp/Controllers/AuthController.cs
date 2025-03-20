@@ -37,23 +37,73 @@ public class AuthController(UserService userService, SignInManager<ApplicationUs
     }
     
     // [Route("login")]
-    public IActionResult SignIn()
+    public IActionResult SignIn(string returnUrl = "/")
     {
+        ViewBag.ReturnUrl = returnUrl;
+        ViewBag.ErrorMessage = "";
         return View();
     }
     
     [HttpPost]
-    public async Task<IActionResult> SignIn(UserSignInForm form)
+    public async Task<IActionResult> SignIn(UserSignInForm form, string returnUrl = "/")
     {
-        if (ModelState.IsValid)
-        {
-            var result = await _signInManager.PasswordSignInAsync(form.Email, form.Password, false, false);
-            if (result.Succeeded)
-                return RedirectToAction("Index", "Home");
-        }
+        #region With the returnUrl (Valid)
 
-        ViewData["ErrorMessage"] = "Invalid login attempt.";
-        return View(form);
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(form.Email, form.Password, false, false);
+                if (result.Succeeded)
+                {
+                    if (Url.IsLocalUrl(returnUrl))
+                        return Redirect(returnUrl);
+                    
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+                
+            ViewBag.ReturnUrl = returnUrl;
+            ViewBag.ErrorMessage = "Invalid email or password.";
+            return View(form);
+
+        #endregion
+        
+        #region With the returnUrl (Not Valid)
+
+            // if (!ModelState.IsValid)
+            // {
+            //     ViewBag.ReturnUrl = returnUrl;
+            //     ViewBag.ErrorMessage = "Invalid email or password.";
+            //     return View(form);
+            // }
+            //
+            // var result = await _signInManager.PasswordSignInAsync(form.Email, form.Password, false, false);
+            // if (result.Succeeded)
+            // {
+            //     if (Url.IsLocalUrl(returnUrl))
+            //         return Redirect(returnUrl);
+            //     
+            //     return RedirectToAction("Index", "Home");
+            // }
+            //
+            // ViewBag.ReturnUrl = returnUrl;
+            // ViewBag.ErrorMessage = "Invalid email or password.";
+            // return View(form);
+
+        #endregion
+        
+        #region Without the returnUrl
+
+            // if (ModelState.IsValid)
+            // {
+            //     var result = await _signInManager.PasswordSignInAsync(form.Email, form.Password, false, false);
+            //     if (result.Succeeded)
+            //         return RedirectToAction("Index", "Home");
+            // }
+            //
+            // ViewData["ErrorMessage"] = "Invalid login attempt.";
+            // return View(form);
+
+        #endregion
     }
     
     public new async Task<IActionResult> SignOut()

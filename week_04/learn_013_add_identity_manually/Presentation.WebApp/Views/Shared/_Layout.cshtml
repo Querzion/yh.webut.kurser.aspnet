@@ -16,9 +16,13 @@
 </head>
 <body>
 
-<div class="center-screen">
-    @await Html.PartialAsync("Partials/Sections/_Header")
-    @RenderBody()
+<div class="">
+    <header class="nav">
+        @await Html.PartialAsync("Partials/Sections/_Header")
+    </header>
+    <main class="center-screen">
+        @RenderBody()
+    </main>
 </div>
 
 @* Bootstrap Javascript CDN *@

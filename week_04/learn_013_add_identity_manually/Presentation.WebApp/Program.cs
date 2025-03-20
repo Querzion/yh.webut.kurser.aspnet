@@ -20,6 +20,17 @@ builder.Services.AddControllersWithViews();
         .AddEntityFrameworkStores<DataContext>()
         .AddDefaultTokenProviders();
 
+    builder.Services.ConfigureApplicationCookie(x =>
+    {
+        x.LoginPath = "/auth/signin";
+        x.LogoutPath = "/auth/signout";
+        x.AccessDeniedPath = "/auth/denied";
+        x.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+        x.SlidingExpiration = true;
+    });
+
+
+
     builder.Services.AddScoped<UserService>();
 
 #endregion

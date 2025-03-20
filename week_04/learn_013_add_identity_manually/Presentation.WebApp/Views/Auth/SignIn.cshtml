@@ -7,27 +7,45 @@
     
     <form id="signin-form" asp-action="SignIn" asp-controller="Auth" method="post" novalidate>
         
+        <input type="hidden" name="returnUrl" value="@ViewBag.ReturnUrl" />
+        
         <div class="form-group">
             <label asp-for="Email"></label>
-            <div class="field-group">
-                <input asp-for="Email"/>
-                <span asp-validation-for="Email"></span>
-            </div>
+            <input asp-for="Email" />
         </div>
 
         <div class="form-group">
             <label asp-for="Password"></label>
-            <div class="field-group">
-                <input asp-for="Password"/>
-                <span asp-validation-for="Password"></span>
-            </div>
+            <input asp-for="Password"/>
         </div>
         
+        @* returnURL *@
         <div class="form-group">
-            <div class="notification error">
-                @ViewData["ErrorMessage"]
-            </div>
+            @ViewBag.ErrorMessage
         </div>
+        
+        @* No returnURL *@
+        @* <div class="form-group"> *@
+        @*     <label asp-for="Email"></label> *@
+        @*     <div class="field-group"> *@
+        @*         <input asp-for="Email"/> *@
+        @*         <span asp-validation-for="Email"></span> *@
+        @*     </div> *@
+        @* </div> *@
+        @* *@
+        @* <div class="form-group"> *@
+        @*     <label asp-for="Password"></label> *@
+        @*     <div class="field-group"> *@
+        @*         <input asp-for="Password"/> *@
+        @*         <span asp-validation-for="Password"></span> *@
+        @*     </div> *@
+        @* </div> *@
+        @* *@
+        @* <div class="form-group"> *@
+        @*     <div class="notification error"> *@
+        @*         @ViewData["ErrorMessage"] *@
+        @*     </div> *@
+        @* </div> *@
 
         <button type="submit" class="btn btn-gray btn-login">Sign In</button>
 
