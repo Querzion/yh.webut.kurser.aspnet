@@ -10,4 +10,25 @@ public class AdminController : Controller
 
         return View();
     }
+    
+    public IActionResult Projects()
+    {
+        ViewData["Title"] = "Home";
+
+        return View();
+    }
+    
+    public IActionResult Members()
+    {
+        ViewData["Title"] = "Home";
+
+        return View();
+    }
+    
+    public IActionResult Clients()
+    {
+        ViewData["Title"] = "Home";
+
+        return View();
+    }
 }

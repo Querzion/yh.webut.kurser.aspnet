@@ -24,14 +24,14 @@
     --font-black: 900;
 
     /* font sizes */
-    --font-size-default: 16px;
-    --font-size-h1: 36px;
-    --font-size-h2: 32px;
-    --font-size-h3: 28px;
-    --font-size-h4: 24px;
-    --font-size-h5: 20px;
-    --font-size-h6: 18px;
-    --font-size-logo: 26px;
+    --font-size-default: 1em; /* 16px */
+    --font-size-h1: 2.25em; /* 36px */
+    --font-size-h2: 2em; /* 32px */
+    --font-size-h3: 1.75em; /* 28px */
+    --font-size-h4: 1.5em; /* 24px */
+    --font-size-h5: 1.25em; /* 20px */
+    --font-size-h6: 1.125em; /* 18px */
+    --font-size-logo: 1.625em; /* 26px */
 
     /* resolutions */
     --size-tablet: 768px;
@@ -64,10 +64,10 @@
     --gray-600: #C6C8CC;
     --gray-700: #9E9E9E;
     --gray-800: #637085; /* Minna #637985 */
-
+    
+    --dark-opacity-20: rgba(26, 25, 38, 0.2); /* --dark-100-a */
+    --dark-opacity-60: rgba(26, 25, 38, 0.6); /* --dark-100-60 */
     --dark-100: #1A1926;
-    --dark-100-a: rgba(26, 25, 38, 0.2);
-    --dark-100-60: rgba(26, 25, 38, 0.6);
     --dark-200: #1C1D1F;
     --dark-300: #202123;
     --dark-400: #28263B;
@@ -76,23 +76,38 @@
     --dark-700: #39393F;
     --dark-800: #3F3F60;
 
-    --yellow-light: #FEF8DA;
-    --yellow: #FFD422;
+    --yellow-light: #FFF6C7; /* Old #FEF8DA */
+    --yellow-semilight: #FFF3B4;
+    --yellow: #6C6102; /* Old #FFD422 */
+    --yellow-dark: #8B7400;
     --yellow-dark-1: #FCBB42;
     --yellow-dark-2: #6A5902;
+    
     --orange: #FF9640;
     --orange-dark: #F09330;
-    --red-light: #FEF0EC;
-    --red-semilight: #ffaf99;
-    --red: #FF6640;
-    --red-dark: #E94D3F;
-    --green-light: #EEFBF1;
-    --green: #31D482;
-    --green-dark: #24B26B;
-    --blue-1: #2CD9D9;
-    --blue-2: #2D99FF;
+    --orange-dark-1: #FF6640;
+    --orange-dark-2: #E94D3F;
+    
+    --red-light: #FFEAE4; /* Old #FEF0EC */
+    --red-semilight: #FFB8A5; /* Old #ffaf99 */
+    --red: #DE3434;
+    --red-dark: #B83030;
+    
+    --green-light: #D8FFDF; /* Old #EEFBF1 */
+    --green-semilight: #B3FFC0;
+    --green: #119B56; /* Old #31D482 */
+    --green-dark: #187848; /* Old #24B26B */
+    
+    /* MEMO CHECK ALL BLUE COLORS! THEY HAVE CHANGED NAMES! */
+    --blue-light-opacity: rgba(45, 125, 204, 0.10);
+    --blue-light: #DBEDFF;
+    --blue-semilight: #9DCEFF;
+    --blue: #2D99FF;
     --blue-dark: #2D7DCC;
-    --blue-accent: var(--blue-2);
+    --blue-light-10: rgba(45, 125, 204, 0.10);
+    
+    --blue-1: #2CD9D9;
+    --blue-accent: var(--blue);
     --blue-accent-dark: #2682D9;
     --purple: #826AF9;
     --purple-dark: #634CD4;
@@ -118,13 +133,31 @@
     --text-color: var(--dark-400);
     --text-muted-color: var(--gray-800);
     --text-extra-muted-color: var(--gray-700);
-    --headline-color: var(--dark-100);
-    --background-color: var(--white-300);
-    --auth-background-color: var(--gray-100);
+    --text-headline-color: var(--dark-100); /* --headline-color */
+    
+    --background-color: var(--white-200);
+    --content-background-color: var(--white-100);
+    --sidebar-background-color: var(--white-100);
+    --orseperator-background-color: var(--white-100);
+    
     --border-color: var(--gray-500);
-    --border-focus-color: var(--blue-accent);
+    --border-focus-color: var(--blue-semilight); /* --blue-accent */
+    
+    --auth-background-color: var(--gray-100);
 
-    /* buttons */
+    /* buttons - standard */
+    --btn-border-width: 0;
+    --btn-border-radius: .6rem;
+    --btn-padding: 0.68rem 1.5rem;
+    
+    --btn-text-color: var(--white-100);
+    --btn-border-color: var(--white-100);
+    --btn-background-color: var(--blue);
+    --btn-hover-text-color: var(--white-100);
+    --btn-hover-border-color: var(--white-100);
+    --btn-hover-background-color: var(--blue-dark);
+    
+    /* MEMO CHANGE THE COLOURS FROM THIS TO THE STANDARD! */
     --btn-blue-text-color: var(--white-100);
     --btn-blue-text-hover-color: var(--white-100);
     --btn-blue-border-color: var(--white-100);
@@ -139,19 +172,23 @@
     --btn-gray-background-color: var(--white-200);
     --btn-gray-background-hover-color: var(--gray-300);
 
+    /* links */
+    --link-color: var(--blue);
+    --link-hover-color: var(--blue-dark);
+    
     /* nav links */
-    --navlink-text-color: var(--text-color);
-    --navlink-text-hover-color: var(--blue-accent);
-    --navlink-text-active-color: var(--blue-accent);
+    --navlink-text-color: var(--dark-200);
+    --navlink-text-hover-color: var(--blue);
+    --navlink-text-active-color: var(--blue);
     --navlink-background-color: transparent;
-    --navlink-background-hover-color: var(--blue-accent-10);
-    --navlink-background-active-color: var(--blue-accent-10);
+    --navlink-background-hover-color: var(--blue-light);
+    --navlink-background-active-color: var(--blue-light-opacity);
 
     /* table colors */
     --table-header-background-color: var(--white-300);
     --table-header-text-color: var(--text-color);
     --table-tbody-tr-background-hover-color: var(--blue-accent-10);
-    --modal-screen-background-color: var(--dark-100-a);
+    --modal-screen-background-color: var(--dark-opacity-20);
     --modal-background-color: var(--white-100);
     --error-background-color: var(--red-light);
     --error-text-color: var(--red-dark);
@@ -178,7 +215,7 @@
     --border-300: var(--gray-600);
     --bg-color: var(--white-300);
     --surface-color: var(--white-100);
-    --blue-accent-color: var(--blue-2);
+    --blue-accent-color: var(--blue-dark);
 }
 [data-theme="dark"] {
 
@@ -219,11 +256,11 @@ html, body {
 }
 
 /* structure */
-.center-screen {
+.wrapper-centerscreen, .center-screen {
+    height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100dvh;
 }
 
 .center-content {
@@ -249,11 +286,60 @@ html, body {
     display: none;
 }
 
+.wrapper-portal {
+    display: grid;
+    height: 100dvh;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: minmax(80px, auto) 1fr;
+    grid-template-areas:    "sidebar header" 
+                            "sidebar main";
+    
+    header, 
+    .header {
+        grid-area: header;
+        border-bottom: 1px solid var(--border-color);
+        padding: 2rem;
+    }
+    
+    aside,
+    .sidebar {
+        grid-area: sidebar;
+        border-right: 1px solid var(--border-color);
+        padding: 1.5rem 2rem;
+        width: 270px;
+    }
+    
+    main,
+    .main {
+        grid-area: main;
+        padding: 1.6rem 2rem;
+    }
+    
+}
+
+.link-logotype {
+    font-size: var(--font-size-logo);
+    font-weight: var(--font-bold);
+    font-family: var(--font-logo), sans-serif;
+    text-decoration: none;
+    color: var(--text-color);
+    display: flex;
+    align-items: start;
+    gap: .5rem;
+
+    a {
+        color: var(--text-color);
+        text-decoration: none;
+    }
+}
+/*.link-logotype > */
+
 .portal {
     display: grid;
     grid-template-columns: minmax(50px, 270px) 1fr;
     grid-template-rows: auto 1fr;
-    grid-template-areas: "logo top" "side main";
+    grid-template-areas:    "logo top" 
+                            "side main";
     height: 100dvh;
 
     .logotype {
@@ -328,11 +414,52 @@ h6 {
 }
 
 /* links */
-.nav-link {
-    font-size: var(--font-size-default);
-    font-family: var(--font-standard), sans-serif;
-    font-weight: var(--font-semibold);
+/*.nav-link {*/
+/*    font-size: var(--font-size-default);*/
+/*    font-family: var(--font-standard), sans-serif;*/
+/*    font-weight: var(--font-semibold);*/
+/*    text-decoration: none;*/
+/*    color: var(--navlink-text-color);*/
+/*    background-color: var(--navlink-background-color);*/
+/*}*/
+.nav-links {
+    margin: 3rem 0;
+
+    .nav-link {
+        font-size: var(--font-size-default);
+        font-family: var(--font-standard), sans-serif;
+        font-weight: var(--font-semibold);
+        text-decoration: none;
+        color: var(--navlink-text-color);
+        background-color: var(--navlink-background-color);
+        border-radius: .6rem;
+        padding: 1rem;
+        transition: background-color 0.3s ease;
+        margin-bottom: .3rem;
+
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+
+
+        &:hover {
+            color: var(--navlink-text-hover-color);
+            background-color: var(--navlink-background-hover-color);
+        }
+
+        &.active {
+            color: var(--navlink-text-active-color);
+            background-color: var(--navlink-background-active-color);
+        }
+    }
 }
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 .tab-link {
     font-size: var(--font-size-default);
@@ -342,17 +469,31 @@ h6 {
 
 /* buttons */
 .btn {
-    border-radius: 14px;
+    color: var(--btn-text-color);
+    border-color: var(--btn-border-color);
+    background-color: var(--btn-background-color);
+    -webkit-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    -moz-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    -ms-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    -o-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    border-width: var(--btn-border-width);
+    border-radius: var(--btn-border-radius);
     font-size: var(--font-size-default);
     font-weight: var(--font-semibold);
     font-family: var(--font-standard), sans-serif;
-    padding: 0.68rem 1.5rem;
+    padding: var(--btn-padding);
     cursor: pointer;
-
     display: flex;
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+        color: var(--btn-hover-text-color);
+        border-color: var(--btn-hover-border-color);
+        background-color: var(--btn-hover-background-color);
+    }
 }
 
 .btn-blue {
@@ -491,39 +632,6 @@ h6 {
 .change-the-user-menu {
     height: 32px;
     width: 32px;
-}
-
-
-.nav-links {
-    margin: 1rem 0;
-
-    .nav-link {
-        font-size: var(--font-size-default);
-        font-family: var(--font-standard), sans-serif;
-        font-weight: var(--font-semibold);
-        color: var(--navlink-text-color);
-        background-color: var(--navlink-background-color);
-        text-decoration: none;
-        padding: 1rem 2rem;
-        border-radius: .6rem;
-        transition: background-color 0.3s ease;
-        margin-bottom: .3rem;
-
-        display: flex;
-        align-items: center;
-        gap: 1.2rem;
-
-
-        &:hover {
-            color: var(--navlink-text-hover-color);
-            background-color: var(--navlink-background-hover-color);
-        }
-
-        &.active {
-            color: var(--navlink-text-active-color);
-            background-color: var(--navlink-background-active-color);
-        }
-    }
 }
 
 /* lists */
