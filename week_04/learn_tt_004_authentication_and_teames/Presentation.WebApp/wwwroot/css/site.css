@@ -439,7 +439,7 @@ h6 {
 
         display: flex;
         align-items: center;
-        gap: 1.2rem;
+        gap: .6rem;
 
 
         &:hover {
@@ -469,9 +469,32 @@ h6 {
 
 /* buttons */
 .btn {
+    cursor: pointer;
     color: var(--btn-text-color);
-    border-color: var(--btn-border-color);
+    border: 1px solid var(--btn-border-color);
     background-color: var(--btn-background-color);
+    -webkit-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    -moz-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    -ms-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    -o-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    outline: none;
+    border-radius: var(--btn-border-radius);
+    font-size: var(--font-size-default);
+    font-weight: var(--font-semibold);
+    font-family: var(--font-standard), sans-serif;
+    text-decoration: none;
+    padding: var(--btn-padding);
+    min-width: 130px;
+
+    &:hover {
+        color: var(--btn-hover-text-color);
+        border-color: var(--btn-hover-border-color);
+        background-color: var(--btn-hover-background-color);
+    }
+}
+
+.btn-nocol {
     -webkit-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
     -moz-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
     -ms-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
@@ -488,12 +511,6 @@ h6 {
     gap: 0.5rem;
     justify-content: center;
     align-items: center;
-
-    &:hover {
-        color: var(--btn-hover-text-color);
-        border-color: var(--btn-hover-border-color);
-        background-color: var(--btn-hover-background-color);
-    }
 }
 
 .btn-blue {
@@ -523,6 +540,7 @@ h6 {
 .btn-add {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: .5rem;
 
     &::before {
@@ -811,7 +829,7 @@ input[type="checkbox"] {
         font-size: var(--font-size-h4);
         font-weight: var(--font-regular);
         color: var(--white-200);
-        background-color: var(--dark-100-60);
+        background-color: var(--dark-opacity-60);
         padding: .5rem .90rem;
         border-radius: 50%;
         position: relative;

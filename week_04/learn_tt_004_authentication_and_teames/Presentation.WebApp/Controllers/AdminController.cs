@@ -1,7 +1,9 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Presentation.WebApp.Controllers;
 
+[Authorize]
 public class AdminController : Controller
 {
     public IActionResult Index()
@@ -18,6 +20,7 @@ public class AdminController : Controller
         return View();
     }
     
+    // [Authorize(Roles = "Admin")]
     public IActionResult Members()
     {
         ViewData["Title"] = "Home";
@@ -25,6 +28,7 @@ public class AdminController : Controller
         return View();
     }
     
+    // [Authorize(Roles = "Admin")]
     public IActionResult Clients()
     {
         ViewData["Title"] = "Home";
