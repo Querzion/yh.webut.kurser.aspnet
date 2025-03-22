@@ -71,12 +71,14 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Models\" />
+      <Folder Include="ViewModels\" />
       <Folder Include="wwwroot\images\UserUploads\" />
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Business\Business.csproj" />
       <ProjectReference Include="..\Data\Data.csproj" />
+      <ProjectReference Include="..\Domain\Domain.csproj" />
     </ItemGroup>
 
     <ItemGroup>
