@@ -10,34 +10,72 @@ public class AuthController(IAuthService authService) : Controller
     
     public IActionResult Login()
     {
-        ViewBag.ErrorMessage = null;
+        ViewBag.ErrorMessage = "";
         
         return View();
     }
     
     [HttpPost]
-    public async Task<IActionResult> Login(MemberLoginForm form, string returnUrl = "~/")
+    public async Task<IActionResult> Login(MemberLoginForm form, string returnUrl = "/")
     {
-        ViewBag.ErrorMessage = null;
-        
-        if (!ModelState.IsValid)
-        {
-            ViewBag.ErrorMessage = "Incorrect email or password.";
-            return View(form);
-        }
+        // ViewBag.ErrorMessage = "";
     
-        var result = await _authService.LoginAsync(form);
-        if (result)
+        if (ModelState.IsValid)
         {
-            return Redirect(returnUrl);
+            var result = await _authService.LoginAsync(form);
+            if (result)
+                return Redirect(returnUrl);
         }
-        else
-        {
-            ViewBag.ErrorMessage = "Incorrect email or password.";
-        }
+        
+        ViewBag.ErrorMessage = "Incorrect email or password.";
+        return View(form);
+        
+    }
+    
+    public IActionResult SignUp()
+    {
+        ViewBag.ErrorMessage = "";
         
         return View();
     }
+    
+    [HttpPost]
+    public async Task<IActionResult> SignUp(MemberSignUpForm form)
+    {
+        if (ModelState.IsValid)
+        {
+            var result = await _authService.SignUpAsync(form);
+            if (result)
+                return LocalRedirect("~/");
+        }
+    
+        ViewBag.ErrorMessage = "";
+        return View(form);
+    }
+    
+    // [HttpPost]
+    // public async Task<IActionResult> Login(MemberLoginForm form, string returnUrl = "~/")
+    // {
+    //     // ViewBag.ErrorMessage = null;
+    //     
+    //     if (!ModelState.IsValid)
+    //     {
+    //         ViewBag.ErrorMessage = "Incorrect email or password.";
+    //         return View(form);
+    //     }
+    //
+    //     var result = await _authService.LoginAsync(form);
+    //     if (result)
+    //     {
+    //         return Redirect(returnUrl);
+    //     }
+    //     else
+    //     {
+    //         ViewBag.ErrorMessage = "Incorrect email or password.";
+    //     }
+    //     
+    //     return View(form);
+    // }
     
     // [HttpPost]
     // public async Task<IActionResult> Login(MemberLoginFormWRECKED form, string returnUrl = "~/")
@@ -60,17 +98,6 @@ public class AuthController(IAuthService authService) : Controller
     //     //     return View(form);
     //     // }
     //     
-    //     return View();
-    // }
-    
-    // public IActionResult Register()
-    // {
-    //     return View();
-    // }
-    
-    // [HttpPost]
-    // public IActionResult Register(MemberRegistrationForm form)
-    // {
     //     return View();
     // }
 }

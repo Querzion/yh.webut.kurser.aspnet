@@ -15,12 +15,12 @@ namespace Domain.Models;
 
 public class MemberLoginForm
 {
-    [Required]
+    [Required(ErrorMessage = "Email is required.")]
     [DataType(DataType.EmailAddress)]
     [Display(Name = "Email", Prompt = "Enter email address")]
     public string? Email { get; set; }
 
-    [Required]
+    [Required(ErrorMessage = "A password is required.")]
     [DataType(DataType.Password)]
     [Display(Name = "Password", Prompt = "Enter password")]
     public string? Password { get; set; }
