@@ -12,11 +12,6 @@
     --font-fa-free: "Font Awesome 6 Free";
     --font-fa-pro: "Font Awesome 6 Pro";
     --font-bootstrap: "bootstrap-icons";
-
-    /* border-radius */
-    --border-radius-default: 1rem; /* 16px */ 
-    --border-radius-m: .8rem; /* 16px */ 
-    --border-radius-s: .6rem; /* 16px */ 
     
     /* font thickness */
     --font-weight-extralight: 200;
@@ -150,6 +145,12 @@
     
     --auth-background-color: var(--gray-100);
 
+    /* border-radius */
+    --border-radius-default: 1rem; /* 16px */
+    --border-radius-l: .875rem; /* 14 */
+    --border-radius-m: .75rem; /* 12px */
+    --border-radius-s: .625rem; /* 10px */
+    
     /* buttons - standard */
     --btn-border-width: 0;
     --btn-border-radius: .7rem;
@@ -200,7 +201,7 @@
     --error-border-color: var(--red-semilight);
     
     /* form colors */
-    --form-text-color: var(--white-100);
+    --form-text-color: var(--dark-400);
     --form-border-color: var(--white-100);
     --form-background-color: var(--white-100);
     --form-label-color: var(--dark-200);
@@ -219,6 +220,10 @@
     --form-error-message-text-color: var(--red-dark);
     --form-error-message-background-color: var(--red-light);
     --form-error-message-border-color: var(--red-light);
+
+    --card-text-color: var(--dark-400);
+    --card-border-color: var(--white-100);
+    --card-background-color: var(--white-100);
     
     /* box shadow */
     /* box-shadow: 2px 12px 16px 2px var(--box-shadow-color); */
@@ -337,6 +342,9 @@ a {
         grid-area: header;
         border-bottom: 1px solid var(--border-color);
         padding: 2rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
     
     aside,
@@ -489,6 +497,7 @@ h6, .h6 {
         &:hover {
             color: var(--navlink-text-hover-color);
             background-color: var(--navlink-background-hover-color);
+            text-decoration: none;
         }
 
         &.active {
@@ -535,6 +544,7 @@ h6, .h6 {
         color: var(--btn-hover-text-color);
         border-color: var(--btn-hover-border-color);
         background-color: var(--btn-hover-background-color);
+        text-decoration: none;
     }
 }
 
@@ -572,7 +582,7 @@ h6, .h6 {
 .btn-gray {
     color: var(--btn-gray-text-color);
     border-color: var(--btn-gray-border-color);
-    background-color: var(--btn-gray-background-color);
+    background-color: var(--btn-gray-background-color);    
 
     &:hover {
         color: var(--btn-gray-text-hover-color);
@@ -613,6 +623,12 @@ h6, .h6 {
 .btn-submit {
     width: 100%;
     margin-top: 2rem;
+}
+
+.btn-logout:before {
+    content: "\f2f5";
+    font-family: var(--font-fa-pro), sans-serif;
+    margin-right: .5rem;
 }
 
 /* statuses */
@@ -1038,6 +1054,87 @@ input[type="checkbox"] {
     }
 }
 
+#members {
+    display: grid;
+    gap: 2rem;
+    
+    .members-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
 
+        /*@media (max-width: 768px) {*/
+        /*    grid-template-columns: 1fr;*/
+        /*}*/
+        @media (min-width: 920px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (min-width: 1200px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        @media (min-width: 1700px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @media (min-width: 2200px) {
+            grid-template-columns: repeat(5, 1fr);
+        }
+        @media (min-width: 2700px) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+        @media (min-width: 3200px) {
+            grid-template-columns: repeat(7, 1fr);
+        }
+        @media (min-width: 3700px) {
+            grid-template-columns: repeat(8, 1fr);
+        }
+        @media (min-width: 4200px) {
+            grid-template-columns: repeat(9, 1fr);
+        }
+        @media (min-width: 4500px) {
+            grid-template-columns: repeat(10, 1fr);
+        }
+    }
+    
+    .card {
+        color: var(--card-text-color);
+        border: 1px solid var(--card-border-color);
+        background-color: var(--card-background-color);
+        box-shadow: var(--box-shadow);
+        padding: 2rem;
+        border-radius: var(--border-radius-m);
+    }
+    
+    .member {
+        text-align: center;
+        
+        
+        
+        .avatar {
+
+        }
+
+        .name {
+            
+        }
+        
+        .job-title {
+            background-color: var(--white-400);
+            border-radius: var(--border-radius-m);
+            display: inline-block;
+            align-self: center;
+            padding: .2rem .5rem;
+            margin: .5rem 0 1.5rem;
+            max-width: max-content;
+        }
+
+        .email {
+            
+        }
+
+        .phone-number {
+
+        }
+    }
+}
 
 /* views/pages */

@@ -36,7 +36,7 @@ public class MemberSignUpForm
     [DataType(DataType.Password)]
     public string Password { get; set; } = null!;
     
-    
+    [Required(ErrorMessage = "Required")]
     [Compare(nameof(Password), ErrorMessage = "Passwords don't match")]
     [Display(Name = "Confirm Password", Prompt = "Confirm password.")]
     [DataType(DataType.Password)]

@@ -1,3 +1,4 @@
+using Business.Interfaces;
 using Business.Services;
 using Data.Contexts;
 using Data.Entities;
@@ -11,6 +12,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<DataContext>(options => options.UseSqlite(builder.Configuration.GetConnectionString("AlphaDb")));
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IMemberService, MemberService>();
 
 builder.Services.AddIdentity<MemberEntity, IdentityRole>(options =>
     {

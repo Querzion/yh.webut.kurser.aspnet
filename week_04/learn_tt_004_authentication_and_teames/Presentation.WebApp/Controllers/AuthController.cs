@@ -1,4 +1,4 @@
-using Business.Services;
+using Business.Interfaces;
 using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,23 +8,25 @@ public class AuthController(IAuthService authService) : Controller
 {
     private readonly IAuthService _authService = authService;
     
-    public IActionResult Login()
+    public IActionResult Login(string returnUrl = "~/")
     {
-        ViewBag.ErrorMessage = "";
-        
+        if (string.IsNullOrWhiteSpace(returnUrl))
+            returnUrl = "~/";
+
+        ViewBag.ReturnUrl = returnUrl;
         return View();
     }
     
     [HttpPost]
-    public async Task<IActionResult> Login(MemberLoginForm form, string returnUrl = "/")
+    public async Task<IActionResult> Login(MemberLoginForm form, string returnUrl = "~/")
     {
-        // ViewBag.ErrorMessage = "";
+        ViewBag.ErrorMessage = "";
     
         if (ModelState.IsValid)
         {
             var result = await _authService.LoginAsync(form);
             if (result)
-                return Redirect(returnUrl);
+                return LocalRedirect(string.IsNullOrEmpty(returnUrl) ? "~/" : returnUrl);
         }
         
         ViewBag.ErrorMessage = "Incorrect email or password.";
@@ -51,6 +53,13 @@ public class AuthController(IAuthService authService) : Controller
     
         ViewBag.ErrorMessage = "";
         return View(form);
+    }
+
+    public async Task<IActionResult> Logout()
+    {
+        await _authService.LogoutAsync();
+        
+        return LocalRedirect("~/");
     }
     
     // [HttpPost]

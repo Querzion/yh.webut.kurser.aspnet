@@ -1,15 +1,10 @@
 using System.Linq.Expressions;
+using Business.Interfaces;
 using Data.Entities;
 using Domain.Models;
 using Microsoft.AspNetCore.Identity;
 
 namespace Business.Services;
-
-public interface IAuthService
-{
-    Task<bool> LoginAsync(MemberLoginForm loginForm);
-    Task<bool> SignUpAsync(MemberSignUpForm signUpForm);
-}
 
 public class AuthService(SignInManager<MemberEntity> signInManager, UserManager<MemberEntity> userManager) : IAuthService
 {
@@ -33,7 +28,14 @@ public class AuthService(SignInManager<MemberEntity> signInManager, UserManager<
             PhoneNumber = signUpForm.PhoneNumber
         };
         
+        // Memo: To add the address through a service, you need to find the Id of the person you are editing/creating
+        // then add the extended information.
         var result = await _userManager.CreateAsync(memberEntity, signUpForm.Password);
         return result.Succeeded;
+    }
+
+    public async Task LogoutAsync()
+    {
+        await _signInManager.SignOutAsync();
     }
 }
