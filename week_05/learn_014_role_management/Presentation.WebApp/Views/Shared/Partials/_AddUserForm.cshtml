@@ -1,0 +1,57 @@
+@model UserRegistrationViewModel
+
+<div id="adduser" class="add-user card text-center">
+    <div class="card-header">
+        <h1>Add User</h1>
+    </div>
+    <div class="card-body">
+        
+        @if (!string.IsNullOrEmpty(ViewBag?.ErrorMessage))
+        {
+            <div class="alert-notification error">
+                @ViewBag?.ErrorMessage
+            </div>
+        }
+        
+        <form method="post" asp-controller="Users" asp-action="Index" enctype="multipart/form-data" novalidate="">
+            <div class="form-group">
+                <div class="form-label-group">
+                    <label asp-for="FirstName"></label>
+                    <span asp-validation-for="FirstName"></span>
+                </div>
+                <input asp-for="FirstName"/>
+            </div>
+            <div class="form-group">
+                <div class="form-label-group">
+                    <label asp-for="LastName"></label>
+                    <span asp-validation-for="LastName"></span>
+                </div>
+                <input asp-for="LastName"/>
+            </div>
+            <div class="form-group">
+                <div class="form-label-group">
+                    <label asp-for="Email"></label>
+                    <span asp-validation-for="Email"></span>
+                </div>
+                <input asp-for="Email"/>
+            </div>
+            <div class="form-group">
+                <div class="form-label-group">
+                    <label asp-for="Role"></label>
+                    <span asp-validation-for="Role"></span>
+                </div>
+                
+                <div class="custom-select-container">
+                    <select class="custom-select" asp-for="Role" asp-items="ViewBag?.Roles" required>
+                        <option class="muted" disabled hidden selected value="">Select user role</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" class="btn btn-submit">Add User</button>
+            </div>                
+        </form>
+        
+    </div>
+</div>

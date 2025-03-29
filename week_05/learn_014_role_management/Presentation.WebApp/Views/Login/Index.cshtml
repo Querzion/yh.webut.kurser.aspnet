@@ -1,0 +1,34 @@
+@model LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<section id="login">
+    <div class="card-header">
+        <h1>@ViewData["Title"]</h1>
+    </div>
+    
+    @if (!string.IsNullOrEmpty(ViewBag?.ErrorMessage))
+    {
+        <div class="alert-notification error">
+            @ViewBag?.ErrorMessage
+        </div>
+    }
+    
+    <form asp-controller="Login" asp-action="Index" method="post" enctype="multipart/form-data" novalidate>
+
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email"/>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <input asp-for="Password"/>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-submit">Log In</button>
+        </div>
+    </form>
+</section>

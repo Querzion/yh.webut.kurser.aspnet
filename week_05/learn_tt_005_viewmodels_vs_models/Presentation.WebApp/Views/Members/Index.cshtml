@@ -1,0 +1,23 @@
+@model MembersViewModel
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div id="members" class="card">
+    <div class="card-header">
+        <h1>@ViewData["Title"]</h1>
+        <button asp-controller="Auth" asp-action="SignUp" class="btn"> Sign Up </button>
+    </div>
+    <div class="card-body">
+        
+        @foreach (var member in Model.Members)
+        {
+            <div class="member">
+                <img src="~/images/avatars/avatar-template.svg" alt="avatar template" />
+                <div class="name">@member.FirstName @member.LastName</div>
+                <div class="email">@member.Email</div>
+            </div>
+        }
+        
+    </div>
+</div>
