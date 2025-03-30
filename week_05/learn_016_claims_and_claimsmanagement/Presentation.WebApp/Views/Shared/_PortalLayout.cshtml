@@ -16,12 +16,24 @@
 </head>
 <body>
 
-<a class="btn btn-gray" href="">VIDEO LINK</a>
-
-<div class="center-screen">
-    <main class="d-grid">
+<div class="portal">
+    <div class="logotype">
+        <a class="btn btn-gray" href="https://youtu.be/hIHFzoNdSVA?si=ZN-oWxf2pr43cyIH">VIDEO LINK</a>
+    </div>
+    <div class="side">
+        @await Html.PartialAsync("Partials/_NavLinks")
+    </div>
+    <div class="top">
+       <div class="change-the-search-field">Search</div>
+        <div class="d-flex">
+            <div class="change-the-notifications"></div>
+            <div class="change-the-settings-menu"></div>
+            <a class="btn btn-gray" asp-controller="Auth" asp-action="Logout">Log Out</a>
+        </div>
+    </div>
+    <div class="main">
         @RenderBody()
-    </main>
+    </div>
 </div>
 
 @* Bootstrap Javascript CDN *@
