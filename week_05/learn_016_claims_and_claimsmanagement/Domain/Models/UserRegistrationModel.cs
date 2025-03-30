@@ -37,11 +37,13 @@ public class UserRegistrationModel
         ErrorMessage = "Invalid Password")]
     [DataType(DataType.Password)]
     public string Password { get; set; } = null!;
-    
-    
+
+
     [Required(ErrorMessage = "Required")]
     [Compare(nameof(Password), ErrorMessage = "Password must be confirmed.")]
     [Display(Name = "Confirm Password", Prompt = "Confirm the password.")]
     [DataType(DataType.Password)]
     public string ConfirmPassword { get; set; } = null!;
+    
+    public string? Role { get; set; }
 }

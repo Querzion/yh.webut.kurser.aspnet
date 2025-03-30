@@ -18,6 +18,9 @@ public class LoginViewModel
     [DataType(DataType.Password)]
     public string Password { get; set; } = null!;
     
+    [Display(Name = "Remember Me", Prompt = "Remember me?")]
+    public bool RememberMe { get; set; }
+    
     public static implicit operator UserLoginModel(LoginViewModel model)
     {
         return model == null

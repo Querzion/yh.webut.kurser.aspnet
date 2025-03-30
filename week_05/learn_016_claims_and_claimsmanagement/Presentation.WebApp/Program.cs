@@ -31,7 +31,6 @@ builder.Services.AddAuthorization(options =>
 {
     options.AddPolicy("Admins", policy => policy.RequireRole("Admin"));
     options.AddPolicy("Managers", policy => policy.RequireRole("Admin", "Manager"));
-    options.AddPolicy("Authenticated", policy => policy.RequireRole("Admin", "Manager", "User"));
 });
 
 var app = builder.Build();
@@ -69,7 +68,7 @@ app.UseAuthorization();
         #region Create Administrator Account
 
             var userManagerAdmin = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-            var adminUser = new ApplicationUser { FirstName = "Primary", LastName = "Admin", UserName = "admin@domain.com", Email = "admin@domain.com" };
+            var adminUser = new ApplicationUser { FirstName = "System", LastName = "Administrator", UserName = "admin@domain.com", Email = "admin@domain.com" };
 
             var adminExists = await userManagerAdmin.Users.AnyAsync(u => u.Email == adminUser.Email);
             if (!adminExists)
@@ -84,7 +83,7 @@ app.UseAuthorization();
         #region Create Manager Account
 
             var userManagerManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-            var managerUser = new ApplicationUser { FirstName = "Primary", LastName = "Manager", UserName = "manager@domain.com", Email = "manager@domain.com" };
+            var managerUser = new ApplicationUser { FirstName = "Platform", LastName = "Manager", UserName = "manager@domain.com", Email = "manager@domain.com" };
 
             var managerExists = await userManagerManager.Users.AnyAsync(u => u.Email == managerUser.Email);
             if (!managerExists)
@@ -99,7 +98,7 @@ app.UseAuthorization();
         #region Create User Account
 
             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
-            var user = new ApplicationUser { FirstName = "Primary", LastName = "User", UserName = "user@domain.com", Email = "user@domain.com" };
+            var user = new ApplicationUser { FirstName = "Test", LastName = "User", UserName = "user@domain.com", Email = "user@domain.com" };
 
             var userExists = await userManager.Users.AnyAsync(u => u.Email == user.Email);
             if (!userExists)
@@ -117,7 +116,7 @@ app.UseAuthorization();
 app.MapStaticAssets();
 app.MapControllerRoute(
         name: "default",
-        pattern: "{controller=Overview}/{action=Index}/{id?}")
+        pattern: "{controller=Auth}/{action=Login}/{id?}")
     .WithStaticAssets();
 
 

@@ -521,6 +521,17 @@ h6, .h6 {
     }
 }
 
+.account-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
 .page-header {
     display: flex;
     justify-content: space-between;

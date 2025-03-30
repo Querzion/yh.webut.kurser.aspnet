@@ -36,7 +36,7 @@ public class AuthController(IAuthenticationService authenticationService) : Cont
                 return LocalRedirect(returnUrl);
         }
         
-        return View();
+        return View(model);
     }
 
     [Route("login")]
@@ -45,19 +45,34 @@ public class AuthController(IAuthenticationService authenticationService) : Cont
         return View();
     }
 
+    // [HttpPost]
+    // [Route("login")]
+    // public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = "~/")
+    // {
+    //     if (ModelState.IsValid)
+    //     {
+    //         var result = await _authenticationService.LoginAsync(model);
+    //         if (result)
+    //             return LocalRedirect(returnUrl);
+    //     }
+    //
+    //     ViewBag.ErrorMessage = "Unable to login. Try another email or password.";
+    //     return View();
+    // }
+    
     [HttpPost]
     [Route("login")]
     public async Task<IActionResult> Login(LoginViewModel model, string returnUrl = "~/")
     {
         if (ModelState.IsValid)
         {
-            var result = await _authenticationService.LoginAsync(model);
-            if (result)
+            var result = await _authenticationService.LoginAsync(model.Email, model.Password);
+            if (result.Succeeded)
                 return LocalRedirect(returnUrl);
         }
 
         ViewBag.ErrorMessage = "Unable to login. Try another email or password.";
-        return View();
+        return View(model);
     }
 
     [Route("logout")]
@@ -65,6 +80,6 @@ public class AuthController(IAuthenticationService authenticationService) : Cont
     public async Task<IActionResult> Logout()
     {
         await _authenticationService.LogoutAsync();
-        return LocalRedirect("~/");
+        return LocalRedirect("~/auth/login");
     }
 }

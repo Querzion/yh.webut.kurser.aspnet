@@ -1,0 +1,22 @@
+@using System.Security.Claims
+@{
+    var userRoles = User.Claims.Where(c => c.Type == ClaimTypes.Role).Select(c => c.Value).ToList();
+    var displayName = User.Claims.FirstOrDefault(x => x.Type == "DisplayName")?.Value;
+}
+<div class="account-nav text-center">
+    <div class="role">
+        <div>
+            <span class="muted">Current Role:</span>
+            @if (userRoles.Any())
+            {
+                <span>@string.Join(", ", userRoles)</span>
+            }
+        </div>
+        @* <div><small>@User.Identity?.Name</small></div> *@
+        <div><small>@displayName</small></div>
+    </div>
+    
+    <a asp-controller="Auth" asp-action="Logout" class="btn btn-logout btn-gray">
+        <span>Logout</span>
+    </a>
+</div>

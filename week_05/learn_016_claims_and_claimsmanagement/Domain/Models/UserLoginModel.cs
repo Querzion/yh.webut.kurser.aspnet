@@ -16,4 +16,6 @@ public class UserLoginModel
     [Display(Name = "Password", Prompt = "Enter a password.")]
     [DataType(DataType.Password)]
     public string Password { get; set; } = null!;
+    
+    public bool RememberMe { get; set; }
 }

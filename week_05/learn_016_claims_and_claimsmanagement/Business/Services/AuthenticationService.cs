@@ -14,39 +14,70 @@ public class AuthenticationService(SignInManager<ApplicationUser> signInManager,
     private readonly UserManager<ApplicationUser> _userManager = userManager;
     private readonly RoleManager<IdentityRole> _roleManager = roleManager;
 
-    public async Task<bool> LoginAsync(UserLoginModel loginForm)
-    {
-        var result = await _signInManager.PasswordSignInAsync(loginForm.Email, loginForm.Password, false, false);
-        return result.Succeeded;
-    }
+    // public async Task<bool> LoginAsync(UserLoginModel loginForm)
+    // {
+    //     var result = await _signInManager.PasswordSignInAsync(loginForm.Email, loginForm.Password, false, false);
+    //     return result.Succeeded;
+    // }
 
     #region Teachers LoginAsync
 
-        public async Task<SignInResult> LoginAsync(string email, string password, bool rememberMe = false)
-        { 
-            var result = await _signInManager.PasswordSignInAsync(email, password, rememberMe, lockoutOnFailure: false);
-            var user = await _userManager.FindByEmailAsync(email);
-            if (user != null)
-            {
-                // var result = await _signInManager.PasswordSignInAsync(email, password, rememberMe, lockoutOnFailure: false);
+        #region Works
+
+            // public async Task<SignInResult> LoginAsync(string email, string password, bool rememberMe = false)
+            // {
+            //     var user = await _userManager.FindByEmailAsync(email);
+            //     if (user != null)
+            //     {
+            //         var result = await _signInManager.PasswordSignInAsync(email, password, rememberMe, lockoutOnFailure: false);
+            //         if (result.Succeeded)
+            //         {
+            //             var claims = await _userManager.GetClaimsAsync(user);
+            //
+            //             if (!claims.Any(x => x.Type == "DisplayName"))
+            //             {
+            //                 var displayName = $"{user.FirstName} {user.LastName}";
+            //                 await _userManager.AddClaimAsync(user, new Claim("DisplayName", displayName));
+            //             }
+            //         }
+            //         return result;
+            //     }
+            //     return new SignInResult();
+            // }
+
+        #endregion
+
+        #region It now works, I had missed a ! in AddClaimsByEmail();
+
+            public async Task<SignInResult> LoginAsync(string email, string password, bool rememberMe = false)
+            { 
+                var result = await _signInManager.PasswordSignInAsync(email, password, rememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
+                {
+                    var user = await _userManager.FindByEmailAsync(email);
+                    if (user != null)
+                    {
+                        await AddClaimsByEmailAsync(user, "DisplayName", $"{user.FirstName} {user.LastName}");
+                    }
+                }
+                return result;
+            }
+
+            private async Task AddClaimsByEmailAsync(ApplicationUser user, string typeName, string value)
+            {
+                if (user != null)
                 {
                     var claims = await _userManager.GetClaimsAsync(user);
 
-                    if (claims.Any(x => x.Type == "DisplayName"))
+                    if (!claims.Any(x => x.Type == typeName))
                     {
-                        var displayName = $"{user.FirstName} {user.LastName}";
-                        await _userManager.AddClaimAsync(user, new Claim("DisplayName", displayName));
+                        await _userManager.AddClaimAsync(user, new Claim(typeName, value));
                     }
-                } 
-                
-                // return result;
+                }
             }
 
-            return result;
-            // return new SignInResult();
-        }
-
+        #endregion
+        
     #endregion
     
     public async Task<bool> RegisterUserAsync(UserRegistrationModel form)
@@ -54,6 +85,11 @@ public class AuthenticationService(SignInManager<ApplicationUser> signInManager,
         var memberEntity = UserFactory.ToEntity(form);
         
         var result = await _userManager.CreateAsync(memberEntity, form.Password);
+        if (result.Succeeded)
+        {
+            await _userManager.AddToRoleAsync(memberEntity, "User");
+        }
+        
         return result.Succeeded;
     }
     
