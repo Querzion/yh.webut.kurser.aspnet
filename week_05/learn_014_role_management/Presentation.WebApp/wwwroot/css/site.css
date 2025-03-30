@@ -40,7 +40,7 @@
     --img-width-small: 12px;
     --img-width-medium: 16px;
     --img-width-large: 24px;
-    
+
     /* resolutions */
     --size-tablet: 768px;
     --size-desktop: 1400px;
@@ -241,7 +241,7 @@
     --box-sh-prim-spread: 2px;
     --box-sh-prim-color: rgba(82, 81, 81, 0.1);
     --box-shadow: 2px 12px 16px 2px var(--box-sh-prim-color);
-    
+
     /* From the Figma File for Alpha Portal */
     --heading-color: var(--dark-100);
     --body-light: var(--gray-800);
@@ -519,6 +519,17 @@ h6, .h6 {
             background-color: var(--navlink-background-active-color);
         }
     }
+}
+
+.account-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .page-header {
@@ -991,7 +1002,7 @@ input[type="checkbox"] {
 #editMemberModal {
     position: relative;
     z-index: 1000;
-    
+
     .with-modal-content {
         width: 550px;
     }
@@ -1059,25 +1070,25 @@ input[type="checkbox"] {
 
 #adduser {
     width: 550px;
-    
-    
+
+
 }
 
 
 #userlist {
     width: 550px;
-    
+
     .user-item {
         display: flex;
         flex-direction: row;
         gap: 1rem;
         padding: 1rem;
         margin-left: 1rem;
-        
+
         img {
             width: var(--img-width-default);
         }
-        
+
         .user {
             display: flex;
             flex-direction: column;
