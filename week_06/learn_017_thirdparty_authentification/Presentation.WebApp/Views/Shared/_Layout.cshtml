@@ -23,11 +23,12 @@
         
     </div>
     <div class="top">
-        <a class="btn btn-gray" asp-controller="Auth" asp-action="Logout">Logout</a>
+        <a class="btn btn-gray" asp-controller="Auth" asp-action="SignOut">Logout</a>
+        <partial name="_HeaderPartial"/>
     </div>
 
     <main class="d-grid">
-        @RenderBody()
+        @RenderBody() 
     </main>
 </div>
 

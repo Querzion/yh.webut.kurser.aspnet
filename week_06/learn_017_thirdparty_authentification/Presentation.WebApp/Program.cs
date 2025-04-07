@@ -22,16 +22,14 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(options =>
 builder.Services.ConfigureApplicationCookie(options =>
 {
     options.LoginPath = "/auth/signin";
-    options.AccessDeniedPath = "/auth/denied";
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
-    options.SlidingExpiration = true;
-    options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
+    options.Cookie.SameSite = SameSiteMode.None;
+    options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
 });
 
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IUserService, UserService>();
-builder.Services.AddScoped<IAuthService, AuthService>();
+// Only in use, if the TT auth version is in use.
+// builder.Services.AddScoped<IUserRepository, UserRepository>();
+// builder.Services.AddScoped<IUserService, UserService>();
+// builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
 app.UseHsts();
@@ -43,10 +41,10 @@ app.UseAuthorization();
 
 app.MapStaticAssets();
 
-app.UseRewriter(new RewriteOptions().AddRedirect("^$", "/admin/overview"));
+// app.UseRewriter(new RewriteOptions().AddRedirect("^$", "/admin/overview"));
 app.MapControllerRoute(
         name: "default",
-        pattern: "{controller=Overview}/{action=Index}/{id?}")
+        pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
 app.Run();
