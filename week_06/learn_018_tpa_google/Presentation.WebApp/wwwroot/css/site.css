@@ -499,6 +499,8 @@ h6, .h6 {
     text-align: center;
 }
 
+
+
 /* links */
 /*.nav-link {*/
 /*    font-size: var(--font-size-default);*/
@@ -592,6 +594,26 @@ h6, .h6 {
     }
 }
 
+.btn-external {
+    -webkit-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    -moz-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    -ms-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    -o-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    border-width: var(--btn-border-width);
+    border-radius: var(--btn-border-radius);
+    font-size: var(--font-size-default);
+    font-weight: var(--font-weight-semibold);
+    font-family: var(--font-standard), sans-serif;
+    padding: var(--btn-padding);
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn-nocol {
     -webkit-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
     -moz-transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
@@ -643,6 +665,76 @@ h6, .h6 {
 
     &::before {
         content: "\F4FE";
+        font-family: var(--font-bootstrap), sans-serif;
+        font-size: 1rem;
+    }
+}
+
+.btn-google {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8rem;
+    border: 1px solid var(--gray-600);
+
+    &::before {
+        content: "\F3F0";
+        font-family: var(--font-bootstrap), sans-serif;
+        font-size: 1rem;
+    }
+}
+
+.btn-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8rem;
+    border: 1px solid var(--gray-600);
+
+    &::before {
+        content: "\F344";
+        font-family: var(--font-bootstrap), sans-serif;
+        font-size: 1rem;
+    }
+}
+
+.btn-microsoft {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8rem;
+    border: 1px solid var(--gray-600);
+    
+    &::before {
+        content: "\F65D";
+        font-family: var(--font-bootstrap), sans-serif;
+        font-size: 1rem;
+    }
+}
+
+.btn-github {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8rem;
+    border: 1px solid var(--gray-600);
+
+    &::before {
+        content: "\F3ED";
+        font-family: var(--font-bootstrap), sans-serif;
+        font-size: 1rem;
+    }
+}
+
+.btn-twitter-x {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8rem;
+    border: 1px solid var(--gray-600);
+
+    &::before {
+        content: "\F8DB";
         font-family: var(--font-bootstrap), sans-serif;
         font-size: 1rem;
     }
@@ -883,6 +975,21 @@ form {
         }
     }
 
+    .terms-confirmation {
+        display: none;
+        color: var(--green);
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+
+    .text-danger {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        display: block; /* Ensure error message is a block element */
+        font-size: 0.875rem; /* Adjust font size */
+    }
+    
     .input-validation-error {
         border-color: var(--error-border-color);
         color: var(--error-text-color);
@@ -920,8 +1027,24 @@ form {
 input[type="checkbox"] {
     height: 15px;
     width: 15px;
+
+    appearance: checkbox; /* Ensures it's not overridden */
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
 }
 
+input[type="checkbox"] + label {
+    margin-left: 0.5rem;
+}
+
+input[type="checkbox"].input-validation-error {
+    outline: 1px solid var(--error-border-color);
+    outline-offset: 2px;
+}
+
+.external-account {
+    margin-top: 2rem;
+}
 
 
 /* badges */

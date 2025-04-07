@@ -21,12 +21,12 @@
             <input asp-for="Password"/>
         </div>
 
-        @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
-        {
-            <div class="alert-notification error">
-                @ViewBag.ErrorMessage
-            </div>
-        }
+        @* @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage)) *@
+        @* { *@
+        @*     <div class="alert-notification error"> *@
+        @*         @ViewBag.ErrorMessage *@
+        @*     </div> *@
+        @* } *@
 
         @if (!string.IsNullOrEmpty(ViewBag?.ErrorMessage))
         {
@@ -43,5 +43,7 @@
             <span>Don't have an account?</span>
             <a asp-controller="Auth" asp-action="SignUp">Sign Up</a>
         </div>
+        
+        <partial name="_ExternalAuthenticationPartial"/>
     </form>
 </section>

@@ -14,7 +14,7 @@ namespace Presentation.WebApp.Controllers;
 public class AuthController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager) : Controller
 {
     // private readonly IAuthService _authService = authService;
-    public readonly UserManager<AppUser> _userManager = userManager;
+    private readonly UserManager<AppUser> _userManager = userManager;
     private readonly SignInManager<AppUser> _signInManager = signInManager;
 
     #region Local Identity - This Video
@@ -35,7 +35,7 @@ public class AuthController(UserManager<AppUser> userManager, SignInManager<AppU
             {
                 ViewBag.ReturnUrl = returnUrl;
                 
-                if (ModelState.IsValid)
+                if (!ModelState.IsValid)
                     return View(model);
                 
                 var user = new AppUser { UserName = model.Email, Email = model.Email, FirstName = model.FirstName, LastName = model.LastName };
@@ -45,7 +45,7 @@ public class AuthController(UserManager<AppUser> userManager, SignInManager<AppU
                     var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
                     if (result.Succeeded)
                     {
-                        return LocalRedirect(returnUrl);
+                        return Redirect(returnUrl); 
                     }
                 }
                 
@@ -75,6 +75,8 @@ public class AuthController(UserManager<AppUser> userManager, SignInManager<AppU
                 var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
                 if (result.Succeeded)
                 {
+                    if (string.IsNullOrEmpty(returnUrl) || returnUrl == "~/")
+                        return RedirectToAction("Index", "Home");
                     return LocalRedirect(returnUrl);
                 }
                 
@@ -187,7 +189,7 @@ public class AuthController(UserManager<AppUser> userManager, SignInManager<AppU
                 return View("SignIn");
             }
             
-            var redirectUrl = Url.Action("ExternalSignInCallback", "Auth", new { returnUrl })!;
+            var redirectUrl = Url.Action("ExternalSignInCallback", "Auth", new { returnUrl });
             var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider, redirectUrl);
             return Challenge(properties, provider);
         }
@@ -209,6 +211,8 @@ public class AuthController(UserManager<AppUser> userManager, SignInManager<AppU
             var signInResult = await _signInManager.ExternalLoginSignInAsync(externalLoginInfo.LoginProvider, externalLoginInfo.ProviderKey, isPersistent: false, bypassTwoFactor: true);
             if (signInResult.Succeeded)
             {
+                if (string.IsNullOrEmpty(returnUrl) || returnUrl == "~/")
+                    return RedirectToAction("Index", "Home");
                 return LocalRedirect(returnUrl);
             }
             else
