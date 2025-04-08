@@ -68,6 +68,16 @@
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.slim.min.js" />
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\dist\jquery.slim.min.map" />
       <_ContentIncludedByDefault Remove="wwwroot\lib\jquery\LICENSE.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\alpha-logo.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\Avatars\avatar-female-001.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\Avatars\avatar-female-002.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\Avatars\avatar-male-001.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\Avatars\avatar-male-002.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\Avatars\avatar-male-003.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\Avatars\avatar-male-004.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\ControlPanel\bottom-layer-abstract.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\ControlPanel\top-layer-blur.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\images\Projects\project-vector.svg" />
     </ItemGroup>
 
     <ItemGroup>
@@ -80,6 +90,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <PackageReference Include="AspNet.Security.OAuth.GitHub" Version="9.2.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.3">
         <PrivateAssets>all</PrivateAssets>
         <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

@@ -50,18 +50,21 @@
                     <span asp-validation-for="ConfirmPassword"></span>
                 </div>
             </div>
-
+            
             <div class="form-group">
                 <label asp-for="TermsAndConditions"></label>
                 <div class="field-group">
-                    <input asp-for="TermsAndConditions"/>
-                    <span asp-validation-for="TermsAndConditions">I accept the terms and conditions.</span>
+                    <input asp-for="TermsAndConditions" type="checkbox" id="terms" class="form-check-input" />
+                    <label for="terms" class="form-check-label">
+                        I accept the <a href="/terms" target="_blank">terms and conditions</a>.
+                    </label>
+                    <span asp-validation-for="TermsAndConditions" class="text-danger"></span>
                 </div>
             </div>
 
             <button type="submit" class="btn btn-blue btn-submit">Create Account</button>
 
-            <div class="form-footer">
+            <div class="form-footer text-center">
                 <span>Already have an account?</span>
                 <a asp-controller="Auth" asp-action="SignIn">Login</a>
             </div>
@@ -69,4 +72,6 @@
     </div>
 </div>
 
-@await Html.PartialAsync("_ValidationScripts")
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScripts");}
+}

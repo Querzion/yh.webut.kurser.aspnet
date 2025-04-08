@@ -1,8 +1,10 @@
+using System.Security.Claims;
 using Business.Services;
 using Data.Contexts;
 using Data.Entities;
 using Data.Interfaces;
 using Data.Repositories;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Rewrite;
 using Microsoft.EntityFrameworkCore;
@@ -25,6 +27,42 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.Cookie.SameSite = SameSiteMode.None;
     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
 });
+
+builder.Services.AddAuthentication(options =>
+    {
+        options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    })
+    .AddCookie().AddGitHub(options =>
+    {
+        options.ClientId = builder.Configuration["Authentication:GitHub:ClientId"]!;
+        options.ClientSecret = builder.Configuration["Authentication:GitHub:ClientSecret"]!;
+        options.Scope.Add("user:email");
+        options.Scope.Add("read:user");
+
+        options.Events.OnCreatingTicket = async context =>
+        {
+            await Task.Delay(0);
+
+            if (context.User.TryGetProperty("name", out var nameClaim))
+            {
+                var fullName = nameClaim.GetString();
+                if (!string.IsNullOrEmpty(fullName))
+                {
+                    var names = fullName.Split(' ', 2, StringSplitOptions.RemoveEmptyEntries);
+                    if (names.Length > 0)
+                    {
+                        context.Identity?.AddClaim(new Claim(ClaimTypes.GivenName, names[0]));
+                    }
+
+                    if (names.Length > 1)
+                    {
+                        
+                        context.Identity?.AddClaim(new Claim(ClaimTypes.Surname, names[1]));
+                    }
+                }
+            }
+        };
+    });
 
 // Only in use, if the TT auth version is in use.
 // builder.Services.AddScoped<IUserRepository, UserRepository>();
