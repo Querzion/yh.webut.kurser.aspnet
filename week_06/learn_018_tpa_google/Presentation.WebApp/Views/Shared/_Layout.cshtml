@@ -20,14 +20,15 @@
         <partial name="_VideoLink"/>
     </div>
     <div class="side">
-        
+        <partial name="_HeaderPartial"/>
     </div>
     <div class="top">
         @* <a class="btn btn-gray" asp-controller="Auth" asp-action="SignOut">Logout</a> *@
-        <partial name="_HeaderPartial"/>
+        <div class="d-flex">
+        </div>
     </div>
 
-    <main class="d-grid">
+    <main class="main">
         @RenderBody() 
     </main>
 </div>

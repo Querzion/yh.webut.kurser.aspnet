@@ -1,11 +1,13 @@
 @model SignInViewModel
 
-<form asp-controller="Auth" asp-action="SignIn" method="post" novalidate>
+<form asp-controller="Auth" asp-action="SignIn" method="post" novalidate enctype="multipart/form-data">
     <input type="hidden" name="returnURL" value="@ViewBag.ReturnUrl" />
+
+    <h2>Login</h2>
 
     <div class="form-group">
         <label asp-for="Email"></label>
-        <input asp-for="Email" />
+        <input asp-for="Email" readonly class="readonly-input" />
     </div>
 
     <div class="form-group">
@@ -13,15 +15,19 @@
         <input asp-for="Password" type="password" />
     </div>
 
-    @if (!string.IsNullOrEmpty(ViewBag.ErrorMessage))
+    @if (!string.IsNullOrEmpty(ViewBag?.ErrorMessage))
     {
-        <div class="alert-notification error" role="alert">
-            @ViewBag.ErrorMessage
+        <div class="alert-notification error">
+            @ViewBag?.ErrorMessage
         </div>
     }
 
     <div class="form-group">
         <button type="submit" class="btn btn-submit">Log In</button>
     </div>
-</form>
 
+    <div class="form-footer">
+        <span>Don't have an account?</span>
+        <a asp-controller="Auth" asp-action="SignUp">Sign Up</a>
+    </div>
+</form>

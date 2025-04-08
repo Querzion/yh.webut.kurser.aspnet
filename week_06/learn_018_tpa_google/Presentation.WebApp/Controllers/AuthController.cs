@@ -14,7 +14,7 @@ namespace Presentation.WebApp.Controllers;
 public class AuthController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager) : Controller
 {
     // private readonly IAuthService _authService = authService;
-    private readonly UserManager<AppUser> _userManager = userManager;
+    public readonly UserManager<AppUser> _userManager = userManager;
     private readonly SignInManager<AppUser> _signInManager = signInManager;
 
     #region Local Identity - This Video
@@ -83,6 +83,29 @@ public class AuthController(UserManager<AppUser> userManager, SignInManager<AppU
                 ModelState.AddModelError("Invalid", "Invalid email or password");
                 return View(model);
             }
+            
+            #region ChatGPT Extension
+
+                [HttpGet]
+                public async Task<IActionResult> LocalSignInPartial(string email)
+                {
+                    if (string.IsNullOrWhiteSpace(email))
+                    {
+                        return BadRequest("Email is required.");
+                    }
+
+                    var user = await _userManager.FindByEmailAsync(email);
+
+                    if (user == null)
+                    {
+                        return NotFound("Email does not exist.");
+                    }
+
+                    var model = new SignInViewModel { Email = email };
+                    return PartialView("~/Views/Shared/_LocalSignInPartial.cshtml", model);
+                }
+
+            #endregion
 
         #endregion
 
