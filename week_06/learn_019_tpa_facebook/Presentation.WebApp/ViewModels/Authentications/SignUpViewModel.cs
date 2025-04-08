@@ -30,7 +30,7 @@ public class SignUpViewModel
     public string Password { get; set; } = null!;
     
     [Required(ErrorMessage = "Required")]
-    [Compare(nameof(Password), ErrorMessage = "Password must be confirmed.")]
+    [Compare(nameof(Password), ErrorMessage = "Passwords do not match.")]
     [Display(Name = "Confirm Password", Prompt = "Confirm the password.")]
     [DataType(DataType.Password)]
     public string ConfirmPassword { get; set; } = null!;

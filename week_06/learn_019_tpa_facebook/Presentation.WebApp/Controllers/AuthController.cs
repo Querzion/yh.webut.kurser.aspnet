@@ -34,10 +34,10 @@ public class AuthController(UserManager<AppUser> userManager, SignInManager<AppU
             public async Task<IActionResult> SignUp(SignUpViewModel model, string returnUrl = "~/")
             {
                 ViewBag.ReturnUrl = returnUrl;
-                
-                if (ModelState.IsValid)
+                    
+                if (!ModelState.IsValid)
                     return View(model);
-                
+                    
                 var user = new AppUser { UserName = model.Email, Email = model.Email, FirstName = model.FirstName, LastName = model.LastName };
                 var identityResult = await _userManager.CreateAsync(user, model.Password);
                 if (identityResult.Succeeded)
@@ -45,10 +45,10 @@ public class AuthController(UserManager<AppUser> userManager, SignInManager<AppU
                     var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
                     if (result.Succeeded)
                     {
-                        return LocalRedirect(returnUrl);
+                        return Redirect(returnUrl); 
                     }
                 }
-                
+                    
                 ModelState.AddModelError("Unable", "Unable to create user.");
                 return View(model);
             }
@@ -81,6 +81,29 @@ public class AuthController(UserManager<AppUser> userManager, SignInManager<AppU
                 ModelState.AddModelError("Invalid", "Invalid email or password");
                 return View(model);
             }
+
+            #region ChatGPT Extension
+
+                [HttpGet]
+                public async Task<IActionResult> LocalSignInPartial(string email)
+                {
+                    if (string.IsNullOrWhiteSpace(email))
+                    {
+                        return BadRequest("Email is required.");
+                    }
+
+                    var user = await _userManager.FindByEmailAsync(email);
+
+                    if (user == null)
+                    {
+                        return NotFound("Email does not exist.");
+                    }
+
+                    var model = new SignInViewModel { Email = email };
+                    return PartialView("~/Views/Shared/_LocalSignInPartial.cshtml", model);
+                }
+
+            #endregion
 
         #endregion
 

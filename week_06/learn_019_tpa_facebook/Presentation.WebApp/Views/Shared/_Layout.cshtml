@@ -17,17 +17,18 @@
 
 <div class="wrapper-portal">
     <div class="logotype">
-        <a class="btn btn-gray" href="https://youtu.be/FQnSq1iWNPE">VIDEO LINK</a>
+        <partial name="_VideoLink"/>
     </div>
     <div class="side">
-        
-    </div>
-    <div class="top">
-        <a class="btn btn-gray" asp-controller="Auth" asp-action="SignOut">Logout</a>
         <partial name="_HeaderPartial"/>
     </div>
+    <div class="top">
+        @* <a class="btn btn-gray" asp-controller="Auth" asp-action="SignOut">Logout</a> *@
+        <div class="d-flex">
+        </div>
+    </div>
 
-    <main class="d-grid">
+    <main class="main">
         @RenderBody() 
     </main>
 </div>
