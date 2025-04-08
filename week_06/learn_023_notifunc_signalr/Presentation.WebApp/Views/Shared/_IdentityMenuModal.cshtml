@@ -1,0 +1,24 @@
+<div class="dropdown">
+    <!-- Avatar Button -->
+    <button id="avatarBtn" class="avatar-button" aria-label="Open user menu"></button>
+
+    <!-- Dropdown Modal -->
+    <div id="userDropdown" class="dropdown-menu hidden">
+        <div class="user-info">
+            <div class="avatar"></div>
+            <span class="username">
+                @($"{User.FindFirst("given_name")?.Value} {User.FindFirst("family_name")?.Value}")
+            </span>
+        </div>
+
+        <div class="darkmode-toggle">
+            <span class="icon-toggle">Dark Mode</span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+        </div>
+
+        <a asp-controller="Auth" asp-action="SignOut" class="btn-external btn-signout"><span> Sign Out </span></a>
+    </div>
+</div>
