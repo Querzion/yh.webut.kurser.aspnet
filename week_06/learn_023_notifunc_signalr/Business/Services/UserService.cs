@@ -13,6 +13,7 @@ public interface IUserService
     Task<UserServiceResult> GetUsersAsync();
     Task<UserServiceResult> AddUserToRole(string userId, string roleName);
     Task<UserServiceResult> CreateUserAsync(SignUpFormData formData, string roleName = "User");
+    Task<string> GetDisplayNameAsync(string? username);
 }
 
 public class UserService(IUserRepository userRepository, UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager) : IUserService
@@ -83,5 +84,14 @@ public class UserService(IUserRepository userRepository, UserManager<AppUser> us
         return result.Succeeded
             ? new UserServiceResult { Succeeded = true, StatusCode = 200 }
             : new UserServiceResult { Succeeded = false, StatusCode = 500, Error = "Unable to add user to role."};
+    }
+
+    public async Task<string> GetDisplayNameAsync(string? username)
+    {
+        if (username == null)
+            return "";
+        
+        var user = await _userManager.FindByNameAsync(username);
+        return user == null ? "" : $"{user.FirstName} {user.LastName}";
     }
 }
