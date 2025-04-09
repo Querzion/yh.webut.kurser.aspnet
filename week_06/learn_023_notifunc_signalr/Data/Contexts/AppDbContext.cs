@@ -11,4 +11,9 @@ public class AppDbContext(DbContextOptions options) : IdentityDbContext<AppUser>
         base.OnConfiguring(optionsBuilder);
         optionsBuilder.UseLazyLoadingProxies();
     }
+    
+    public virtual DbSet<NotificationEntity> Notifications { get; set; }
+    public virtual DbSet<NotificationDismissedEntity> DismissedNotifications { get; set; }
+    public virtual DbSet<NotificationTypeEntity> NotificationTypes { get; set; }
+    public virtual DbSet<NotificationTargetGroupEntity> NotificationTargetGroups { get; set; }
 }

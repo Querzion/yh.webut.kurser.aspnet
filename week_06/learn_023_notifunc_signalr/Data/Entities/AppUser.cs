@@ -18,4 +18,6 @@ public class AppUser : IdentityUser
     [ProtectedPersonalData]
     [Column(TypeName = "nvarchar(50)")]
     public string? JobTitle { get; set; }
+    
+    public virtual ICollection<NotificationDismissedEntity> DismissedNotifications { get; set; } = [];
 }

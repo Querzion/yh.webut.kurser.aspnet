@@ -72,7 +72,7 @@
 
     <ItemGroup>
       <Folder Include="ViewModels\" />
-      <Folder Include="wwwroot\images\UserUploads\" />
+      <Folder Include="wwwroot\images\uploads\" />
     </ItemGroup>
 
     <ItemGroup>

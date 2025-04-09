@@ -1,91 +1,33 @@
 @model SignInViewModel
 @{
-    Layout = "_CleanLayout";
-    ViewData["Title"] = "Login";
+    Layout = "_CenterScreen";
+    ViewData["Title"] = "Sign In";
 }
 
-<section id="login">
-    <form id="email-only-form" method="post" novalidate>
-        <h1>@ViewData["Title"]</h1>
+<div id="signin" class="card">
 
-        <div class="form-group">
-            <label asp-for="Email"></label>
-            <input asp-for="Email" id="emailInput" required />
-        </div>
+    <div class="card-header">
+        <h2>Welcome back</h2>
+    </div>
 
-        <div id="error-message" class="error-message hidden"></div>
+    <div class="card-body">
 
-        <div class="form-group">
-            <button type="button" id="continueBtn" class="btn btn-submit">Continue</button>
-        </div>
+        <partial name="Partials/Authentication/_LocalStagedSignInPartial" model="Model"/>
 
-        <div class="form-footer">
+        <div class="additional-information">
             <span>Don't have an account?</span>
             <a asp-controller="Auth" asp-action="SignUp">Sign Up</a>
         </div>
 
         <div class="or-separator">
-            <span>OR</span>
+            <span>or</span>
         </div>
 
-    </form>
+        <partial name="Partials/Authentication/_ExternalSignInPartial"/>
 
-    <partial name="_ExternalAuthenticationPartial"/>
- 
-    <div id="partial-container"></div>
-</section>
+    </div>
+</div>
+<div class="agreement-links">
+    <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a>
+</div>
 
-
-@section Scripts {
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const continueBtn = document.querySelector('#continueBtn');
-            const emailInput = document.getElementById('emailInput');
-            const form = document.getElementById('email-only-form');
-            const errorMessage = document.getElementById('error-message'); // Error message container
-
-            continueBtn.addEventListener('click', async function () {
-                // Reset the error message and hide it at the start
-                errorMessage.classList.add('hidden');
-                errorMessage.textContent = '';
-
-                if (!form.checkValidity()) {
-                    form.reportValidity(); // Trigger browser's built-in validation UI
-                    return;
-                }
-
-                // Disable the continue button to prevent multiple clicks
-                continueBtn.disabled = true;
-
-                try {
-                    const response = await fetch('/Auth/LocalSignInPartial?email=' + encodeURIComponent(emailInput.value));
-
-                    if (response.ok) {
-                        const html = await response.text();
-                        form.style.display = 'none';
-                        document.getElementById('partial-container').innerHTML = html;
-                    } else if (response.status === 404) {
-                        // Show error message if the account is not found
-                        showError("No account found with that email.");
-                    } else {
-                        // Generic error message for other issues
-                        showError("An error occurred. Please try again.");
-                    }
-                } catch (err) {
-                    console.error('An error occurred:', err);
-                    showError("Unable to connect. Try again later.");
-                }
-
-                // After 5 seconds, re-enable the continue button
-                setTimeout(() => {
-                    continueBtn.disabled = false;
-                }, 5000); // 5000ms = 5 seconds
-            });
-
-            function showError(message) {
-                errorMessage.textContent = message; // Set the error message
-                errorMessage.classList.remove('hidden'); // Show the error message by removing the 'hidden' class
-            }
-        });
-    </script>
-}

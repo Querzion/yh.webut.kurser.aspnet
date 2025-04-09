@@ -1,9 +1,7 @@
 @model SignInViewModel
 
-<form asp-controller="Auth" asp-action="SignIn" method="post" novalidate enctype="multipart/form-data">
+<form id="signin-form" asp-controller="Auth" asp-action="SignIn" method="post" enctype="multipart/form-data" novalidate>
     <input type="hidden" name="returnURL" value="@ViewBag.ReturnUrl" />
-
-    <h2>Login</h2>
 
     <div class="form-group">
         <label asp-for="Email"></label>
@@ -26,8 +24,4 @@
         <button type="submit" class="btn btn-submit">Log In</button>
     </div>
 
-    <div class="form-footer">
-        <span>Don't have an account?</span>
-        <a asp-controller="Auth" asp-action="SignUp">Sign Up</a>
-    </div>
 </form>

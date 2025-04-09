@@ -10,14 +10,117 @@ using Presentation.WebApp.ViewModels.Authentications;
 
 namespace Presentation.WebApp.Controllers;
 
-public class AuthController(IAuthService authService, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager) : Controller
+public class AuthController(IAuthService authService, UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, RoleManager<IdentityRole> roleManager) : Controller
 // public class AuthController(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager) : Controller
 {
     private readonly IAuthService _authService = authService;
     private readonly UserManager<AppUser> _userManager = userManager;
     private readonly SignInManager<AppUser> _signInManager = signInManager;
+    private readonly RoleManager<IdentityRole> _roleManager = roleManager;
 
-    #region Local Identity - This Video
+    #region Local Identity - With UserService
+    
+        // This Local Identity uses A bunch of extra files, such as a user service, auth service, but do not inherently
+        // use the UserManager or SignInManager.
+    
+        #region SignUp
+        
+            public IActionResult SignUp()
+            {
+                return View();
+            }
+                
+            [HttpPost]
+            public async Task<IActionResult> SignUp(SignUpViewModel model)
+            {
+                ViewBag.ErrorMessage = null;
+                    
+                if (!ModelState.IsValid)
+                    return View(model);
+        
+                var signUpFormData = model.MapTo<SignUpFormData>();
+        
+                var result = await _authService.SignUpAsync(signUpFormData);
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("SignIn", "Auth");
+                }
+                    
+                ViewBag.ErrorMessage = result.Error;
+                return View(model);
+            }
+        
+        #endregion
+        
+        #region Sign In
+        
+            public IActionResult SignIn(string returnUrl = "~/")
+            {
+                ViewBag.ReturnUrl = returnUrl;
+                    
+                return View();
+            }
+                
+            [HttpPost]
+            public async Task<IActionResult> SignIn(SignInViewModel model, string returnUrl = "~/")
+            {
+                ViewBag.ErrorMessage = null;
+                ViewBag.ReturnUrl = returnUrl;
+                    
+                if (!ModelState.IsValid)
+                    return View(model);
+                    
+                var signInFormData = model.MapTo<SignInFormData>();
+                    
+                var result = await _authService.SignInAsync(signInFormData);
+                if (result.Succeeded)
+                {
+                    return LocalRedirect(returnUrl);
+                }
+                    
+                ViewBag.ErrorMessage = result.Error;
+                return View(model);
+            }
+            
+            #region ChatGPT Extension
+
+                [HttpGet]
+                public async Task<IActionResult> LocalSignInPartial(string email)
+                {
+                    if (string.IsNullOrWhiteSpace(email))
+                    {
+                        return BadRequest("Email is required.");
+                    }
+
+                    var user = await _userManager.FindByEmailAsync(email);
+
+                    if (user == null)
+                    {
+                        return NotFound("Email does not exist.");
+                    }
+
+                    var model = new SignInViewModel { Email = email };
+                    return PartialView("~/Views/Shared/Partials/Authentication/_LocalSignInFormPartial.cshtml", model);
+                }
+
+            #endregion
+        
+        #endregion
+        
+        #region Sign Out
+        
+            public async Task<IActionResult> SignOut(string returnUrl = "~/")
+            {
+                await _authService.SignOutAsync();
+                    
+                return LocalRedirect(returnUrl);
+            }
+        
+        #endregion
+    
+    #endregion
+    
+    #region Local Identity - Without UserService
 
         // This Local Identity uses UserManager and SignInManager to function correctly. 
     
@@ -121,85 +224,6 @@ public class AuthController(IAuthService authService, UserManager<AppUser> userM
         // #endregion
 
     #endregion
-    
-    #region Local Identity - Version based on Tips & Trix video.
-    
-        // This Local Identity uses A bunch of extra files, such as a user service, auth service, but do not inherently
-        // use the UserManager or SignInManager.
-    
-        #region SignUp
-        
-            public IActionResult SignUp()
-            {
-                return View();
-            }
-                
-            [HttpPost]
-            public async Task<IActionResult> SignUp(SignUpViewModel model)
-            {
-                ViewBag.ErrorMessage = null;
-                    
-                if (!ModelState.IsValid)
-                    return View(model);
-        
-                var signUpFormData = model.MapTo<SignUpFormData>();
-        
-                var result = await _authService.SignUpAsync(signUpFormData);
-                if (result.Succeeded)
-                {
-                    return RedirectToAction("SignIn", "Auth");
-                }
-                    
-                ViewBag.ErrorMessage = result.Error;
-                return View(model);
-            }
-        
-        #endregion
-        
-        #region Sign In
-        
-            public IActionResult SignIn(string returnUrl = "~/")
-            {
-                ViewBag.ReturnUrl = returnUrl;
-                    
-                return View();
-            }
-                
-            [HttpPost]
-            public async Task<IActionResult> SignIn(SignInViewModel model, string returnUrl = "~/")
-            {
-                ViewBag.ErrorMessage = null;
-                ViewBag.ReturnUrl = returnUrl;
-                    
-                if (!ModelState.IsValid)
-                    return View(model);
-                    
-                var signInFormData = model.MapTo<SignInFormData>();
-                    
-                var result = await _authService.SignInAsync(signInFormData);
-                if (result.Succeeded)
-                {
-                    return LocalRedirect(returnUrl);
-                }
-                    
-                ViewBag.ErrorMessage = result.Error;
-                return View(model);
-            }
-        
-        #endregion
-        
-        #region Sign Out
-        
-            public async Task<IActionResult> SignOut(string returnUrl = "~/")
-            {
-                await _authService.SignOutAsync();
-                    
-                return LocalRedirect(returnUrl);
-            }
-        
-        #endregion
-    
-    #endregion
 
     #region Extrernal Authentication
         
@@ -259,7 +283,15 @@ public class AuthController(IAuthService authService, UserManager<AppUser> userM
                 if (identityResult.Succeeded)
                 {
                     await _userManager.AddLoginAsync(user, externalLoginInfo);
-                    // await _signInManager.SignInAsync(user, isPersistent: false);
+                    
+                    string defaultRole = "User";
+
+                    if (!await _roleManager.RoleExistsAsync(defaultRole))
+                    {
+                        await _roleManager.CreateAsync(new IdentityRole(defaultRole));
+                    }
+                    await _userManager.AddToRoleAsync(user, defaultRole);
+                    
                     await _authService.ExternalSignInAsync(user);
                     return LocalRedirect(returnUrl);
                 }
