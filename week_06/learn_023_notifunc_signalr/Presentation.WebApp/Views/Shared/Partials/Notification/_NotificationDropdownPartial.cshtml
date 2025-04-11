@@ -70,6 +70,7 @@
     connection.start().catch(error => console.error(error))
     
     async function dismissNotification(notificationId) {
+        console.log('Trying to dismiss: ', notificationId)
         try {
             const res = await fetch(`/api/notifications/dismiss/${notificationId}`, { method : 'POST' })
             if (res.ok) {

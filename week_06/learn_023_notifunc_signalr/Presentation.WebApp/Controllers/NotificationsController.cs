@@ -34,7 +34,7 @@ public class NotificationsController(IHubContext<NotificationHub> notificationHu
         return Ok(notifications);
     }
 
-    [HttpPost("dissmiss/{id}")]
+    [HttpPost("dismiss/{id}")]
     public async Task<IActionResult> DismissNotification(string id)
     {
         var userId = User.FindFirstValue(ClaimTypes.NameIdentifier) ?? "anonymous";

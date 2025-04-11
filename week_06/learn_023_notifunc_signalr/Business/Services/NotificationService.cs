@@ -26,10 +26,10 @@ public class NotificationService(AppDbContext context, IHubContext<NotificationH
             switch (notificationEntity.NotificationTypeId)
             {
                 case 1 :
-                    notificationEntity.Icon = "~/images/profiles/user-template-male.svg";
+                    notificationEntity.Icon = "/images/profiles/user-template-male.svg";
                     break;
                 case 2 :
-                    notificationEntity.Icon = "~/images/projects/project-template.svg";
+                    notificationEntity.Icon = "/images/projects/project-template.svg";
                     break;
             }
         }
