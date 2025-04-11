@@ -145,21 +145,53 @@ public class AuthService(IUserService userService, SignInManager<AppUser> signIn
 
     #region External SignIn - With Notification
 
-        
-
-    #endregion
-
-    #region External SignIn - Without Notification
-
         public async Task<AuthServiceResult> ExternalSignInAsync(AppUser user)
         {
             if (user == null)
                 return new AuthServiceResult
-                    { Succeeded = false, StatusCode = 400, Error = "User is null." };
-        
+                {
+                    Succeeded = false,
+                    StatusCode = 400,
+                    Error = "User is null."
+                };
+
             await _signInManager.SignInAsync(user, isPersistent: false);
-            return new AuthServiceResult { Succeeded = true, StatusCode = 200 };
+
+            try
+            {
+                var notificationEntity = new NotificationEntity
+                {
+                    Message = $"{user.FirstName} {user.LastName} signed in with an external provider.",
+                    NotificationTypeId = 1
+                };
+
+                await _notificationService.AddNotificationAsync(notificationEntity, user.Id);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Notification failed: {ex.Message}");
+            }
+            
+            return new AuthServiceResult
+            {
+                Succeeded = true,
+                StatusCode = 200
+            };
         }
+    
+    #endregion
+
+    #region External SignIn - Without Notification
+
+        // public async Task<AuthServiceResult> ExternalSignInAsync(AppUser user)
+        // {
+        //     if (user == null)
+        //         return new AuthServiceResult
+        //             { Succeeded = false, StatusCode = 400, Error = "User is null." };
+        //
+        //     await _signInManager.SignInAsync(user, isPersistent: false);
+        //     return new AuthServiceResult { Succeeded = true, StatusCode = 200 };
+        // }
 
     #endregion
 
