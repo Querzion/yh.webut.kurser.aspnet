@@ -20,6 +20,7 @@ public class AppUser : IdentityUser
     public string? JobTitle { get; set; }
 
     [ProtectedPersonalData]
+    [Column(TypeName = "date")]
     public DateTime? DateOfBirth { get; set; }
 
     [ForeignKey(nameof(Image))]

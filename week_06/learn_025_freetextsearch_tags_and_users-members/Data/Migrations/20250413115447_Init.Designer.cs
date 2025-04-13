@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250412204603_Init")]
+    [Migration("20250413115447_Init")]
     partial class Init
     {
         /// <inheritdoc />
@@ -19,7 +19,7 @@ namespace Data.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.3")
+                .HasAnnotation("ProductVersion", "9.0.4")
                 .HasAnnotation("Proxies:ChangeTracking", false)
                 .HasAnnotation("Proxies:CheckEquality", false)
                 .HasAnnotation("Proxies:LazyLoading", true);
@@ -37,7 +37,7 @@ namespace Data.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime?>("DateOfBirth")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("date");
 
                     b.Property<string>("Email")
                         .HasMaxLength(256)
@@ -149,7 +149,7 @@ namespace Data.Migrations
                         .HasColumnType("nvarchar(200)");
 
                     b.Property<DateTime>("UploadedAt")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("date");
 
                     b.HasKey("Id");
 
@@ -185,7 +185,7 @@ namespace Data.Migrations
                         .HasColumnType("varchar(36)");
 
                     b.Property<DateTime>("Created")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("date");
 
                     b.Property<string>("Icon")
                         .IsRequired()
@@ -343,6 +343,9 @@ namespace Data.Migrations
                         .HasColumnType("nvarchar(75)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("TagName")
+                        .IsUnique();
 
                     b.ToTable("Tags");
                 });
@@ -586,7 +589,7 @@ namespace Data.Migrations
             modelBuilder.Entity("Data.Entities.ProjectMemberEntity", b =>
                 {
                     b.HasOne("Data.Entities.ProjectEntity", "Project")
-                        .WithMany()
+                        .WithMany("ProjectMembers")
                         .HasForeignKey("ProjectId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -700,6 +703,11 @@ namespace Data.Migrations
             modelBuilder.Entity("Data.Entities.NotificationTypeEntity", b =>
                 {
                     b.Navigation("Notifications");
+                });
+
+            modelBuilder.Entity("Data.Entities.ProjectEntity", b =>
+                {
+                    b.Navigation("ProjectMembers");
                 });
 
             modelBuilder.Entity("Data.Entities.StatusEntity", b =>

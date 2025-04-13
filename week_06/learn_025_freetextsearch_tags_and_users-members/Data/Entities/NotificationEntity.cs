@@ -23,6 +23,7 @@ public class NotificationEntity
     [Column(TypeName = "nvarchar(500)")]
     public string Message { get; set; } = null!;
     
+    [Column(TypeName = "date")]
     public DateTime Created { get; set; } = DateTime.Now;
     
     public virtual ICollection<NotificationDismissedEntity> DismissedNotifications { get; set; } = [];

@@ -44,4 +44,6 @@ public class ProjectEntity
     [ForeignKey(nameof(Status))]
     public int StatusId { get; set; }
     public virtual StatusEntity Status { get; set; } = null!;
+    
+    public virtual ICollection<ProjectMemberEntity> ProjectMembers { get; set; } = [];
 }

@@ -948,6 +948,17 @@ h6, .h6 {
     margin-top: 2rem;
 }
 
+.btn-remove {
+    cursor: pointer;
+    color: var(--gray-600);
+    transition: background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, color 0.1s ease-in-out;
+    
+    &:hover {
+        cursor: pointer;
+        color: var(--dark-400);
+    }
+}
+
 .btn-logout:before {
     content: "\f2f5";
     font-family: var(--font-fa-pro), sans-serif;
@@ -1417,6 +1428,29 @@ form .form-group {
 .search-item.active {
     background-color: var(--blue-light-opacity);
     border-radius: var(--border-radius-ml);
+}
+
+.user-avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weight-bold);
+    color: var(--white-100);
+    font-size: var(--font-size-xsmall);
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    background-color: #f1f5f9;
+    border-radius: var(--border-radius-m);
+    padding: .3rem .6rem;
+    font-size: var(--font-size-small);
 }
 
 #RichTextContent {

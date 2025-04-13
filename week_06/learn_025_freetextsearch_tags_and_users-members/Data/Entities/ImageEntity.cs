@@ -17,6 +17,7 @@ public class ImageEntity
     [Column(TypeName = "nvarchar(200)")]
     public string? AltText { get; set; }
 
+    [Column(TypeName = "date")]
     public DateTime UploadedAt { get; set; } = DateTime.UtcNow;
 
     // Navigation properties

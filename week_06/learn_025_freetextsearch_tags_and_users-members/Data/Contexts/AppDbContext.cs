@@ -6,11 +6,12 @@ namespace Data.Contexts;
 
 public class AppDbContext(DbContextOptions options) : IdentityDbContext<AppUser>(options)
 {
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        base.OnConfiguring(optionsBuilder);
-        optionsBuilder.UseLazyLoadingProxies();
-    }
+    // LazyLoading is implemented in Program.cs and is no longer needed here.
+    // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    // {
+    //     base.OnConfiguring(optionsBuilder);
+    //     optionsBuilder.UseLazyLoadingProxies();
+    // }
     
     public virtual DbSet<NotificationEntity> Notifications { get; set; }
     public virtual DbSet<NotificationDismissedEntity> DismissedNotifications { get; set; }

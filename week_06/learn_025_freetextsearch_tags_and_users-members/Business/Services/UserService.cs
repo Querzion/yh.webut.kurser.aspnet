@@ -4,6 +4,7 @@ using Data.Entities;
 using Data.Interfaces;
 using Domain.DTOs;
 using Domain.Extensions;
+using Domain.Models;
 using Microsoft.AspNetCore.Identity;
 
 namespace Business.Services;
@@ -13,6 +14,7 @@ public interface IUserService
     Task<UserServiceResult> GetUsersAsync();
     Task<UserServiceResult> AddUserToRole(string userId, string roleName);
     Task<UserServiceResult> CreateUserAsync(SignUpFormData formData, string roleName = "User");
+    Task<UserServiceResult> GetUserByEmailAsync(string email);
     Task<string> GetDisplayNameAsync(string? username);
 }
 
@@ -169,6 +171,30 @@ public class UserService(IUserRepository userRepository, UserManager<AppUser> us
                 var result = await _userRepository.GetAllAsync();
                 return result.MapTo<UserServiceResult>();
             }
+
+            public async Task<UserServiceResult> GetUserByEmailAsync(string email)
+            {
+                var result = await _userRepository.GetAsync(u => u.Email == email);
+
+                if (!result.Succeeded || result.Result == null)
+                {
+                    return new UserServiceResult
+                    {
+                        Succeeded = false,
+                        StatusCode = result.StatusCode,
+                        Error = result.Error ?? "User not found.",
+                        Result = null
+                    };
+                }
+
+                return new UserServiceResult
+                {
+                    Succeeded = true,
+                    StatusCode = 200,
+                    Result = new List<User> { result.Result }
+                };
+            }
+            
 
         #endregion
 

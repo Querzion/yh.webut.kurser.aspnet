@@ -32,7 +32,7 @@ namespace Data.Migrations
                     Id = table.Column<string>(type: "varchar(36)", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(200)", nullable: true),
                     AltText = table.Column<string>(type: "nvarchar(200)", nullable: true),
-                    UploadedAt = table.Column<DateTime>(type: "TEXT", nullable: false)
+                    UploadedAt = table.Column<DateTime>(type: "date", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -120,7 +120,7 @@ namespace Data.Migrations
                     FirstName = table.Column<string>(type: "nvarchar(75)", nullable: true),
                     LastName = table.Column<string>(type: "nvarchar(75)", nullable: true),
                     JobTitle = table.Column<string>(type: "nvarchar(50)", nullable: true),
-                    DateOfBirth = table.Column<DateTime>(type: "TEXT", nullable: true),
+                    DateOfBirth = table.Column<DateTime>(type: "date", nullable: true),
                     ImageId = table.Column<string>(type: "varchar(36)", nullable: true),
                     UserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "TEXT", maxLength: 256, nullable: true),
@@ -177,7 +177,7 @@ namespace Data.Migrations
                     NotificationTypeId = table.Column<int>(type: "INTEGER", nullable: false),
                     Icon = table.Column<string>(type: "varchar(150)", nullable: false),
                     Message = table.Column<string>(type: "nvarchar(500)", nullable: false),
-                    Created = table.Column<DateTime>(type: "TEXT", nullable: false)
+                    Created = table.Column<DateTime>(type: "date", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -504,6 +504,12 @@ namespace Data.Migrations
                 name: "IX_Statuses_StatusName",
                 table: "Statuses",
                 column: "StatusName",
+                unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Tags_TagName",
+                table: "Tags",
+                column: "TagName",
                 unique: true);
         }
 
