@@ -28,6 +28,7 @@
     --font-weight-black: 900;
 
     /* font sizes */
+    --font-size-icon: 1.1em; /* 17.6px */
     --font-size-default: 1em; /* 16px */
     --font-size-h1: 2.25em; /* 36px */
     --font-size-h2: 2em; /* 32px */
@@ -160,7 +161,8 @@
 
     /* border-radius */
     --border-radius-default: 1rem; /* 16px */
-    --border-radius-l: .875rem; /* 14 */
+    --border-radius-l: .875rem; /* 14px */
+    --border-radius-ml: 0.8125rem; /* 13px */
     --border-radius-m: .75rem; /* 12px */
     --border-radius-s: .625rem; /* 10px */
 
@@ -381,18 +383,6 @@ a {
 }
 
 .surface, .card {
-    background-color: var(--surface-color);
-    /* Default box-shadow: is >> 2px 12px 16px 2px var(--box-shadow-color); */
-    box-shadow: var(--box-sh-prim-horisontal)
-    var(--box-sh-prim-vertical)
-    var(--box-sh-prim-blur)
-    var(--box-sh-prim-spread)
-    var(--box-sh-prim-color);
-    border-radius: var(--border-radius-default);
-    padding: 2rem;
-}
-
-.card {
     background-color: var(--card-background-color);
     border: 1px solid var(--card-border-color);
     box-shadow: var(--box-sh-prim-horisontal)
@@ -402,6 +392,10 @@ a {
     var(--box-sh-prim-color);
     color: var(--card-text-color);
     border-radius: var(--border-radius-default);
+    padding: 2rem;
+}
+
+.card {
     width: 100%;
     
     .card-header {
@@ -414,7 +408,7 @@ a {
     }
     
     .card-footer {
-        
+        margin-top: 2rem;
     }
 }
 
@@ -1310,13 +1304,13 @@ input[type="checkbox"].input-validation-error {
 
 /* In order to test out multiple versions of the form settings, this is named .form, and will hopefully override form */
 
-.form {
+form {
     width: 100%;
     color: var(--text-color);
-    border-radius: 16px;
+    border-radius: var(--border-radius-default);
 }
 
-.form .form-group {
+form .form-group {
     position: relative;
     display: grid;
     gap: .2rem;
@@ -1324,16 +1318,26 @@ input[type="checkbox"].input-validation-error {
     text-align: left;
 }
 
-.form label {
+.form-label {
     color: var(--form-label-color);
     font-size: 1em;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     font-family: var(--font-standard), sans-serif;
 }
 
-.form input,
-.form select,
-.form textarea {
+.form-tag-input {
+    font-size: var(--font-size-default);
+    outline: none;
+    border: none;
+    flex-grow: 1;
+    font-weight: var(--font-weight-regular);
+    font-family: var(--font-standard), sans-serif;
+    background-color: var(--form-input-background-color);
+}
+
+.form-input,
+.form-select,
+.form-textarea {
     width: 100%;
     font-size: 1em;
     font-family: var(--font-standard), sans-serif;
@@ -1344,22 +1348,75 @@ input[type="checkbox"].input-validation-error {
     outline: none;
     padding: .5rem 1rem;
     border-radius: 16px;
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    position: relative;
 }
 
-.form input:focus,
-.form select:focus,
-.form textarea:focus {
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
     border: 1px solid var(--form-input-border-focus-color);
 }
 
-.form input::placeholder,
-.form select::placeholder,
-.form textarea::placeholder,
+.form-tag-select.focused,
+.search-results.focused {
+    border-color: 1px solid var(--form-input-border-focus-color);
+}
+
+.form-input::placeholder,
+.form-select::placeholder,
+.form-textarea::placeholder,
+.form-tag-input::placeholder,
 .ql-editor.ql-blank::before {
     color: var(--form-input-placeholder-color);
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: var(--font-weight-regular);
+}
+
+.form-tag-select label,
+.form-tag-select i {
+    cursor: pointer;
+    position: absolute;
+    font-size: var(--font-size-icon);
+    right: 1rem;
+    top: 1.2rem;
+}
+
+.search-results {
+    background-color: var(--form-input-background-color);
+    border: 1px solid var(--form-input-border-color);
+    border-top: none;
+    border-radius: 0 0 13px 13px;
+    /*height: 100px;*/
+    padding: 1rem;
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    z-index: 10;
+    display: none;
+}
+
+.search-item {
+    padding: .5rem 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: var(--font-size-xsmall);
+}
+
+.search-item:hover {
+    background-color: var(--blue-light-opacity);
+    border-radius: var(--border-radius-ml);
+}
+
+.search-item.active {
+    background-color: var(--blue-light-opacity);
+    border-radius: var(--border-radius-ml);
 }
 
 #RichTextContent {
@@ -1578,7 +1635,7 @@ input:checked + .slider:before {
 .account-dropdown-container {
     position: relative;
     display: inline-block;
-    z-index: 0;
+    z-index: 1;
 }
 
 .account-avatar {
@@ -1681,7 +1738,7 @@ input:checked + .slider:before {
 .notification-dropdown-container {
     position: relative;
     display: inline-block;
-    z-index: 0;
+    z-index: 1;
 }
 
 .notification-dropdown-container .btn-notification {
@@ -1969,8 +2026,6 @@ input:checked + .slider:before {
 
 #adduser {
     width: 550px;
-
-
 }
 
 #home {

@@ -161,7 +161,7 @@ public class AuthService(IUserService userService, SignInManager<AppUser> signIn
             {
                 var notificationEntity = new NotificationEntity
                 {
-                    Message = $"{user.FirstName} {user.LastName} signed in with an external provider.",
+                    Message = $"{user.FirstName} {user.LastName} signed in.",
                     NotificationTypeId = 1
                 };
 

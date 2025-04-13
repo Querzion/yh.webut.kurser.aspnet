@@ -71,78 +71,78 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 // Comment/UnComment if it's to be used or not.
-// #region IdentityUser - RoleCreation
-//
-// // This creates roles if they do not exist, BUT, they do this check every time the application is run,
-// // so one thing that one can do is to create the manual input functionality, and through that just have to use it once,
-// // OR you can just start it once, and then comment out this whole section to be honest.
-//
-//
-//     using (var scope = app.Services.CreateScope())
-//     {
-//         #region Create Roles
-//
-//             var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-//             string[] roleNames = ["Admin", "Manager", "User"];
-//
-//             foreach (var roleName in roleNames)
-//             {
-//                 var roleExists = await roleManager.RoleExistsAsync(roleName);
-//                 if (!roleExists)
-//                 {
-//                     await roleManager.CreateAsync(new IdentityRole(roleName));
-//                 }
-//             }
-//
-//         #endregion
-//         
-//         #region Create Administrator Account
-//
-//             var userManagerAdmin = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
-//             var adminUser = new AppUser { FirstName = "System", LastName = "Administrator", UserName = "admin@domain.com", Email = "admin@domain.com" };
-//
-//             var adminExists = await userManagerAdmin.Users.AnyAsync(u => u.Email == adminUser.Email);
-//             if (!adminExists)
-//             {
-//                 var result = await userManagerAdmin.CreateAsync(adminUser, "!Scam2014");
-//                 if (result.Succeeded)
-//                     await userManagerAdmin.AddToRoleAsync(adminUser, "Admin");
-//             }
-//
-//         #endregion
-//         
-//         #region Create Manager Account
-//
-//             var userManagerManager = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
-//             var managerUser = new AppUser { FirstName = "System", LastName = "Manager", UserName = "manager@domain.com", Email = "manager@domain.com" };
-//
-//             var managerExists = await userManagerManager.Users.AnyAsync(u => u.Email == managerUser.Email);
-//             if (!managerExists)
-//             {
-//                 var result = await userManagerManager.CreateAsync(managerUser, "!Scam2014");
-//                 if (result.Succeeded)
-//                     await userManagerManager.AddToRoleAsync(managerUser, "Manager");
-//             }
-//
-//         #endregion
-//         
-//         #region Create User Account
-//
-//             var userManager = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
-//             var user = new AppUser { FirstName = "Test", LastName = "User", UserName = "user@domain.com", Email = "user@domain.com" };
-//
-//             var userExists = await userManager.Users.AnyAsync(u => u.Email == user.Email);
-//             if (!userExists)
-//             {
-//                 var result = await userManager.CreateAsync(user, "!Scam2014");
-//                 if (result.Succeeded)
-//                     await userManager.AddToRoleAsync(user, "User");
-//             }
-//
-//         #endregion
-//     }
-//
-// #endregion
+#region IdentityUser - RoleCreation
+
+// This creates roles if they do not exist, BUT, they do this check every time the application is run,
+// so one thing that one can do is to create the manual input functionality, and through that just have to use it once,
+// OR you can just start it once, and then comment out this whole section to be honest.
+
+
+    using (var scope = app.Services.CreateScope())
+    {
+        #region Create Roles
+
+            var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+            string[] roleNames = ["Admin", "Manager", "User"];
+
+            foreach (var roleName in roleNames)
+            {
+                var roleExists = await roleManager.RoleExistsAsync(roleName);
+                if (!roleExists)
+                {
+                    await roleManager.CreateAsync(new IdentityRole(roleName));
+                }
+            }
+
+        #endregion
+        
+        #region Create Administrator Account
+
+            var userManagerAdmin = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
+            var adminUser = new AppUser { FirstName = "System", LastName = "Administrator", UserName = "admin@domain.com", Email = "admin@domain.com" };
+
+            var adminExists = await userManagerAdmin.Users.AnyAsync(u => u.Email == adminUser.Email);
+            if (!adminExists)
+            {
+                var result = await userManagerAdmin.CreateAsync(adminUser, "!Scam2014");
+                if (result.Succeeded)
+                    await userManagerAdmin.AddToRoleAsync(adminUser, "Admin");
+            }
+
+        #endregion
+        
+        #region Create Manager Account
+
+            var userManagerManager = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
+            var managerUser = new AppUser { FirstName = "System", LastName = "Manager", UserName = "manager@domain.com", Email = "manager@domain.com" };
+
+            var managerExists = await userManagerManager.Users.AnyAsync(u => u.Email == managerUser.Email);
+            if (!managerExists)
+            {
+                var result = await userManagerManager.CreateAsync(managerUser, "!Scam2014");
+                if (result.Succeeded)
+                    await userManagerManager.AddToRoleAsync(managerUser, "Manager");
+            }
+
+        #endregion
+        
+        #region Create User Account
+
+            var userManager = scope.ServiceProvider.GetRequiredService<UserManager<AppUser>>();
+            var user = new AppUser { FirstName = "Test", LastName = "User", UserName = "user@domain.com", Email = "user@domain.com" };
+
+            var userExists = await userManager.Users.AnyAsync(u => u.Email == user.Email);
+            if (!userExists)
+            {
+                var result = await userManager.CreateAsync(user, "!Scam2014");
+                if (result.Succeeded)
+                    await userManager.AddToRoleAsync(user, "User");
+            }
+
+        #endregion
+    }
+
+#endregion
 
 app.MapStaticAssets();
 

@@ -1,0 +1,17 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61FC54401902034DB50CBD30DAC93514/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61FC54401902034DB50CBD30DAC93514/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61FC54401902034DB50CBD30DAC93514/CustomProperties/=Extension/@EntryIndexedValue">cshtml</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61FC54401902034DB50CBD30DAC93514/CustomProperties/=FileName/@EntryIndexedValue">_VideoLink</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61FC54401902034DB50CBD30DAC93514/CustomProperties/=ValidateFileName/@EntryIndexedValue">False</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61FC54401902034DB50CBD30DAC93514/Description/@EntryValue">Layout VideoLink</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61FC54401902034DB50CBD30DAC93514/Image/@EntryValue">Razor</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61FC54401902034DB50CBD30DAC93514/Text/@EntryValue">&lt;a class="btn btn-gray" href="https://youtu.be/_YVKZwzptZY"&gt;VIDEO LINK&lt;/a&gt;</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61FC54401902034DB50CBD30DAC93514/Scope/=B802D3EDA464DF4395E291A5B02B1753/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61FC54401902034DB50CBD30DAC93514/Scope/=B802D3EDA464DF4395E291A5B02B1753/Type/@EntryValue">InRazorCSharpSharedViewsFolder</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61FC54401902034DB50CBD30DAC93514/Scope/=C049D1F3598F294DAC47F8162209A25A/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=61FC54401902034DB50CBD30DAC93514/Scope/=C049D1F3598F294DAC47F8162209A25A/Type/@EntryValue">InRazorCSharpProject</s:String>
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=D7EC079A413E934BB1D3FC50986A8B50/Entry/=61FC54401902034DB50CBD30DAC93514/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=D7EC079A413E934BB1D3FC50986A8B50/Entry/=61FC54401902034DB50CBD30DAC93514/EntryName/@EntryValue">Razor Layout</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=D7EC079A413E934BB1D3FC50986A8B50/Entry/=61FC54401902034DB50CBD30DAC93514/Position/@EntryValue">13</s:Int64></wpf:ResourceDictionary>
